@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "57df7db71cc1d04032b45a4be31a52e1",
+    "content-hash": "4aa012fc4d3873709f285f65c3c2810c",
     "packages": [
         {
             "name": "composer/installers",
@@ -405,6 +405,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/zero-spam/"
+        },
+        {
+            "name": "wpackagist-theme/sempress",
+            "version": "1.5.12",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/sempress/",
+                "reference": "1.5.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/sempress.1.5.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/sempress/"
         }
     ],
     "packages-dev": [],
