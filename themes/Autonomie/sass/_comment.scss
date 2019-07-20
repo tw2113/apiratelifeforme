@@ -1,0 +1,180 @@
+#comments {
+	clear: both;
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		display: block;
+		width: 95%;
+	}
+
+	.comment-form-cookies-consent label[for="wp-comment-cookies-consent"] {
+		display: inline;
+		margin-left: 10px;
+	}
+
+	input {
+		display: block;
+	}
+
+	input[type="checkbox"] {
+		display: inline;
+	}
+
+	label {
+		display: block;
+		color: $gray;
+	}
+
+	.says {
+		display: none;
+	}
+
+	h2#comments-title {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+article.comment {
+	display: block;
+	position: relative;
+	padding: 25px 0;
+	line-height: 2;
+}
+
+#respond .form-allowed-tags {
+	clear: both;
+	width: 98%;
+}
+
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+#comments-title,
+#reply-title {
+	padding: 0;
+	margin: 0;
+	font-size: 2em;
+}
+
+a.comment-reply-link {
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+
+	&:before {
+		font-family: "Dashicons";
+		content: "\f101";
+		padding-right: 5px;
+	}
+}
+
+li.comment {
+	list-style: none outside none;
+	margin: 10px 0;
+
+	.comment-meta cite {
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	img.avatar {
+		float: left;
+	}
+
+	.reply {
+		margin-left: 58px;
+	}
+}
+
+.comment-meta,
+.comment-notes,
+.logged-in-as {
+	display: block;
+	font-family: Lato, sans-serif;
+	color: $gray;
+}
+
+.comment-meta {
+	address {
+		line-height: 1.2;
+	}
+
+	time {
+		font-size: .7em;
+	}
+}
+
+.comment-meta a,
+.comment-reply-link,
+.logged-in-as a {
+	color: $gray;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ol.commentlist {
+	margin: 0;
+	padding: 0;
+
+	.avatar {
+		float: left;
+		margin-right: 10px;
+		width: 48px;
+		height: 48px;
+	}
+}
+
+ul.children {
+	padding-left: 58px;
+
+	.avatar {
+		margin-right: 10px;
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.comment-content {
+	font-size: 1.1em;
+	line-height: 2em;
+	margin-left: 58px;
+
+	cite {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+	}
+}
+
+.webmention,
+.pingback,
+.trackback {
+	address {
+		display: inline;
+	}
+
+	.comment-content {
+		font-size: 0.9em;
+	}
+}
+.commentlist .odd article {
+}
+.bypostauthor {
+	color: inherit;
+}
+
+.comment-respond {
+	padding: 25px 0;
+}

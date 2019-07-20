@@ -1,0 +1,74 @@
+@import "vars";
+@import "mixins";
+
+.site-navigation,
+.site-header .site-branding,
+.site-header .page-banner #page-title,
+.site-header .page-banner #page-description,
+.site-header .page-banner #page-meta {
+	width: $default-width;
+}
+
+.page-banner .avatar {
+	width: 120px;
+	height: 120px;
+}
+
+#primary .post,
+#primary .page {
+	nav {
+		background-color: #eee;
+		max-width: $default-width / 2;
+		margin-right: calc( 50% - 350px );
+		float: right;
+		padding: 10px;
+		font-size: .8em;
+
+		h1, h2, h3, h4 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+
+.entry-content > *,
+.entry-summary > *,
+.entry-content > form,
+.entry-content > div,
+.entry-header,
+.entry-footer,
+.entry-reaction,
+#comments,
+#nav-above,
+#nav-below,
+.wp-block-quote.is-style-large {
+	max-width: $default-width;
+	margin: 1.2em auto;
+	box-sizing: border-box;
+}
+
+#sidebar {
+	width: 100%;
+
+	aside {
+		margin: 50px 50px;
+	}
+
+	#secondary {
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+
+	#tertiary {
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+
+	#quaternary {
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+}

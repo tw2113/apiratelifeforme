@@ -1,0 +1,155 @@
+body {
+	background-color: $white;
+	color: $dark-gray;
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+address {
+	font-style: normal;
+}
+
+a {
+	color: $dark-gray;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+abbr {
+	font-variant: small-caps;
+
+	&[title] {
+		border-bottom: 1px dotted $gray;
+		cursor: help;
+	}
+}
+
+blockquote,
+figure {
+	color: $gray;
+	font-size: 1em;
+	font-style: italic;
+	position: relative;
+	line-height: 1.5;
+
+	small,
+	figcaption,
+	cite {
+		color: $gray;
+		display: block;
+		font-size: .7em;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	cite,
+	small {
+		&:before {
+			content: "\2014 \00A0";
+		}
+	}
+}
+
+blockquote {
+	small,
+	figcaption,
+	cite {
+		text-align: left;
+	}
+}
+
+figure,
+.wp-block-pullquote {
+	small,
+	figcaption,
+	cite {
+		text-align: right;
+	}
+}
+
+blockquote {
+	border: 0;
+	border-left: 3px solid $border-gray;
+	margin: 0;
+	padding-left: 30px;
+	line-height: 1.8;
+}
+
+code {
+	word-wrap: break-word;
+}
+
+figure blockquote,
+.wp-block-pullquote {
+	hyphens: auto;
+	word-wrap: break-word;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+ins {
+	background: $yellow;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 2.0em;
+}
+
+h4 {
+	font-size: 1.8em;
+}
+
+h5 {
+	font-size: 1.6em;
+}
+
+h6 {
+	font-size: 1.4em;
+}
+
+hr {
+	display: block;
+	width: 200px;
+	margin: 60px auto !important;
+	border: 0;
+	border-top: 1px solid $border-gray;
+	text-align: center;
+}
+
+pre {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #000;
+	color: #fff;
+	display: block;
+	padding: 50px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
