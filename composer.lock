@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fe6b1f7d5e08d5c8f7d185541d47cac",
+    "content-hash": "b68614e82a17bcc683018166ffd6184f",
     "packages": [
         {
             "name": "composer/installers",
@@ -345,6 +345,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-piwik/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-search-with-algolia",
+            "version": "1.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
+                "reference": "tags/1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-search-with-algolia/"
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
