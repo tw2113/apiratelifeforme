@@ -1,4 +1,5 @@
-/plugins/
+/plugins
+!/plugins/asylum-sync
 /vendor/
 index.php
 /themes/
