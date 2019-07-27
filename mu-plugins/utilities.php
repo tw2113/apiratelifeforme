@@ -115,4 +115,29 @@ function opengraph_on_single() {
 		}
 	}
 }
-add_action('wp_head', __NAMESPACE__ . '\opengraph_on_single');
+add_action( 'wp_head', __NAMESPACE__ . '\opengraph_on_single' );
+
+function atom_links() {
+    $tmpl = '<link rel="%s" type="%s" title="%s" href="%s" />';
+
+    printf(
+        $tmpl,
+        esc_attr( 'alternate' ),
+        esc_attr( 'application/atom+xml' ),
+        esc_attr( get_bloginfo( 'name' ) . '&raquo; Atom Feed link'  ),
+		get_bloginfo( 'atom_url' )
+    );
+}
+add_action( 'wp_head', __NAMESPACE__ . '\atom_links' );
+
+function add_atom_mime_support( $mimes ) {
+	$mimes = array_merge(
+		$mimes,
+		array(
+			'atom' => 'application/atom+xml',
+		)
+	);
+
+	return $mimes;
+}
+add_filter( 'mime_types', __NAMESPACE__ . '\add_atom_mime_support' );
