@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "629184225a1e316c719c6005aafe1655",
+    "content-hash": "2056aa0732b500786d122fa2088a4e90",
     "packages": [
         {
             "name": "composer/installers",
@@ -285,6 +285,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/semantic-linkbacks/"
+        },
+        {
+            "name": "wpackagist-plugin/syndication-links",
+            "version": "4.1.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/syndication-links/",
+                "reference": "tags/4.1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.1.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/syndication-links/"
         },
         {
             "name": "wpackagist-plugin/untappd-checkins-widget",
