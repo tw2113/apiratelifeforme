@@ -52,7 +52,7 @@ function piwik() {
 
 	<?php
 }
-add_action('wp_footer', __NAMESPACE__ . '\piwik');
+//add_action('wp_footer', __NAMESPACE__ . '\piwik');
 
 function add_toolbar_items($admin_bar){
 	if ( is_admin() ) {
@@ -133,9 +133,9 @@ add_action( 'wp_head', __NAMESPACE__ . '\atom_links' );
 function add_atom_mime_support( $mimes ) {
 	$mimes = array_merge(
 		$mimes,
-		array(
+		[
 			'atom' => 'application/atom+xml',
-		)
+		]
 	);
 
 	return $mimes;
