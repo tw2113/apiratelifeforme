@@ -53,3 +53,8 @@ function scripts_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\scripts_styles' );
+
+function credits() {
+	echo wpautop( 'We are wolves of the sea.' );
+}
+add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
