@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "57826dacb34e5c660f022d163b29b948",
+    "content-hash": "265dae6ff5556fc7172be57ac0c8c421",
     "packages": [
         {
             "name": "composer/installers",
@@ -245,6 +245,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jsonfeed/"
+        },
+        {
+            "name": "wpackagist-plugin/micropub",
+            "version": "2.0.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/micropub/",
+                "reference": "tags/2.0.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.0.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/micropub/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
