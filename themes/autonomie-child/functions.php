@@ -4,7 +4,7 @@ namespace tw2113;
 
 function scripts_styles() {
 	wp_enqueue_style( 'autonomie-parent', get_template_directory_uri() . '/style.css', [ 'dashicons' ] );
-
+	wp_enqueue_style( 'autonomie-child', get_stylesheet_directory_uri() . '/style.css', [ 'dashicons', 'autonomie-parent' ] );
 
 	/*
 		 * Adds JavaScript to pages with the comment form to support sites with
