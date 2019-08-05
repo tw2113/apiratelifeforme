@@ -7,3 +7,7 @@
  * Version: 1.0.0
  * Template: autonomie
  */
+
+#sidebar ul li {
+	padding-bottom: 15px;
+}
