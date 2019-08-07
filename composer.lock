@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52065369c229e50cb4e521fe3f8c4bcf",
+    "content-hash": "99dc597621112cd385109f80a74874cf",
     "packages": [
         {
             "name": "composer/installers",
@@ -228,15 +228,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -408,15 +408,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "3.8.9",
+            "version": "3.8.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/3.8.9"
+                "reference": "tags/3.8.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.3.8.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/webmention.3.8.11.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -428,15 +428,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.7",
+            "version": "11.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.7"
+                "reference": "tags/11.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -448,15 +448,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
-            "version": "1.0.21",
+            "version": "1.0.22",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-piwik/",
-                "reference": "tags/1.0.21"
+                "reference": "tags/1.0.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.21.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.22.zip",
                 "reference": null,
                 "shasum": null
             },
