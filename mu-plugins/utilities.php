@@ -1,10 +1,10 @@
 <?php
-/*
-Plugin Name: Michaelbox Utilities.
-Plugin URI: http://michaelbox.net
-Author: Michael Beckwith
-Version: 2.113
-*/
+/**
+ * Plugin Name: Michaelbox Utilities.
+ * Plugin URI: http://michaelbox.net
+ * Author: Michael Beckwith
+ * Version: 2.113
+ */
 
 namespace tw2113;
 
