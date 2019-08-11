@@ -1,6 +1,9 @@
 /plugins
 !/plugins/asylum-sync
+
+/uploads/
 /vendor/
 index.php
+
 /themes/
 !/themes/autonomie*
