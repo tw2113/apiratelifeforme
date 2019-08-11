@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Michaelbox Utilities.
- * Plugin URI: http://michaelbox.net
+ * Plugin Name: APirateLifeFor.me Shortcodes.
+ * Plugin URI: http://apiratelifefor.me
  * Author: Michael Beckwith
  * Version: 2.113
  */
