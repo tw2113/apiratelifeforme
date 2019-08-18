@@ -7,3 +7,5 @@ index.php
 
 /themes/sempress
 !/themes/autonomie*
+
+/themes/autonomie-child/node_modules
