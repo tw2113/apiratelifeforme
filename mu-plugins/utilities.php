@@ -141,3 +141,6 @@ function add_atom_mime_support( $mimes ) {
 	return $mimes;
 }
 add_filter( 'mime_types', __NAMESPACE__ . '\add_atom_mime_support' );
+
+remove_filter('pre_user_description', 'wp_filter_kses');
+add_filter( 'pre_user_description', 'wp_filter_post_kses');
