@@ -14,7 +14,6 @@
         <?php
         endif;
 
-		<?php
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '<ul><li>', '</li><li>', '</li></ul>' );
 		if ( $tags_list ) :
