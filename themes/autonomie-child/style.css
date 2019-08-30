@@ -23,3 +23,8 @@ h1.entry-title a, h2.entry-title a, h3.entry-title a, h4.entry-title a {
 .site-navigation ul a {
 	color: #720000;
 }
+
+#hcard_widget {
+	max-width: 100%;
+	width: 50%;
+}
