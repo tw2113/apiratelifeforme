@@ -29,7 +29,7 @@ h1.entry-title a, h2.entry-title a, h3.entry-title a, h4.entry-title a {
 	width: 50%;
 }
 
-#hcard_widget .author {
+#hcard_widget .avatar {
 	height: auto;
 	max-width: 100%;
 }
