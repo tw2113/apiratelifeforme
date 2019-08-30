@@ -144,3 +144,28 @@ add_filter( 'mime_types', __NAMESPACE__ . '\add_atom_mime_support' );
 
 remove_filter('pre_user_description', 'wp_filter_kses');
 add_filter( 'pre_user_description', 'wp_filter_post_kses');
+
+/**
+ * Show the updated time for a given post.
+ *
+ * @param int $post_id Post ID, Optional.
+ *
+ * @return string
+ */
+function updated_date( $post_id = 0 ) {
+    if ( empty( $post_id ) ) {
+        $post_id = get_the_ID();
+    }
+
+    $content         = '';
+    $u_time          = get_the_time( 'U', $post_id );
+    $u_modified_time = get_the_modified_time( 'U', $post_id );
+    $u_datetime      = get_the_modified_date( 'c', $post_id );
+    if ( $u_modified_time >= $u_time + 86400 ) {
+        $updated_date = get_the_modified_time('F jS, Y');
+        $updated_time = get_the_modified_time('h:i a');
+        $content     .= '<time class="entry-date updated dt-updated" datetime="' . $u_datetime . '">Last updated on '. $updated_date . ' at '. $updated_time .'</time>';
+    }
+
+    return $content;
+}
