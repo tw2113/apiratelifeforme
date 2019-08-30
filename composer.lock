@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0e58f24cfa2be2edea94c035562525f",
+    "content-hash": "e6dabdcda95c50ebf61e1c7a2e13b6c0",
     "packages": [
         {
             "name": "composer/installers",
@@ -127,6 +127,24 @@
                 "zikula"
             ],
             "time": "2019-08-12T15:00:31+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/avatar-privacy",
+            "version": "2.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
+                "reference": "tags/2.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.2.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/avatar-privacy/"
         },
         {
             "name": "wpackagist-plugin/classic-editor",
