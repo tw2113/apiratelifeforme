@@ -3,6 +3,26 @@
 function autonomie_enqueue_scripts() {}
 
 /**
+ * Display navigation to next/previous pages when applicable
+ *
+ * @since Autonomie 1.0.0
+ */
+function autonomie_content_nav( $nav_id ) {
+    global $wp_query;
+    ?>
+    <?php if ( is_home() || is_archive() || is_search() ) : // navigation links for home, archive, and search pages ?>
+        <nav id="archive-nav">
+            <h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'autonomie' ); ?></h1>
+            <?php echo paginate_links( [
+                'prev_text' => '<~ Previous',
+                'next_text' => 'Next ~>',
+            ] ); ?>
+        </nav><!-- #<?php echo $nav_id; ?> -->
+    <?php endif; ?>
+    <?php
+}
+
+/**
  * Prints HTML with meta information for the current post-date/time and author.
  * Create your own autonomie_posted_on to override in a child theme
  *
