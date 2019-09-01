@@ -1,0 +1,34 @@
+{
+  "name": "tw2113/pirate-rss",
+  "description": "Custom RSS for data on https://apiratelifefor.me",
+  "type": "wordpress-plugin",
+  "autoload": {
+    "psr-4": {
+      "tw2113\\YarrRSS\\": "src/"
+    }
+  },
+  "scripts": {
+    "dist": [
+      "rm -rf ./vendor",
+      "@composer install --no-dev -a",
+      "@composer archive --format=zip --file constant-contact-woocommerce",
+      "mv constant-contact-woocommerce.zip $HOME/Desktop"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7",
+    "10up/wp_mock": "dev-master"
+  },
+  "archive": {
+    "exclude": [
+      ".gitignore",
+      "!vendor/*",
+      "node_modules",
+      "tests",
+      "cypress.*",
+      "phpunit.xml",
+      "README.md",
+      "tags"
+    ]
+  }
+}
