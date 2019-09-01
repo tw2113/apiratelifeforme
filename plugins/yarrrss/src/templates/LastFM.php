@@ -1,40 +1,93 @@
 <?php
+/**
+ * Atom Feed Template for displaying Atom Posts feed.
+ *
+ * @package WordPress
+ */
 
-$postCount = 5; // The number of posts to show in the feed
-$posts = query_posts('showposts=' . $postCount);
-header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('blog_charset'), true);
-echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
+header( 'Content-Type: ' . feed_content_type( 'atom' ) . '; charset=' . get_option( 'blog_charset' ), true );
+$more = 1;
+
+echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>';
+
+/** This action is documented in wp-includes/feed-rss2.php */
+do_action( 'rss_tag_pre', 'atom' );
 ?>
-<rss version="2.0"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-    <?php do_action('rss2_ns'); ?>>
-    <channel>
-        <title><?php bloginfo_rss('name'); ?> - Feed</title>
-        <atom:link href="<?php self_link(); ?>" rel="self" type="application/rss+xml" />
-        <link><?php bloginfo_rss('url') ?></link>
-        <description><?php bloginfo_rss('description') ?></description>
-        <lastBuildDate><?php echo mysql2date('D, d M Y H:i:s +0000', get_lastpostmodified('GMT'), false); ?></lastBuildDate>
-        <language><?php echo get_option('rss_language'); ?></language>
-        <sy:updatePeriod><?php echo apply_filters( 'rss_update_period', 'hourly' ); ?></sy:updatePeriod>
-        <sy:updateFrequency><?php echo apply_filters( 'rss_update_frequency', '1' ); ?></sy:updateFrequency>
-        <?php do_action('rss2_head'); ?>
-        <?php while(have_posts()) : the_post(); ?>
-            <item>
-                <title><?php the_title_rss(); ?></title>
-                <link><?php the_permalink_rss(); ?></link>
-                <pubDate><?php echo mysql2date('D, d M Y H:i:s +0000', get_post_time('Y-m-d H:i:s', true), false); ?></pubDate>
-                <dc:creator><?php the_author(); ?></dc:creator>
-                <guid isPermaLink="false"><?php the_guid(); ?></guid>
-                <description><![CDATA[<?php the_excerpt_rss() ?>]]></description>
-                <content:encoded><![CDATA[<?php the_excerpt_rss() ?>]]></content:encoded>
-                <?php rss_enclosure(); ?>
-                <?php do_action('rss2_item'); ?>
-            </item>
-        <?php endwhile; ?>
-    </channel>
-</rss>
+<feed
+        xmlns="http://www.w3.org/2005/Atom"
+        xmlns:thr="http://purl.org/syndication/thread/1.0"
+        xml:lang="<?php bloginfo_rss( 'language' ); ?>"
+        xml:base="<?php bloginfo_rss( 'url' ); ?>/wp-atom.php"
+    <?php
+    /**
+     * Fires at end of the Atom feed root to add namespaces.
+     *
+     * @since 2.0.0
+     */
+    do_action( 'atom_ns' );
+    ?>
+>
+    <title type="text"><?php wp_title_rss(); ?></title>
+    <subtitle type="text"><?php bloginfo_rss( 'description' ); ?></subtitle>
+
+    <updated><?php echo get_feed_build_date( 'Y-m-d\TH:i:s\Z' ); ?></updated>
+
+    <link rel="alternate" type="<?php bloginfo_rss( 'html_type' ); ?>" href="<?php bloginfo_rss( 'url' ); ?>" />
+    <id><?php bloginfo( 'atom_url' ); ?></id>
+    <link rel="self" type="application/atom+xml" href="<?php self_link(); ?>" />
+
+    <?php
+    /**
+     * Fires just before the first Atom feed entry.
+     *
+     * @since 2.0.0
+     */
+    do_action( 'atom_head' );
+
+    while ( have_posts() ) :
+        the_post();
+        ?>
+        <entry>
+            <author>
+                <name><?php the_author(); ?></name>
+                <?php $author_url = get_the_author_meta( 'url' ); if ( ! empty( $author_url ) ) : ?>
+                    <uri><?php the_author_meta( 'url' ); ?></uri>
+                <?php
+                endif;
+
+                /**
+                 * Fires at the end of each Atom feed author entry.
+                 *
+                 * @since 3.2.0
+                 */
+                do_action( 'atom_author' );
+                ?>
+            </author>
+            <title type="<?php html_type_rss(); ?>"><![CDATA[<?php the_title_rss(); ?>]]></title>
+            <link rel="alternate" type="<?php bloginfo_rss( 'html_type' ); ?>" href="<?php the_permalink_rss(); ?>" />
+            <id><?php the_guid(); ?></id>
+            <updated><?php echo get_post_modified_time( 'Y-m-d\TH:i:s\Z', true ); ?></updated>
+            <published><?php echo get_post_time( 'Y-m-d\TH:i:s\Z', true ); ?></published>
+            <?php the_category_rss( 'atom' ); ?>
+            <summary type="<?php html_type_rss(); ?>"><![CDATA[<?php the_excerpt_rss(); ?>]]></summary>
+            <?php if ( ! get_option( 'rss_use_excerpt' ) ) : ?>
+                <content type="<?php html_type_rss(); ?>" xml:base="<?php the_permalink_rss(); ?>"><![CDATA[<?php the_content_feed( 'atom' ); ?>]]></content>
+            <?php endif; ?>
+            <?php
+            atom_enclosure();
+            /**
+             * Fires at the end of each Atom feed item.
+             *
+             * @since 2.0.0
+             */
+            do_action( 'atom_entry' );
+
+            if ( get_comments_number() || comments_open() ) :
+                ?>
+                <link rel="replies" type="<?php bloginfo_rss( 'html_type' ); ?>" href="<?php the_permalink_rss(); ?>#comments" thr:count="<?php echo get_comments_number(); ?>"/>
+                <link rel="replies" type="application/atom+xml" href="<?php echo esc_url( get_post_comments_feed_link( 0, 'atom' ) ); ?>" thr:count="<?php echo get_comments_number(); ?>"/>
+                <thr:total><?php echo get_comments_number(); ?></thr:total>
+            <?php endif; ?>
+        </entry>
+    <?php endwhile; ?>
+</feed>
