@@ -5,4 +5,6 @@ interface BaseInterface {
     public function hooks();
 
     public function loadTemplate();
+
+    public function declareFeed();
 }
