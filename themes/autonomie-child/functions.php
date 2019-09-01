@@ -57,5 +57,6 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\scripts_styles' );
 function credits() {
 	echo wpautop( 'We are wolves of the sea.' );
 	echo '<p><a href="https://xn--sr8hvo.ws/3%EF%B8%8F%E2%83%A3%F0%9F%93%B2%F0%9F%8D%A3/previous"><~</a> An IndieWeb Webring 🕸💍 <a href="https://xn--sr8hvo.ws/3%EF%B8%8F%E2%83%A3%F0%9F%93%B2%F0%9F%8D%A3/next">~></a></p>';
+	echo '<p><a rel="me" href="https://indieweb.social/@tw2113">Mastodon</a></p>';
 }
 add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
