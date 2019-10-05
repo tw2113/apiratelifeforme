@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63e7ada2201542d58e8efaeba30ab7ae",
+    "content-hash": "2cf9ac2bc80013f715b64b3ac0796eef",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,15 +130,15 @@
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
-            "version": "2.2.2",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.3.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -436,15 +436,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.1",
+            "version": "12.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.1"
+                "reference": "tags/12.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
