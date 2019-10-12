@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70c1727495ea30ade8a09edfa91ab0c7",
+    "content-hash": "0324c2349e1a0b886239571a8b8bfa54",
     "packages": [
         {
             "name": "composer/installers",
@@ -364,15 +364,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.7",
+            "version": "3.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.7"
+                "reference": "tags/3.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.4.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -508,15 +508,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.4.1",
+            "version": "3.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
