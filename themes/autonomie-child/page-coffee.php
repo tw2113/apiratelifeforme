@@ -23,6 +23,8 @@ get_header(); ?>
                 <div class="entry-content e-content" itemprop="description articleBody">
 					<?php
 
+                    the_content();
+
 					$args = [
 						'post_type'      => 'coffee_checkins',
 						'post_status'    => 'publish',
