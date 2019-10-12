@@ -20,7 +20,7 @@ get_header(); ?>
 		<?php
 
 		$args = [
-			'post_type'      => 'coffee_checkin',
+			'post_type'      => 'coffee_checkins',
 			'post_status'    => 'publish',
 			'posts_per_page' => -1,
 		];
