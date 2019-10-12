@@ -17,24 +17,31 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php
+        <article <?php autonomie_post_id(); ?> <?php post_class(); ?><?php autonomie_semantics( 'post' ); ?>>
+			<?php get_template_part( 'templates/partials/entry-header' ); ?>
+				<?php autonomie_the_post_thumbnail( '<div class="entry-media">', '</div>' ); ?>
+                <div class="entry-content e-content" itemprop="description articleBody">
+					<?php
 
-		$args = [
-			'post_type'      => 'coffee_checkins',
-			'post_status'    => 'publish',
-			'posts_per_page' => -1,
-		];
+					$args = [
+						'post_type'      => 'coffee_checkins',
+						'post_status'    => 'publish',
+						'posts_per_page' => -1,
+					];
 
-		$coffee = new WP_Query( $args );
+					$coffee = new WP_Query( $args );
 
-		while( $coffee->have_posts() ) {
-			$coffee->the_post();
+					while( $coffee->have_posts() ) {
+						$coffee->the_post();
 
-			the_content();
+						the_content();
 
-			echo '<hr/>';
-		}
-		?>
+						echo '<hr/>';
+					}
+					?>
+                </div><!-- .entry-content -->
+			<?php get_template_part( 'templates/partials/entry-footer' ); ?>
+        </article><!-- #post-<?php the_ID(); ?> -->
 
 	<?php endwhile; // end of the loop. ?>
 
