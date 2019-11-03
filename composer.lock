@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ea2ced5d87d167b936cdac4783181aa",
+    "content-hash": "3a040eb2f7c123bdf6d727dc58260511",
     "packages": [
         {
             "name": "composer/installers",
@@ -382,15 +382,15 @@
         },
         {
             "name": "wpackagist-plugin/semantic-linkbacks",
-            "version": "3.9.3",
+            "version": "3.10.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/semantic-linkbacks/",
-                "reference": "tags/3.9.3"
+                "reference": "tags/3.10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.9.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.10.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -454,15 +454,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.2",
+            "version": "12.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.2"
+                "reference": "tags/12.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
