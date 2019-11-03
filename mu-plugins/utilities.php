@@ -169,3 +169,10 @@ function updated_date( $post_id = 0 ) {
 
     return $content;
 }
+
+function coffee_addiction_dashboard_count( $data = [] ) {
+    $count = wp_count_posts( 'coffee_checkins' );
+
+    return [ "Coffee checkins: {$count->publish}" ];
+}
+add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\coffee_addiction_dashboard_count' );
