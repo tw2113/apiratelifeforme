@@ -33,6 +33,8 @@ get_header(); ?>
 
 					$coffee = new WP_Query( $args );
 
+					echo "<h2>Total checkins: {$coffee->found_posts}</h2>";
+
 					while( $coffee->have_posts() ) {
 						$coffee->the_post();
 
