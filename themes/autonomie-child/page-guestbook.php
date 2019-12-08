@@ -19,6 +19,7 @@ get_header(); ?>
 
         <article <?php autonomie_post_id(); ?> <?php post_class(); ?><?php autonomie_semantics( 'post' ); ?>>
             <div class="entry-content e-content" itemprop="description articleBody">
+                <h1><?php the_title(); ?></h1>
 				<?php
 
                 the_content();
