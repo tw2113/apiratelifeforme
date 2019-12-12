@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b035e41edbbe41267a4749b66d7ab11e",
+    "content-hash": "18bac8563db9e87845558ec227f5248f",
     "packages": [
         {
             "name": "composer/installers",
@@ -220,15 +220,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "7.0.0",
+            "version": "7.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/7.0.0"
+                "reference": "tags/7.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -382,15 +382,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.5.0",
+            "version": "3.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.5.0"
+                "reference": "tags/3.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -490,15 +490,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.6.2",
+            "version": "12.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.6.2"
+                "reference": "tags/12.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
