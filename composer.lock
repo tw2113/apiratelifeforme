@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "844cb1d545127f0fdee1be19fb422d0d",
+    "content-hash": "a6e879ec9e53db478daf56cb1b6eec7c",
     "packages": [
         {
             "name": "composer/installers",
@@ -436,15 +436,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.1.4",
+            "version": "4.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.1.4"
+                "reference": "tags/4.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -487,24 +487,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/webmention/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.7.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
