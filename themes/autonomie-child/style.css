@@ -33,3 +33,13 @@ h1.entry-title a, h2.entry-title a, h3.entry-title a, h4.entry-title a {
 	height: auto;
 	max-width: 100%;
 }
+
+.entry-meta a,
+.wp-caption-text a,
+.gallery-caption a,
+.page-link a,
+.page-links a,
+.site-header #site-title a,
+.site-navigation ul a {
+	text-decoration: underline;
+}

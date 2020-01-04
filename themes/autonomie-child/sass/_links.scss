@@ -24,3 +24,13 @@ h4 {
 	}
   }
 }
+
+.entry-meta a,
+.wp-caption-text a,
+.gallery-caption a,
+.page-link a,
+.page-links a,
+.site-header #site-title a,
+.site-navigation ul a {
+	text-decoration: underline;
+}
