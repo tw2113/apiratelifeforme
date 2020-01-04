@@ -23,8 +23,36 @@ get_header(); ?>
 
             <?php endwhile; // end of the loop. ?>
             </ul>
+
+            <?php
+            $topics = get_terms(
+                [
+                    'taxonomy' => 'bookmark_topics',
+                ]
+            );
+            ?>
+
+            <h2>Individual topics</h2>
+            <?php
+            if ( ! empty( $topics ) && ! is_wp_error( $topics ) ) {
+                echo '<ul class="bookmark-topics">';
+                foreach ( $topics as $topic ) {
+                    printf(
+                        '<li><a href="%s">%s</a> - <img src="%s" alt="Atom feed icon" /> <a href="%s">%s</a></li>',
+                        get_term_link( $topic ),
+                        $topic->name,
+						esc_url( includes_url( 'images/rss.png' ) ),
+						get_term_feed_link( $topic->term_id, 'bookmark_topics', 'atom' ),
+                        'Atom feed'
+                    );
+                }
+                echo '</ul>';
+            }
+            ?>
         </div>
     </article>
 </main><!-- #content -->
+
+<?php autonomie_content_nav( 'nav-below' ); ?>
 
 <?php get_footer(); ?>
