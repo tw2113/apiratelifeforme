@@ -31,6 +31,10 @@ h4 {
 .page-link a,
 .page-links a,
 .site-header #site-title a,
-.site-navigation ul a {
+.site-navigation ul a,
+h1.entry-title a,
+h2.entry-title a,
+h3.entry-title a,
+h4.entry-title a {
 	text-decoration: underline;
 }
