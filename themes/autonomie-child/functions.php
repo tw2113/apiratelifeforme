@@ -69,3 +69,12 @@ function credits() {
 	echo '<p class="copy">First set sail in 2019.</p>';
 }
 add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
+
+function hide_webmentions() {
+	if ( ! is_page( 'bean-me' ) ) {
+		return;
+	}
+	remove_action( 'comment_form_after', 'webmention_comment_form', 11 );
+	remove_action( 'comment_form_comments_closed', 'webmention_comment_form' );
+}
+add_action( 'wp_head', __NAMESPACE__ . '\hide_webmentions' );
