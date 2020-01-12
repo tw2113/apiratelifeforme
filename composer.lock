@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f852ac52b90d1b160706966428edcc99",
+    "content-hash": "c0c6dcabd3d5c5738c45d19723c339f7",
     "packages": [
         {
             "name": "composer/installers",
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -220,15 +220,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "7.1.0",
+            "version": "7.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/7.1.0"
+                "reference": "tags/7.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -400,15 +400,15 @@
         },
         {
             "name": "wpackagist-plugin/semantic-linkbacks",
-            "version": "3.10.0",
+            "version": "3.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/semantic-linkbacks/",
-                "reference": "tags/3.10.0"
+                "reference": "tags/3.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.10.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.10.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -472,15 +472,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/4.0.1"
+                "reference": "tags/4.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
