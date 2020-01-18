@@ -78,3 +78,17 @@ function hide_webmentions() {
 	remove_action( 'comment_form_comments_closed', 'webmention_comment_form' );
 }
 add_action( 'wp_head', __NAMESPACE__ . '\hide_webmentions' );
+
+function random_video( $wp_query ) {
+	if ( is_admin() ) {
+		return;
+	}
+	if ( ! is_post_type_archive( 'music_video' ) ) {
+		return;
+	}
+
+	$wp_query->set( 'posts_per_page', 1 );
+	$wp_query->set( 'orderby', 'rand' );
+	$wp_query->set( 'post__not_in', [ 107 ] );
+}
+add_filter( 'pre_get_posts', __NAMESPACE__ . '\random_video' );

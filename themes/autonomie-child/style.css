@@ -53,3 +53,7 @@ h4.entry-title a,
 #nf-field-9 {
 	border: solid #222 1px;
 }
+
+.post-type-archive-music_video article {
+	text-align: center;
+}
