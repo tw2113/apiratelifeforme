@@ -24,6 +24,7 @@ function listener() {
 		'post_status' => 'publish',
 		'post_content' => wp_kses_post( $_POST['post_content'] ),
 		'post_title' => sanitize_text_field( $_POST['post_title'] ),
+		'post_author' => 1,
 	];
 
 	$id = wp_insert_post( $args );
