@@ -145,9 +145,18 @@ function updated_date( $post_id = 0 ) {
     return $content;
 }
 
-function coffee_addiction_dashboard_count( $data = [] ) {
-    $count = wp_count_posts( 'coffee_checkins' );
+function custom_coffee_checkin_counts( $data = [] ) {
+    $coffee_count = wp_count_posts( 'coffee_checkins' );
+    $data[]       = "Coffee checkins: {$coffee_count->publish}";
 
-    return [ "Coffee checkins: {$count->publish}" ];
+    return $data;
 }
-add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\coffee_addiction_dashboard_count' );
+add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_coffee_checkin_counts' );
+
+function custom_bookmarks_counts( $data = [] ) {
+	$bookmarks_count = wp_count_posts( 'bookmarks' );
+	$data[]          = "Bookmarks: {$bookmarks_count->publish}";
+
+	return $data;
+}
+add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_bookmarks_counts' );
