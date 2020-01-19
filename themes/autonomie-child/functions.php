@@ -92,3 +92,16 @@ function random_video( $wp_query ) {
 	$wp_query->set( 'post__not_in', [ 107 ] );
 }
 add_filter( 'pre_get_posts', __NAMESPACE__ . '\random_video' );
+
+function bookmarks_posts_per_page( $wp_query ) {
+	if ( is_admin() ) {
+		return;
+	}
+
+	if ( ! is_post_type_archive( 'bookmarks' ) ) {
+		return;
+	}
+
+	$wp_query->set( 'posts_per_page', 50 );
+}
+add_filter( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
