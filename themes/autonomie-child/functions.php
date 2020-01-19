@@ -102,6 +102,6 @@ function bookmarks_posts_per_page( $wp_query ) {
 		return;
 	}
 
-	$wp_query->set( 'posts_per_page', 50 );
+	$wp_query->set( 'posts_per_page', 15 );
 }
 add_filter( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
