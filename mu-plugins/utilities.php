@@ -147,7 +147,8 @@ function updated_date( $post_id = 0 ) {
 
 function custom_coffee_checkin_counts( $data = [] ) {
     $coffee_count = wp_count_posts( 'coffee_checkins' );
-    $data[]       = "Coffee checkins: {$coffee_count->publish}";
+    $url          = get_bloginfo( 'url' ) . '/coffee/';
+    $data[]       = "<a href='{$url}'>Coffee checkins: {$coffee_count->publish}</a>";
 
     return $data;
 }
@@ -155,8 +156,18 @@ add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_coffee_checkin_co
 
 function custom_bookmarks_counts( $data = [] ) {
 	$bookmarks_count = wp_count_posts( 'bookmarks' );
-	$data[]          = "Bookmarks: {$bookmarks_count->publish}";
+	$url             = get_bloginfo( 'url' ) . '/bookmarks/';
+	$data[]          = "<a href='{$url}'>Bookmarks: {$bookmarks_count->publish}</a>";
 
 	return $data;
 }
 add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_bookmarks_counts' );
+
+function custom_videos_counts( $data = [] ) {
+	$video_count = wp_count_posts( 'music_video' );
+	$url         = get_bloginfo( 'url' ) . '/video/';
+	$data[]      = "<a href='{$url}'>Music videos: {$video_count->publish}</a>";
+
+	return $data;
+}
+add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_videos_counts' );
