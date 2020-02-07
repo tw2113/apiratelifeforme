@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c431d29fe10d6a9fc883ed000125783c",
+    "content-hash": "b58e496fbc5a01e32d47e3a892990163",
     "packages": [
         {
             "name": "composer/installers",
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.2"
+                "reference": "tags/1.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -220,15 +220,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "7.3.0",
+            "version": "7.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/7.3.0"
+                "reference": "tags/7.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.7.4.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -346,15 +346,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.0.11",
+            "version": "2.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.0.11"
+                "reference": "tags/2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.0.11.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -364,15 +364,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.22",
+            "version": "3.4.22.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.22"
+                "reference": "tags/3.4.22.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.22.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.22.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
