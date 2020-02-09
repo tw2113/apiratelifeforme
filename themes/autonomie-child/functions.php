@@ -66,7 +66,7 @@ function credits() {
 	echo wpautop( $quote );
 	echo '<p><a href="https://xn--sr8hvo.ws/3%EF%B8%8F%E2%83%A3%F0%9F%93%B2%F0%9F%8D%A3/previous">&lt;~</a> An IndieWeb Webring 🕸💍 <a href="https://xn--sr8hvo.ws/3%EF%B8%8F%E2%83%A3%F0%9F%93%B2%F0%9F%8D%A3/next">~&gt;</a></p>';
 	echo '<p><a rel="me" href="https://indieweb.social/@tw2113">Indieweb.social Mastodon</a></p>';
-	echo '<p class="copy">First set sail in 2019. This site does not include any analytics tracking.</p>';
+	echo '<p class="copy">First set sail in 2019. Free of any analytics tracking.</p>';
 }
 add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
 
