@@ -26,9 +26,9 @@
     "wpackagist-plugin/keyring": "2.0",
     "wpackagist-plugin/avatar-privacy": "2.3.3",
     "wpackagist-plugin/indieauth": "3.4.2",
-    "wpackagist-plugin/ninja-forms": "3.4.22.1",
+    "wpackagist-plugin/ninja-forms": "3.4.23",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "7.4.0"
+    "wpackagist-plugin/gutenberg": "7.5.0"
   },
   "extra": {
     "installer-paths": {
