@@ -1,0 +1,9 @@
+.site-navigation {
+  .sub-menu li {
+    border-left: solid $cherry-red 3px;
+
+    &:hover {
+      border-left-color: #fff;
+    }
+  }
+}
