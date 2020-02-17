@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "431918c66a9a615f1769e59da14477cd",
+    "content-hash": "bd350a9c28c07f66360ecca5692e4da1",
     "packages": [
         {
             "name": "composer/installers",
@@ -474,15 +474,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/4.0.2"
+                "reference": "tags/4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
