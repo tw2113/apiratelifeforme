@@ -8,3 +8,9 @@ function override_zerospam_for_webmentions( $commentdata ) {
 	return $commentdata;
 }
 add_action( 'preprocess_comment', __NAMESPACE__ . '\override_zerospam_for_webmentions', 9 );
+
+// @todo amend to be conditional once figure out how to check request source.
+function override_micropub_post_type( $post_type, $input ) {
+	return 'books';
+}
+add_filter( 'micropub_post_type', __NAMESPACE__ . '\override_micropub_post_type', 10, 2 );
