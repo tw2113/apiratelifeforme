@@ -12,9 +12,10 @@
  */
 ?>
 
-<?php comment_form( array( 'format' => '' ) ); ?>
-
 <div id="comments">
+
+    <?php comment_form( array( 'format' => '' ) ); ?>
+
 	<?php if ( post_password_required() ) : ?>
 	<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'autonomie' ); ?></p>
 </div><!-- #comments -->
