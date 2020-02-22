@@ -25,10 +25,19 @@ get_header(); ?>
 
                     the_content();
 
+					$paged = 1;
+					if ( get_query_var( 'paged' ) ) {
+						$paged = get_query_var( 'paged' );
+					} else if ( get_query_var( 'page' ) ) {
+						// This will occur if on front page.
+						$paged = get_query_var( 'page' );
+					}
+
 					$args = [
 						'post_type'      => 'coffee_checkins',
 						'post_status'    => 'publish',
-						'posts_per_page' => -1,
+						'posts_per_page' => 100,
+						'paged'          => $paged,
 					];
 
 					$coffee = new WP_Query( $args );
@@ -42,6 +51,10 @@ get_header(); ?>
 
 						echo '<hr/>';
 					}
+
+					printf( '<div>%s</div>', get_next_posts_link( 'Older checkins', $coffee->max_num_pages ) );
+					printf( '<div>%s</div>', get_previous_posts_link( 'Newer checkins', $coffee->max_num_pages ) );
+
 					?>
                 </div><!-- .entry-content -->
 			<?php get_template_part( 'templates/partials/entry-footer' ); ?>
