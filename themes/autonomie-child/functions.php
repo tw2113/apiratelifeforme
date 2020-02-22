@@ -105,3 +105,65 @@ function bookmarks_posts_per_page( $wp_query ) {
 	$wp_query->set( 'posts_per_page', 15 );
 }
 add_filter( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
+
+function coffee_statistics() {
+
+	$coffee_numbers = get_transient( 'coffee_stats' );
+	if ( false === $coffee_numbers ) {
+		$args = [
+			'post_type'      => 'coffee_checkins',
+			'post_status'    => 'publish',
+			'posts_per_page' => -1,
+		];
+
+		$coffee_posts   = new \WP_Query($args);
+		$coffee_numbers = [];
+		$dunn           = 0;
+		$dawley         = 0;
+		$louise         = 0;
+		$queen          = 0;
+		$down           = 0;
+		$source         = 0;
+		$other          = 0;
+
+		if ( $coffee_posts->have_posts() ) {
+			while ( $coffee_posts->have_posts() ) {
+				$content = get_the_content();
+
+				if ( false !== strpos( $content, 'Dunn Bros' ) ) {
+					$dunn++;
+				}
+				if ( false !== strpos( $content, 'Coffea Dawley Farms' ) ) {
+					$dawley++;
+				}
+				if ( false !== strpos( $content, 'Coffea Louise' ) ) {
+					$louise++;
+				}
+				if ( false !== strpos( $content, 'Queen City Bakery' ) ) {
+					$queen++;
+				}
+				if ( false !== strpos( $content, 'Coffea Downtown' ) ) {
+					$down++;
+				}
+				if ( false !== strpos( $content, 'The Source' ) ) {
+					$source++;
+				}
+				if ( false !== strpos( $content, 'Other' ) ) {
+					$other++;
+				}
+			}
+		}
+		$coffee_numbers['dunn']   = $dunn;
+		$coffee_numbers['dawley'] = $dawley;
+		$coffee_numbers['louise'] = $louise;
+		$coffee_numbers['queen']  = $queen;
+		$coffee_numbers['down']   = $down;
+		$coffee_numbers['source'] = $source;
+		$coffee_numbers['other']  = $other;
+
+		set_transient( 'coffee_stats', $coffee_numbers, 2 * DAY_IN_SECONDS );
+		wp_reset_postdata();
+	}
+
+	return $coffee_numbers;
+}
