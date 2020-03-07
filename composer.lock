@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4abaa1479ebab85431f11ce61fd4dc87",
+    "content-hash": "ca47ec82489ffce0aeb286624f239286",
     "packages": [
         {
             "name": "composer/installers",
@@ -366,15 +366,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.23",
+            "version": "3.4.24.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.23"
+                "reference": "tags/3.4.24.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.23.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.24.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
