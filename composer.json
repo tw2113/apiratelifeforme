@@ -28,7 +28,7 @@
     "wpackagist-plugin/indieauth": "3.4.2",
     "wpackagist-plugin/ninja-forms": "3.4.24.1",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "7.6.0"
+    "wpackagist-plugin/gutenberg": "7.7.1"
   },
   "extra": {
     "installer-paths": {
