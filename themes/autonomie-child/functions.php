@@ -70,6 +70,17 @@ function credits() {
 }
 add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
 
+function badges() {
+?>
+<div class="site-info">
+	<a href="http://indieweb.org" rel="nofollow" alt="IndieWeb">principles from <img src="<?php echo get_stylesheet_directory_uri() ?>/images/indieweb.svg" alt="IndieWebCamp"></a>
+	<a href="http://microformats.org/wiki/get-started"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/microformats.svg" alt="Microformats.org"></a>
+	<a title="This site accepts webmentions." href="<?php echo get_stylesheet_directory_uri() ?>/images/webmention.svg" alt="Webmention"></a>
+</div>
+<?php
+}
+add_action( 'autonomie_credits', __NAMESPACE__ . '\badges' );
+
 function hide_webmentions() {
 	if ( ! is_page( 'bean-me' ) ) {
 		return;
