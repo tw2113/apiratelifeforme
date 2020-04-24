@@ -19,7 +19,7 @@ get_header(); ?>
             <ul class="bookmarks">
             <?php while ( have_posts() ) : the_post(); ?>
 
-                <li><strong><?php the_title(); ?></strong> <?php the_content(); echo get_the_term_list( get_the_ID(), 'bookmark_topics', 'Topics: ', ', ' ); ?></li>
+                <li class="h-entry"><strong><?php the_title(); ?></strong> <?php the_content(); echo get_the_term_list( get_the_ID(), 'bookmark_topics', 'Topics: ', ', ' ); ?></li>
 
             <?php endwhile; // end of the loop. ?>
             </ul>
