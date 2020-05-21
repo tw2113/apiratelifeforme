@@ -102,7 +102,7 @@ function random_video( $wp_query ) {
 	$wp_query->set( 'orderby', 'rand' );
 	$wp_query->set( 'post__not_in', [ 107 ] );
 }
-add_filter( 'pre_get_posts', __NAMESPACE__ . '\random_video' );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\random_video' );
 
 function bookmarks_posts_per_page( $wp_query ) {
 	if ( is_admin() ) {
@@ -115,7 +115,7 @@ function bookmarks_posts_per_page( $wp_query ) {
 
 	$wp_query->set( 'posts_per_page', 15 );
 }
-add_filter( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
 
 function coffee_statistics() {
 
