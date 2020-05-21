@@ -177,3 +177,16 @@ function custom_videos_counts( $data = [] ) {
 	return $data;
 }
 add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_videos_counts' );
+
+function remove_webmentions_from_main_feed( $query ) {
+    if ( ! $query->is_main_query() ) {
+		return $query;
+	}
+
+    if ( ! $query->is_home() ) {
+        return $query;
+    }
+
+	$query->set( 'tag', '-75' );
+}
+add_filter( 'pre_get_posts', 'remove_webmentions_from_main_feed' );
