@@ -179,7 +179,7 @@ function custom_videos_counts( $data = [] ) {
 add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_videos_counts' );
 
 function remove_webmentions_from_main_feed( $query ) {
-    if ( ! $query->is_main_query() ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
 		return $query;
 	}
 
@@ -187,6 +187,6 @@ function remove_webmentions_from_main_feed( $query ) {
         return $query;
     }
 
-	$query->set( 'tag', '-75' );
+	$query->set( 'tag__not_in', '75' );
 }
-add_filter( 'pre_get_posts', __NAMESPACE__ . '\remove_webmentions_from_main_feed' );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\remove_webmentions_from_main_feed' );
