@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07570b001c947ab379608123859d21a0",
+    "content-hash": "2c6790bbde3b231c9b69106fc6184227",
     "packages": [
         {
             "name": "composer/installers",
@@ -152,6 +152,24 @@
             "homepage": "https://wordpress.org/plugins/avatar-privacy/"
         },
         {
+            "name": "wpackagist-plugin/carbon-offset",
+            "version": "1.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/carbon-offset/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/carbon-offset.zip?timestamp=1590322591"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/carbon-offset/"
+        },
+        {
             "name": "wpackagist-plugin/classic-editor",
             "version": "1.5",
             "source": {
@@ -225,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.1.0",
+            "version": "8.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.1.0"
+                "reference": "tags/8.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -369,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.24.2",
+            "version": "3.4.24.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.24.2"
+                "reference": "tags/3.4.24.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.24.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.24.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
