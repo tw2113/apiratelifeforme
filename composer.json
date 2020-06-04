@@ -28,8 +28,8 @@
     "wpackagist-plugin/indieauth": "3.4.2",
     "wpackagist-plugin/ninja-forms": "3.4.24.3",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "8.2.0",
-    "wpackagist-plugin/carbon-offset": "1.0.3"
+    "wpackagist-plugin/gutenberg": "8.2.1",
+    "wpackagist-plugin/carbon-offset": "1.0.5"
   },
   "extra": {
     "installer-paths": {

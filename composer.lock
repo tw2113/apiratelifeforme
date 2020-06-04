@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c6790bbde3b231c9b69106fc6184227",
+    "content-hash": "9cb368c37a58977c5dcf638f806b8165",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,7 +153,7 @@
         },
         {
             "name": "wpackagist-plugin/carbon-offset",
-            "version": "1.0.3",
+            "version": "1.0.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/carbon-offset/",
@@ -161,7 +161,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/carbon-offset.zip?timestamp=1590322591"
+                "url": "https://downloads.wordpress.org/plugin/carbon-offset.zip?timestamp=1590925777"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -243,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.2.0",
+            "version": "8.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.2.0"
+                "reference": "tags/8.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
