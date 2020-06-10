@@ -79,7 +79,7 @@ function badges() {
 </div>
 <?php
 }
-add_action( 'fun-stuff', __NAMESPACE__ . '\badges' );
+add_action( 'autonomie_credits', __NAMESPACE__ . '\badges' );
 
 function hide_webmentions() {
 	if ( ! is_page( 'bean-me' ) ) {
