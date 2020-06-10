@@ -68,7 +68,7 @@ function credits() {
 	echo '<p><a rel="me" href="https://indieweb.social/@tw2113">Indieweb.social Mastodon</a></p>';
 	echo '<p class="copy">First set sail in 2019. Free of any analytics tracking.</p>';
 }
-add_action( 'autonomie_credits', __NAMESPACE__ . '\credits' );
+add_action( 'fun-stuff', __NAMESPACE__ . '\credits' );
 
 function badges() {
 ?>
@@ -79,7 +79,7 @@ function badges() {
 </div>
 <?php
 }
-add_action( 'autonomie_credits', __NAMESPACE__ . '\badges' );
+add_action( 'fun-stuff', __NAMESPACE__ . '\badges' );
 
 function hide_webmentions() {
 	if ( ! is_page( 'bean-me' ) ) {
