@@ -4,3 +4,24 @@
     width: 80px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .site-generator {
+    display: flex;
+
+    & > div {
+      width: 50%;
+    }
+
+    .site-fun-stuff {
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    .site-credits {
+      text-align: right;
+      padding-right: 30px;
+      margin-top: 16px;
+    }
+  }
+}
