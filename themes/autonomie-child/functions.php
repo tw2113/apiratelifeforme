@@ -117,6 +117,19 @@ function bookmarks_posts_per_page( $wp_query ) {
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\bookmarks_posts_per_page' );
 
+function tumblr_posts_per_page( $wp_query ) {
+	if ( is_admin() ) {
+		return;
+	}
+
+	if ( ! is_post_type_archive( 'tumblr' ) ) {
+		return;
+	}
+
+	$wp_query->set( 'posts_per_page', -1 );
+}
+add_action( 'pre_get_posts', __NAMESPACE__ . '\tumblr_posts_per_page' );
+
 function coffee_statistics() {
 
 	$coffee_numbers = get_transient( 'coffee_stats' );
