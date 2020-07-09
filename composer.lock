@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd62d94e0b65c6547140226c992b0de5",
+    "content-hash": "f62c8417ab78e4f10cf2fba0d1194968",
     "packages": [
         {
             "name": "composer/installers",
@@ -243,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.3.0",
+            "version": "8.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.3.0"
+                "reference": "tags/8.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.3.3",
+            "version": "3.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.3.3"
+                "reference": "tags/3.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/jsonfeed",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jsonfeed/",
-                "reference": "tags/1.4.0"
+                "reference": "tags/1.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jsonfeed.1.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/jsonfeed.1.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -459,15 +459,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.2.2"
+                "reference": "tags/4.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -477,15 +477,15 @@
         },
         {
             "name": "wpackagist-plugin/untappd-checkins-widget",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/untappd-checkins-widget/",
-                "reference": "tags/1.3.2"
+                "reference": "tags/1.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/untappd-checkins-widget.1.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/untappd-checkins-widget.1.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -531,15 +531,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.4.4",
+            "version": "3.4.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.4.4"
+                "reference": "tags/3.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
