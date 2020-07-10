@@ -8,5 +8,11 @@
  * Version: 1.0.0
  */
 
-use tw2113\pbc;
+namespace tw2113\pbc;
 
+function plugins_loaded() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/types-taxes.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/meta-boxes.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/filters.php';
+}
+add_action( 'plugins_loaded', __NAMESPACE__ . '\plugins_loaded' );
