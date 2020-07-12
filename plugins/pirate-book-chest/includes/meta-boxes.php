@@ -96,7 +96,7 @@ function meta_boxes() {
 	$cmbpbc_reviews->add_field( [
 		'name'           => 'Annotations',
 		'id'             => $prefix . '_annotation',
-		'type'           => 'annotation',
+		'type'           => 'annotations',
 	] );
 
 	/**
@@ -136,22 +136,22 @@ add_action( 'cmb2_admin_init', __NAMESPACE__ . '\meta_boxes' );
 function cmb2_render_book_review( $field, $escaped_value, $object_id,
 								 $object_type, $field_type_object ) {
 
-	$comments = get_comments(
+	$reviews = get_comments(
 		[
 			'post_id' => $object_id,
 			'type' => 'BookReview',
 		]
 	);
 
-	if ( empty( $comments ) ) {
+	if ( empty( $reviews ) ) {
 		echo 'No reviews yet';
 		return;
 	}
 
-	foreach ( $comments as $comment ) {
-		printf( '<h3>Rating: %s star</h3>', get_comment_meta( $comment->comment_ID, 'pbc_rating', true ) );
+	foreach ( $reviews as $review ) {
+		printf( '<h3>Rating: %s star</h3>', get_comment_meta( $review->comment_ID, 'pbc_rating', true ) );
 
-		echo wpautop( $comment->comment_content );
+		echo wpautop( $review->comment_content );
 	}
 
 
@@ -161,20 +161,20 @@ add_action( 'cmb2_render_book_review', __NAMESPACE__ . '\cmb2_render_book_review
 function cmb2_render_annotations( $field, $escaped_value, $object_id,
 								  $object_type, $field_type_object ) {
 
-	$comments = get_comments(
+	$annotations = get_comments(
 		[
 			'post_id' => $object_id,
 			'type' => 'Annotation',
 		]
 	);
 
-	if ( empty( $comments ) ) {
+	if ( empty( $annotations ) ) {
 		echo 'No annotations yet';
 		return;
 	}
 
-	foreach ( $comments as $comment ) {
-		echo wpautop( $comment->comment_content );
+	foreach ( $annotations as $annotation ) {
+		echo wpautop( $annotation->comment_content );
 	}
 
 
