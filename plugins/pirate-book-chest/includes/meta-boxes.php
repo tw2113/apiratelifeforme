@@ -4,6 +4,10 @@ namespace tw2113\pbc;
 
 function meta_boxes() {
 	$prefix = 'pbc';
+
+	/**
+	 * My current status details.
+	 */
 	$cmbpbc_reading = new_cmb2_box( [
 		'id'           => $prefix . '_book_reading_metabox',
 		'title'        => esc_html__( 'Book Reading Details', 'pirate-book-chest' ),
@@ -27,6 +31,20 @@ function meta_boxes() {
 	] );
 
 	$cmbpbc_reading->add_field( [
+		'name'        => 'Started date',
+		'id'          => $prefix . '_start_date',
+		'type'        => 'text_date_timestamp',
+		'date_format' => 'Y.m.d',
+	] );
+
+	$cmbpbc_reading->add_field( [
+		'name'        => 'Finished date',
+		'id'          => $prefix . '_finished_date',
+		'type'        => 'text_date_timestamp',
+		'date_format' => 'Y.m.d',
+	] );
+
+	$cmbpbc_reading->add_field( [
 		'name'             => 'Reading status',
 		'desc'             => 'What is the status?',
 		'id'               => $prefix . '_reading_status',
@@ -45,18 +63,15 @@ function meta_boxes() {
 		'remove_default' => 'true',
 	] );
 
+	/**
+	 * Book review and notes
+	 */
 	$cmbpbc_reviews = new_cmb2_box( [
 		'id'           => $prefix . '_book_reviews_metabox',
 		'title'        => esc_html__( 'Book Review Details', 'pirate-book-chest' ),
 		'object_types' => [ 'books' ],
 		'context'      => 'normal',
 		'priority'     => 'high',
-	] );
-
-	$cmbpbc_reviews->add_field( [
-		'name'           => 'Book Review',
-		'id'             => $prefix . '_book_review',
-		'type'           => 'book_review',
 	] );
 
 	$cmbpbc_reviews->add_field( [
@@ -72,8 +87,21 @@ function meta_boxes() {
 		],
 	] );
 
+	$cmbpbc_reviews->add_field( [
+		'name'           => 'Book Review',
+		'id'             => $prefix . '_book_review',
+		'type'           => 'book_review',
+	] );
 
+	$cmbpbc_reviews->add_field( [
+		'name'           => 'Annotations',
+		'id'             => $prefix . '_annotation',
+		'type'           => 'annotation',
+	] );
 
+	/**
+	 * Book details.
+	 */
 	$cmbpbc_details = new_cmb2_box( [
 		'id'           => $prefix . '_book_details_metabox',
 		'title'        => esc_html__( 'Book Information', 'pirate-book-chest' ),
@@ -89,6 +117,18 @@ function meta_boxes() {
 		'type'           => 'taxonomy_multicheck',
 		'remove_default' => 'true',
 	] );
+
+	$cmbpbc_details->add_field( [
+		'name'           => 'ISBN 13',
+		'id'             => $prefix . '_book_isbn',
+		'type'           => 'text_medium',
+	] );
+
+	$cmbpbc_details->add_field( [
+		'name'           => 'Author(s)',
+		'id'             => $prefix . '_book_authors',
+		'type'           => 'text_medium',
+	] );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\meta_boxes' );
 
@@ -98,7 +138,8 @@ function cmb2_render_book_review( $field, $escaped_value, $object_id,
 
 	$comments = get_comments(
 		[
-			'post_id' => $object_id
+			'post_id' => $object_id,
+			'type' => 'BookReview',
 		]
 	);
 
@@ -116,3 +157,26 @@ function cmb2_render_book_review( $field, $escaped_value, $object_id,
 
 }
 add_action( 'cmb2_render_book_review', __NAMESPACE__ . '\cmb2_render_book_review', 10, 5 );
+
+function cmb2_render_annotations( $field, $escaped_value, $object_id,
+								  $object_type, $field_type_object ) {
+
+	$comments = get_comments(
+		[
+			'post_id' => $object_id,
+			'type' => 'Annotation',
+		]
+	);
+
+	if ( empty( $comments ) ) {
+		echo 'No annotations yet';
+		return;
+	}
+
+	foreach ( $comments as $comment ) {
+		echo wpautop( $comment->comment_content );
+	}
+
+
+}
+add_action( 'cmb2_render_annotations', __NAMESPACE__ . '\cmb2_render_annotations', 10, 5 );
