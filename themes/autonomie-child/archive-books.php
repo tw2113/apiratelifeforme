@@ -18,9 +18,11 @@ get_header(); ?>
         <div class="entry-content e-content h-entry" itemprop="description articleBody">
             <?php
             while ( have_posts() ) : the_post(); ?>
-                <h2><?php the_title(); ?></h2>
-                <h3>Book description</h3>
-                <?php the_content();
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <a href="<?php the_permalink(); ?>">
+                <?php
+                the_post_thumbnail('medium');
+                ?></a><?php
             endwhile;
             ?>
         </div>
