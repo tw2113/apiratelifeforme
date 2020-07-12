@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46e38cfd35e7b2b97e3224608b61e888",
+    "content-hash": "471e240e51e54d628160162b2584037c",
     "packages": [
         {
             "name": "composer/installers",
@@ -549,15 +549,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.4.6",
+            "version": "3.4.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.4.6"
+                "reference": "tags/3.4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
