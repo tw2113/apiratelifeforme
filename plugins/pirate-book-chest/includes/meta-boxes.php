@@ -79,6 +79,7 @@ function meta_boxes() {
 		'id'      => $prefix . '_rating',
 		'type'    => 'select',
 		'options' => [
+			'rating0' => 'None',
 			'rating1' => '1 star',
 			'rating2' => '2 stars',
 			'rating3' => '3 stars',
