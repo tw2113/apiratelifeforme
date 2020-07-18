@@ -8,6 +8,7 @@ function register_my_cpts() {
 		"name" => __( "Books", "pirate-book-chest" ),
 		"singular_name" => __( "Book", "pirate-book-chest" ),
 		"featured_image" => __( 'Book Image', 'pirate-book-chest' ),
+		"view_items" => __( 'View Books', 'pirate-book-chest' ),
 	];
 
 	$args = [
