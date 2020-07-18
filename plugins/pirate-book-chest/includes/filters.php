@@ -37,3 +37,11 @@ function books_posts_per_page( $wp_query ) {
 	$wp_query->set( 'posts_per_page', 30 );
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\books_posts_per_page' );
+
+function books_chest_archive_title( $title ) {
+	if ( is_archive( 'book' ) ) {
+		return 'Pirate Book Chest';
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', __NAMESPACE__ . '\books_chest_archive_title' );
