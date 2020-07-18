@@ -24,3 +24,16 @@ function remove_creative_commons_on_single_book() {
 	}
 }
 add_action( 'wp_head', __NAMESPACE__ . '\remove_creative_commons_on_single_book' );
+
+function books_posts_per_page( $wp_query ) {
+	if ( is_admin() ) {
+		return;
+	}
+
+	if ( ! is_post_type_archive( 'books' ) ) {
+		return;
+	}
+
+	$wp_query->set( 'posts_per_page', 30 );
+}
+add_action( 'pre_get_posts', __NAMESPACE__ . '\books_posts_per_page' );
