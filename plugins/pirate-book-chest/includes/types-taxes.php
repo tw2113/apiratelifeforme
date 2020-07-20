@@ -58,7 +58,7 @@ function register_my_books_taxes() {
 		"show_admin_column" => true,
 		"show_in_rest" => true,
 		"rest_base" => "book_status",
-		"show_in_quick_edit" => false,
+		"show_in_quick_edit" => true,
 	];
 	register_taxonomy( "book_status", [ "books" ], $args );
 
@@ -81,7 +81,7 @@ function register_my_books_taxes() {
 		"show_admin_column" => true,
 		"show_in_rest" => true,
 		"rest_base" => "book_chest",
-		"show_in_quick_edit" => false,
+		"show_in_quick_edit" => true,
 	];
 	register_taxonomy( "book_chest", [ "books" ], $args );
 
@@ -104,7 +104,7 @@ function register_my_books_taxes() {
 		"show_admin_column" => true,
 		"show_in_rest" => true,
 		"rest_base" => "genre",
-		"show_in_quick_edit" => false,
+		"show_in_quick_edit" => true,
 	];
 	register_taxonomy( "genre", [ "books" ], $args );
 }
