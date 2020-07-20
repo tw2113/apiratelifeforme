@@ -33,12 +33,14 @@ get_header(); ?>
                 <h3 id="status">My status:</h3>
                 <?php
 				$meta = get_post_meta( get_the_ID() );
-                if ( (int) $meta['pbc_current_page'][0] < (int) $meta['pbc_total_pages'][0] ) {
+				$current = isset( $meta['pbc_current_page'][0] ) ? (int) $meta['pbc_current_page'][0] : 0;
+				$total   = isset( $meta['pbc_total_pages'][0] ) ? (int) $meta['pbc_total_pages'][0] : 0;
+                if ( $current < $total ) {
 					printf(
 						'<p><strong>Current page:</strong> %s of %s (%s%% complete)</p>',
-						$meta['pbc_current_page'][0],
-						$meta['pbc_total_pages'][0],
-						number_format($meta['pbc_current_page'][0] / $meta['pbc_total_pages'][0] * 100)
+						$current,
+						$total,
+						number_format($current / $total * 100)
 					);
 				}
                 $finished = ! empty( $meta['pbc_finished_date'][0] ) ? date( 'Y/m/d', $meta['pbc_finished_date'][0] ) : 'TBD';
