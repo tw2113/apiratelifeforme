@@ -43,8 +43,9 @@ get_header(); ?>
 						number_format($current / $total * 100)
 					);
 				}
+                $started  = ! empty( $meta['pbc_start_date'][0] ) ? date( 'Y/m/d', $meta['pbc_start_date'][0] ) : 'TBD';
                 $finished = ! empty( $meta['pbc_finished_date'][0] ) ? date( 'Y/m/d', $meta['pbc_finished_date'][0] ) : 'TBD';
-				printf( '<p><strong>Reading duration:</strong> %s to %s</p>', date( 'Y/m/d', $meta['pbc_start_date'][0] ), $finished );
+				printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
 
 				printf(
                     '<p><strong>Rating:</strong> %s star</p>',
