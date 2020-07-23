@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b65509f31cae11aa41d2fce2e265c97e",
+    "content-hash": "8dbdb3a53bc220d58aaff9c8ef0ca4ca",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.5.1",
+            "version": "8.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.5.1"
+                "reference": "tags/8.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.4.2",
+            "version": "3.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.4.2"
+                "reference": "tags/3.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.3.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -585,15 +585,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.3.1",
+            "version": "4.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.3.1"
+                "reference": "tags/4.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
