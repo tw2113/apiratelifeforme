@@ -178,6 +178,15 @@ function custom_videos_counts( $data = [] ) {
 }
 add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_videos_counts' );
 
+function custom_books_counts( $data = [] ) {
+	$books_count = wp_count_posts( 'books' );
+	$url         = get_bloginfo( 'url' ) . '/book/';
+	$data[]      = "<a href='{$url}'>Books: {$books_count->publish}</a>";
+
+	return $data;
+}
+add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_books_counts' );
+
 function remove_webmentions_from_main_feed( $query ) {
     if ( is_admin() || ! $query->is_main_query() ) {
 		return $query;
