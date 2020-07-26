@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dbdb3a53bc220d58aaff9c8ef0ca4ca",
+    "content-hash": "9163eef025ff9011bb9da3f4c85713aa",
     "packages": [
         {
             "name": "composer/installers",
@@ -387,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -423,15 +423,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.0"
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -585,15 +585,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.4.1",
+            "version": "4.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.4.1"
+                "reference": "tags/4.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
