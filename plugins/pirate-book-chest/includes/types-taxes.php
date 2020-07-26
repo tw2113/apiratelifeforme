@@ -14,7 +14,7 @@ function register_my_cpts() {
 	$args = [
 		"label" => __("Books", "pirate-book-chest"),
 		"labels" => $labels,
-		"description" => "Michael's recreation of GoodReads, on his own personal site.",
+		"description" => "Michael's recreation of GoodReads, on his own personal site. Note: archive and single books are style in style flux.",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
