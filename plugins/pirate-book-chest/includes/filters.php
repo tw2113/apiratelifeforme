@@ -30,7 +30,7 @@ function books_posts_per_page( $wp_query ) {
 		return;
 	}
 
-	if ( ! is_post_type_archive( 'books' ) ) {
+	if ( ! is_post_type_archive( 'books' ) && ! is_tax( 'book_status' ) ) {
 		return;
 	}
 
