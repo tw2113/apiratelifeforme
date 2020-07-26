@@ -32,10 +32,27 @@ get_header(); ?>
                 ?>
                 <h3 id="status">My status:</h3>
                 <?php
+                $statuses = get_the_terms( get_the_ID(), 'book_status' );
+                $has_read = false;
+                $reading  = false;
+
+                if ( 'read' === $statuses[0]->slug ) {
+                    $has_read = true;
+                }
+
+				if ( 'currently-reading' === $statuses[0]->slug ) {
+					$reading = true;
+				}
+
 				$meta = get_post_meta( get_the_ID() );
 				$current = isset( $meta['pbc_current_page'][0] ) ? (int) $meta['pbc_current_page'][0] : 0;
 				$total   = isset( $meta['pbc_total_pages'][0] ) ? (int) $meta['pbc_total_pages'][0] : 0;
-                if ( $current < $total ) {
+
+				if ( $has_read ) {
+				    $current = $total;
+                }
+
+                if ( $reading && $current < $total ) {
 					printf(
 						'<p><strong>Current page:</strong> %s of %s (%s%% complete)</p>',
 						$current,
