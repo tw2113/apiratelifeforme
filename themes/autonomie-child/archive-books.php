@@ -16,6 +16,24 @@ get_header(); ?>
 <main id="primary">
     <article>
         <div class="entry-content e-content h-entry" itemprop="description articleBody">
+			<?php
+			$statuses = get_terms(
+				'book_status'
+			);
+			if ( ! is_wp_error( $statuses ) ) {
+				$list = '<div class="read-status"><p>Filter by status:</p>%s</div>';
+				$items = [];
+				foreach ($statuses as $status) {
+					$items[] = sprintf(
+						'<a href="%s">%s</a>',
+						get_term_link( $status->term_id ),
+						$status->name
+					);
+				}
+				printf( $list, implode( ', ', $items ) );
+			}
+			?>
+
             <div class="pirate-book-chest-wrapper">
             <?php
             while ( have_posts() ) : the_post(); ?>
