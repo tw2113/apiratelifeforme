@@ -115,7 +115,7 @@ function meta_boxes() {
 		'name'           => 'Genre',
 		'id'             => $prefix . '_book_genre',
 		'taxonomy'       => 'genre',
-		'type'           => 'taxonomy_multicheck',
+		'type'           => 'taxonomy_multicheck_hierarchical',
 		'remove_default' => 'true',
 	] );
 
