@@ -130,5 +130,28 @@ function register_my_books_taxes() {
 		"show_in_quick_edit" => true,
 	];
 	register_taxonomy( "genre-tag", [ "books" ], $args );
+
+	$labels = [
+		"name"          => __( "Book Series", "pirate-book-chest" ),
+		"singular_name" => __( "Book Series", "pirate-book-chest" ),
+	];
+
+	$args = [
+		"label" => __( "Book Series", "pirate-book-chest" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'book-series', 'with_front' => true, ],
+		"show_admin_column" => true,
+		"show_in_rest" => true,
+		"rest_base" => "book-series",
+		"show_in_quick_edit" => true,
+	];
+	register_taxonomy( "book-series", [ "books" ], $args );
 }
 add_action( 'init', __NAMESPACE__ . '\register_my_books_taxes' );
