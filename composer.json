@@ -30,7 +30,8 @@
     "wpackagist-plugin/slide": "0.0.39",
     "wpackagist-plugin/gutenberg": "8.6.0",
     "wpackagist-plugin/carbon-offset": "1.0.5",
-    "wpackagist-plugin/cmb2": "2.7.0"
+    "wpackagist-plugin/cmb2": "2.7.0",
+    "wpackagist-plugin/posts-to-posts": "1.6.5"
   },
   "extra": {
     "installer-paths": {

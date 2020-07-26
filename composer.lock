@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9163eef025ff9011bb9da3f4c85713aa",
+    "content-hash": "d5c4c77e4261cdfc9a3cb05dd71823c9",
     "packages": [
         {
             "name": "composer/installers",
@@ -420,6 +420,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/posts-to-posts",
+            "version": "1.6.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/posts-to-posts/",
+                "reference": "tags/1.6.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/posts-to-posts.1.6.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/posts-to-posts/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
