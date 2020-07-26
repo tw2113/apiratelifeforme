@@ -25,7 +25,7 @@ function remove_creative_commons_on_single_book() {
 }
 add_action( 'wp_head', __NAMESPACE__ . '\remove_creative_commons_on_single_book' );
 
-function books_posts_per_page( $wp_query ) {
+function books_query_mods( $wp_query ) {
 	if ( is_admin() ) {
 		return;
 	}
@@ -35,8 +35,9 @@ function books_posts_per_page( $wp_query ) {
 	}
 
 	$wp_query->set( 'posts_per_page', 30 );
+	$wp_query->set( 'orderby', 'rand' );
 }
-add_action( 'pre_get_posts', __NAMESPACE__ . '\books_posts_per_page' );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\books_query_mods' );
 
 function books_chest_archive_title( $title ) {
 	if ( is_archive( 'book' ) ) {
