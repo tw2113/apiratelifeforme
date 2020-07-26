@@ -85,8 +85,14 @@ get_header(); ?>
                 ?>
                 <h3 id="details">Book details:</h3>
                 <?php
-				printf( '<p><strong>Author:</strong> %s</p>', $meta['pbc_book_authors'][0] );
-                printf( '<p><strong>ISBN13:</strong> %s</p>', $meta['pbc_book_isbn'][0] );
+                $authors = ! empty( $meta['pbc_book_authors'][0] ) ? $meta['pbc_book_authors'][0] : '';
+                $isbn    = ! empty( $meta['pbc_book_isbn'][0] ) ? $meta['pbc_book_isbn'][0] : '';
+                if ( $authors ) {
+                    printf( '<p><strong>Author:</strong> %s</p>', $authors );
+                }
+                if ( $isbn ) {
+                    printf( '<p><strong>ISBN13:</strong> %s</p>', $isbn );
+                }
 
 				echo get_the_term_list( get_the_ID(), 'genre', '<p><strong>Genres:</strong> ', ', ', '</p>' );
                 ?>
