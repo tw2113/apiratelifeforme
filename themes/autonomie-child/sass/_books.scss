@@ -1,0 +1,26 @@
+.pirate-book-chest-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1024px !important;
+
+  .individual-book {
+    width: 30%;
+    h2 {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+  }
+
+  .book-placeholder {
+    background-color: #720000;
+    color: #fff;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    width: 225px;
+  }
+  .wp-post-image {
+    margin-top: 0;
+  }
+}
