@@ -21,7 +21,7 @@ get_header(); ?>
 				'book_status'
 			);
             if ( ! is_wp_error( $statuses ) ) {
-				$list = '<div class="read-status"><p>Filter by status:</p>%s</div>';
+				$list = '<div class="read-status"><p>Filter by status: %s</p></div>';
                 $items = [];
 				foreach ($statuses as $status) {
 				    $items[] = sprintf(
