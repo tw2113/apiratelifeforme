@@ -35,7 +35,7 @@ function books_query_mods( $wp_query ) {
 	}
 
 	$wp_query->set( 'posts_per_page', 30 );
-	$wp_query->set( 'orderby', 'rand' );
+	$wp_query->set( 'orderby', 'modified' );
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\books_query_mods' );
 
