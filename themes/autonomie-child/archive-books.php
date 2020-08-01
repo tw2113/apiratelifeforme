@@ -17,6 +17,10 @@ get_header(); ?>
     <article>
         <div class="entry-content e-content h-entry" itemprop="description articleBody">
 			<?php
+
+			$books_count = wp_count_posts( 'books' );
+			printf( '<p>Total books in chests: <strong>%s</strong></p>', $books_count->publish );
+
 			$statuses = get_terms(
 				'book_status'
 			);
