@@ -15,7 +15,7 @@ get_header(); ?>
 
 <main id="primary">
     <article>
-        <div class="entry-content e-content h-entry" itemprop="description articleBody">
+        <div class="entry-content e-content h-review" itemprop="description articleBody">
             <?php
             while ( have_posts() ) : the_post(); ?>
                 <h2><?php the_title(); ?></h2>
@@ -24,9 +24,12 @@ get_header(); ?>
                 the_post_thumbnail( 'medium' );
                 ?>
                 <h3 id="description">Book description:</h3>
+                <div class="p-item">
                 <?php
                 the_content();
-
+                ?>
+                </div>
+                <?php
 				echo get_the_term_list( get_the_ID(), 'book_chest', '<p><strong>Chests:</strong> ', ', ', '</p>' );
 
                 ?>
@@ -65,7 +68,7 @@ get_header(); ?>
 				printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
 
 				printf(
-                    '<p><strong>Rating:</strong> %s star</p>',
+                    '<p class="p-rating"><strong>Rating:</strong> %s star</p>',
 					str_replace( 'rating', '', $meta['pbc_rating'][0] )
                 );
 
