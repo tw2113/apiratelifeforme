@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba25175a72c38553d8d089c3bf3edc40",
+    "content-hash": "8a027f4f7cd8032ac5e0bc1a0926316f",
     "packages": [
         {
             "name": "composer/installers",
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.3.4"
+                "reference": "tags/3.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.3.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -495,15 +495,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.2.3",
+            "version": "4.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.2.3"
+                "reference": "tags/4.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.2.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -603,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.9.8",
+            "version": "4.9.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.9.8"
+                "reference": "tags/4.9.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
