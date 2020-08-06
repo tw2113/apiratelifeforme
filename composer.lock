@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a027f4f7cd8032ac5e0bc1a0926316f",
+    "content-hash": "29e9b971cc36f172e95fe532ac5bcd08",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.6.1",
+            "version": "8.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.6.1"
+                "reference": "tags/8.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.7.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -603,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.9.9",
+            "version": "4.9.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.9.9"
+                "reference": "tags/4.9.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
