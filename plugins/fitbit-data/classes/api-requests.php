@@ -5,6 +5,8 @@
  * @since   1.0.0
  */
 
+namespace tw2113\fitbit;
+
 class API {
 
 	/**
@@ -40,12 +42,20 @@ class API {
 	 */
 	private $redirect_uri = '';
 
+	private $response_type = '';
+
+	private $scope = '';
+
+	private $expires_in = '';
+
+	private $auth_code = '';
+
 	/**
 	 * Returned access token.
 	 * @var string
 	 * @since 1.0.0
 	 */
-	private $access_token = '';
+	protected $access_token = '';
 
 	/**
 	 * Token to use to refresh access without re-authorization.
@@ -65,9 +75,12 @@ class API {
 		$this->client_id     = isset( $args['client_id'] )     ? $args['client_id']     : '';
 		$this->client_secret = isset( $args['client_secret'] ) ? $args['client_secret'] : '';
 		$this->redirect_uri  = isset( $args['redirect_uri'] )  ? $args['redirect_uri']  : '';
-		$this->code          = isset( $args['code'] )          ? $args['code']          : '';
+		$this->response_type = isset( $args['response_type'] ) ? $args['response_type'] : '';
+		$this->scope         = isset( $args['scope'] )         ? $args['scope']         : '';
+		$this->expires_in    = isset( $args['expires_in'] )    ? $args['expires_in']    : '';
 
-		$this->access_token  = $this->get_access_token();
+		$this->auth_code    = $this->set_authentication_code();
+		$this->access_token = $this->get_access_token();
 		#$this->refresh_token = $this->get_refresh_token();
 	}
 
@@ -84,6 +97,7 @@ class API {
 				'client_id'     => $this->client_id,
 				'redirect_uri'  => rawurlencode( $this->redirect_uri ),
 				'response_type' => 'code',
+				'scope'         => rawurlencode( $this->scope ),
 			],
 			self::AUTH_URI
 		);
@@ -104,6 +118,10 @@ class API {
 			$this->get_authentication_link(),
 			esc_html__( 'Authenticate with Fitbit API', 'fitbit-api' )
 		);
+	}
+
+	private function set_authentication_code() {
+		return get_option( 'fitbit_oauth2_code', '' );
 	}
 
 	/**
@@ -137,14 +155,18 @@ class API {
 		}*/
 
 		if ( empty( $this->access_token ) ) {
+
 			$result = wp_remote_post( self::TOKEN_URI,
 				[
 					'body' => [
 						'grant_type'    => 'authorization_code',
 						'client_id'     => $this->client_id,
 						'redirect_uri'  => $this->redirect_uri,
-						'client_secret' => $this->client_secret,
-						'code'          => $this->code,
+						'code'          => $this->auth_code,
+					],
+					'headers' => [
+						'Authorization' => 'Basic ' . base64_encode( $this->client_id . ':' . $this->client_secret ),
+						'Content-Type'  => 'application/x-www-form-urlencoded',
 					]
 				]
 			);
@@ -166,15 +188,14 @@ class API {
 						__( 'Authentication error: %s', 'fitbit-api' ),
 						$response->error_description
 					);
-
 					$this->add_error( $error );
 				}
 				return;
 			}
 
 			$this->set_access_token( $response );
-			#$this->set_refresh_token( $response );
-			$this->get_data();
+			$this->set_refresh_token( $response );
+			#$this->get_data();
 		}
 	}
 
@@ -187,7 +208,7 @@ class API {
 	 */
 	public function set_access_token( $response ) {
 		update_option( 'fitbit_access_token', $response->access_token );
-		#$this->set_token_expiration( $response->expires_in );
+		$this->set_token_expiration( $response->expires_in );
 		$this->access_token = $response->access_token;
 	}
 
@@ -384,6 +405,39 @@ class API {
 	public function display_errors() {
 		foreach( $this->errors as $error ) {
 			echo '<p class="error"><strong>' . $error . '</strong></p>';
+		}
+	}
+
+	public function get_day_activities( $date = '' ) {
+		if ( empty( $date ) ) {
+			$dt = new \DateTime( '-1 day' );
+			$date = $dt->format('Y-m-d');
+		}
+
+		$request_args = [
+			'timeout' => 120,
+			'headers' => [
+				'Authorization' => 'Bearer ' . $this->access_token
+			]
+		];
+
+		$result = wp_remote_get(
+			"https://api.fitbit.com/1/user/-/activities/date/{$date}.json",
+			$request_args
+		);
+
+		if ( is_wp_error( $result ) ) {
+
+			$error = sprintf(
+				__( 'WordPress error: %s', 'fitbit-api' ),
+				$result->get_error_message()
+			);
+			return $error;
+		}
+
+		$response = json_decode( wp_remote_retrieve_body( $result ) );
+		if ( 200 === wp_remote_retrieve_response_code( $result ) ) {
+			return $response;
 		}
 	}
 }
