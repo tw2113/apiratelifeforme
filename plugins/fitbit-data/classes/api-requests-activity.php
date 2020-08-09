@@ -1,9 +1,9 @@
 <?php
 
-namespace tw2113\fitbit\API\Profile;
+namespace tw2113\fitbit\API\Activity;
 use tw2113\fitbit\API\API;
 
-class Profile extends API {
+class Activity extends API {
 
 	/**
 	 * API constructor.
@@ -14,7 +14,11 @@ class Profile extends API {
 		parent::__construct( $args );
 	}
 
-	public function get_profile() {
+	public function get_day_activities( $date = '' ) {
+		if ( empty( $date ) ) {
+			$dt = new \DateTime( '-1 day' );
+			$date = $dt->format('Y-m-d');
+		}
 
 		$request_args = [
 			'timeout' => 120,
@@ -24,7 +28,7 @@ class Profile extends API {
 		];
 
 		$result = wp_remote_get(
-			'https://api.fitbit.com/1/user/-/profile.json',
+			"https://api.fitbit.com/1/user/-/activities/date/{$date}.json",
 			$request_args
 		);
 

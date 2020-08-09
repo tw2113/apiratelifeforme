@@ -62,6 +62,7 @@ function load_includes() {
 	require_once 'classes/exerciseReceipts.php';
 	require_once 'classes/api-requests.php';
 	require_once 'classes/api-requests-profile.php';
+	require_once 'classes/api-requests-activity.php';
 	require_once 'includes/functions.php';
 }
 add_action( 'plugins_loaded', __NAMESPACE__ . '\load_includes' );

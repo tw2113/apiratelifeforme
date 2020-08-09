@@ -5,7 +5,7 @@
  * @since   1.0.0
  */
 
-namespace tw2113\fitbit;
+namespace tw2113\fitbit\API;
 
 class API {
 
@@ -150,9 +150,9 @@ class API {
 	 * @since 1.0.0
 	 */
 	public function get_fresh_token() {
-		/*if ( $this->is_token_expired() && $this->refresh_token ) {
+		if ( $this->is_token_expired() && $this->refresh_token ) {
 			$this->refresh_token();
-		}*/
+		}
 
 		if ( empty( $this->access_token ) ) {
 
@@ -258,59 +258,6 @@ class API {
 	}
 
 	/**
-	 * Returns array of available forms for an account.
-	 *
-	 * For performance sake, we strive to cache the results.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return array|mixed|object
-	 */
-	public function get_data() {
-
-		if ( empty( $this->access_token ) ) {
-			$this->get_access_token();
-		}
-
-		/*if ( $this->is_token_expired() ) {
-			$this->refresh_token();
-		}*/
-		if ( empty( $this->access_token ) ) {
-			return [];
-		}
-
-		$args = [
-			'oauth_token' => $this->access_token,
-		];
-		$url = add_query_arg( $args, self::FORMS_URI );
-
-		$request_args = [
-			'timeout' => 120
-		];
-
-		$result = wp_remote_get( $url, $request_args );
-		if ( is_wp_error( $result ) ) {
-			return [];
-		}
-		// Initial request used mostly just to get a total form count. We will re-fetch the same results on a first request later.
-		$initial_request = json_decode( wp_remote_retrieve_body( $result ) );
-		if ( 200 !== wp_remote_retrieve_response_code( $result ) ) {
-			if ( $initial_request->error ) {
-				$error = sprintf(
-					__( 'Form retrieval error: %s', 'fitbit-api' ),
-					$initial_request->error
-				);
-
-				$this->add_error( $error );
-			}
-
-			return [];
-		}
-
-		return [];
-	}
-
-	/**
 	 * Set an expiration time option so we can check if we should refresh.
 	 *
 	 * @since 1.0.0
@@ -360,84 +307,13 @@ class API {
 		];
 		$result = wp_remote_post( self::TOKEN_URI, $args );
 		if ( is_wp_error( $result ) ) {
-
-			$error = sprintf(
-				__( 'WordPress error: %s', 'fitbit-api' ),
-				$result->get_error_message()
-			);
-
-			$this->add_error( $error );
 			return;
 		}
 
 		$response = json_decode( wp_remote_retrieve_body( $result ) );
 		if ( 200 === wp_remote_retrieve_response_code( $result ) ) {
 			$this->set_access_token( $response );
-			#$this->set_refresh_token( $response );
-		} else {
-			if ( $response->error_description ) {
-				$error = sprintf(
-					__( 'Token refresh error: %s', 'fitbit-api' ),
-					$response->error_description
-				);
-
-				$this->add_error( $error );
-			}
-		}
-	}
-
-	/**
-	 * Adds an error to our array of errors to display.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @param string $error Error to display.
-	 */
-	public function add_error( $error ) {
-		$this->errors[] = $error;
-	}
-
-	/**
-	 * Output all errors we have.
-	 *
-	 * @since 1.0.0
-	 */
-	public function display_errors() {
-		foreach( $this->errors as $error ) {
-			echo '<p class="error"><strong>' . $error . '</strong></p>';
-		}
-	}
-
-	public function get_day_activities( $date = '' ) {
-		if ( empty( $date ) ) {
-			$dt = new \DateTime( '-1 day' );
-			$date = $dt->format('Y-m-d');
-		}
-
-		$request_args = [
-			'timeout' => 120,
-			'headers' => [
-				'Authorization' => 'Bearer ' . $this->access_token
-			]
-		];
-
-		$result = wp_remote_get(
-			"https://api.fitbit.com/1/user/-/activities/date/{$date}.json",
-			$request_args
-		);
-
-		if ( is_wp_error( $result ) ) {
-
-			$error = sprintf(
-				__( 'WordPress error: %s', 'fitbit-api' ),
-				$result->get_error_message()
-			);
-			return $error;
-		}
-
-		$response = json_decode( wp_remote_retrieve_body( $result ) );
-		if ( 200 === wp_remote_retrieve_response_code( $result ) ) {
-			return $response;
+			$this->set_refresh_token( $response );
 		}
 	}
 }
