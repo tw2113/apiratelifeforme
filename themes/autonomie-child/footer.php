@@ -33,7 +33,8 @@
             </div>
             <div class="site-credits">
                 <?php do_action( 'autonomie_credits' ); ?>
-                <?php printf( __( 'This site is powered by %1$s and styled with the %2$s theme', 'autonomie' ), '<a href="http://wordpress.org/" rel="generator">WordPress</a>', '<a href="https://github.com/pfefferle/Autonomie">Autonomie</a>' ); ?>
+                <?php printf( __( 'This site is powered by %1$s and styled with the %2$s theme.', 'autonomie' ), '<a href="http://wordpress.org/" rel="generator">WordPress</a>', '<a href="https://github.com/pfefferle/Autonomie">Autonomie</a>' ); ?>
+                <p>Like how well the site runs? Use my <a href="https://m.do.co/c/4641c57e4ba2">DigitalOcean affiliate link</a> to get your own droplet.</p>
             </div>
 		</div>
 	</footer><!-- #colophon -->
