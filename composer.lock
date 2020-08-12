@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f310e216644848e4bee757205ba47827",
+    "content-hash": "78824d72da6d459345878df35cb4e42e",
     "packages": [
         {
             "name": "composer/installers",
@@ -171,15 +171,15 @@
         },
         {
             "name": "wpackagist-plugin/classic-editor",
-            "version": "1.5",
+            "version": "1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.5"
+                "reference": "tags/1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.4",
+            "version": "1.7.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.4"
+                "reference": "tags/1.7.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.7.0",
+            "version": "8.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.7.0"
+                "reference": "tags/8.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
