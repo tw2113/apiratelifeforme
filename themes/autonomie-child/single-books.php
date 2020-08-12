@@ -98,8 +98,8 @@ get_header(); ?>
                 }
 
 				echo get_the_term_list( get_the_ID(), 'genre', '<p><strong>Genres:</strong> ', ', ', '</p>' );
-                ?>
-            <?php
+
+				edit_post_link( 'Edit book', '<p>', '</p>', null, 'btn btn-primary btn-edit-post-link' );
             endwhile;
             ?>
         </div>
