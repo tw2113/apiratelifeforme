@@ -55,6 +55,7 @@ get_header(); ?>
 					}
 					?>
                     </a>
+                    <?php edit_post_link( 'Edit book', '<span class="edit-book">', '</span>', null, 'btn btn-primary btn-edit-post-link' ); ?>
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 </div>
                 <?php

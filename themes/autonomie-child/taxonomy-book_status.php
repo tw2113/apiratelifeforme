@@ -17,6 +17,9 @@ get_header(); ?>
     <article>
         <div class="entry-content e-content h-entry" itemprop="description articleBody">
             <?php
+
+			get_template_part( 'book-search' );
+
 			$statuses = get_terms(
 				'book_status'
 			);

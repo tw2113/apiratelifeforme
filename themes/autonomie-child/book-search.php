@@ -5,5 +5,5 @@
 	</label>
 	<input type="hidden" name="post_type" value="books" />
 	<input type="submit" class="search-submit" value="Search">
-	<meta itemprop="target" content="https://apiratelifefor.me/?s={search} ">
+	<meta itemprop="target" content="https://apiratelifefor.me/?s={search}">
 </form>
