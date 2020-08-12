@@ -21,7 +21,7 @@ get_header(); ?>
 			get_template_part( 'book-search' );
 
 			$books_count = wp_count_posts( 'books' );
-			printf( '<p>Total books in chests: <strong>%s</strong></p>', $books_count->publish );
+			printf( '<p>Total books in chests: <strong>%s</strong>. Books are ordered by recently updated.</p>', $books_count->publish );
 
 			$statuses = get_terms(
 				'book_status'
