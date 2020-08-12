@@ -18,6 +18,8 @@ get_header(); ?>
         <div class="entry-content e-content h-entry" itemprop="description articleBody">
 			<?php
 
+			get_template_part( 'book-search' );
+
 			$books_count = wp_count_posts( 'books' );
 			printf( '<p>Total books in chests: <strong>%s</strong></p>', $books_count->publish );
 
