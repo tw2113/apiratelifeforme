@@ -15,6 +15,7 @@ function autonomie_content_nav( $nav_id ) {
             <h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'autonomie' ); ?></h1>
             <?php echo paginate_links( [
                 'prev_text' => '<~ Previous',
+                'mid_size'  => '5',
                 'next_text' => 'Next ~>',
             ] ); ?>
         </nav><!-- #<?php echo $nav_id; ?> -->
