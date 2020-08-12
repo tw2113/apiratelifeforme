@@ -199,3 +199,11 @@ function remove_webmentions_from_main_feed( $query ) {
 	$query->set( 'tag__not_in', '75' );
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\remove_webmentions_from_main_feed' );
+
+add_filter(
+	'wp_sitemaps_post_types',
+	function( $post_types ) {
+		unset( $post_types['coffee_checkins'], $post_types['music_video'], $post_types['tumblr'] );
+		return $post_types;
+	}
+);
