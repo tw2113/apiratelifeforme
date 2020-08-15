@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "250fae980a165aab41569ddb74849a14",
+    "content-hash": "aed6993156f5cdf8d85d3c89ef6e141e",
     "packages": [
         {
             "name": "composer/installers",
@@ -621,15 +621,15 @@
         },
         {
             "name": "wpackagist-theme/sempress",
-            "version": "1.5.12",
+            "version": "1.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/sempress/",
-                "reference": "1.5.12"
+                "reference": "1.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/sempress.1.5.12.zip"
+                "url": "https://downloads.wordpress.org/theme/sempress.1.6.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
