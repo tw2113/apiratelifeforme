@@ -14,5 +14,6 @@ function plugins_loaded() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/types-taxes.php';
 	require_once plugin_dir_path( __FILE__ ) . 'includes/meta-boxes.php';
 	require_once plugin_dir_path( __FILE__ ) . 'includes/filters.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/functions.php';
 }
 add_action( 'plugins_loaded', __NAMESPACE__ . '\plugins_loaded' );
