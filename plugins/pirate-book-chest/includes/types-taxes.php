@@ -27,7 +27,7 @@ function register_my_cpts() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => ["slug" => "book", "with_front" => true],
+		"rewrite" => ["slug" => "books", "with_front" => true],
 		"query_var" => true,
 		"menu_icon" => "dashicons-book",
 		"supports" => ["title", "editor", "thumbnail", "comments"],
