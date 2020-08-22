@@ -3,8 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1024px !important;
+  margin: 1.2em !important;
 
   .individual-book {
+    flex: 1 0 auto;
     width: 30%;
     h2 {
       margin-bottom: 32px;
@@ -17,12 +19,12 @@
       text-align: center;
     }
   }
-  @media screen and (max-width: 414px) {
+  @media screen and (min-width: 360px) {
     .individual-book {
       width: 100%;
     }
   }
-  @media screen and (max-width: 736px) {
+  @media screen and (min-width: 667px) {
     .individual-book {
       width: 50%;
     }
