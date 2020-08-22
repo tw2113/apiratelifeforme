@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea684c584caeab464a395ec13653917d",
+    "content-hash": "076ab065986780290fd4971a61bb8c31",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.7.1",
+            "version": "8.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.7.1"
+                "reference": "tags/8.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -441,15 +441,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.1",
+            "version": "3.6.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.1"
+                "reference": "tags/3.6.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
