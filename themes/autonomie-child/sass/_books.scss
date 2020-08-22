@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1024px !important;
-  margin: 1.2em !important;
+  margin: 1.2em auto;
 
   .individual-book {
     flex: 1 0 auto;
@@ -28,6 +28,9 @@
     .individual-book {
       width: 50%;
     }
+  }
+  @media screen and (max-width: 767px) {
+    margin: 1.2em !important;
   }
 
   .book-placeholder {
