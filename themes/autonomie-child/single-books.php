@@ -94,7 +94,7 @@ get_header(); ?>
                     printf( '<p><strong>Author:</strong> %s</p>', $authors );
                 }
                 if ( $isbn ) {
-                    printf( '<p><strong>ISBN13:</strong> %s</p>', $isbn );
+                    printf( '<p><strong>ISBN13:</strong> <a href="https://www.amazon.com/s?field-keywords=%s">%s</a></p>', $isbn, $isbn );
                 }
 
 				echo get_the_term_list( get_the_ID(), 'genre', '<p><strong>Genres:</strong> ', ', ', '</p>' );
