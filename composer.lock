@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "076ab065986780290fd4971a61bb8c31",
+    "content-hash": "5f1fd1e6f804932138b20f528f4ee82b",
     "packages": [
         {
             "name": "composer/installers",
@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.5.0"
+                "reference": "tags/3.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.3.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "3.4.2",
+            "version": "3.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/3.4.2"
+                "reference": "tags/3.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -387,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.2.1"
+                "reference": "tags/2.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.25",
+            "version": "3.4.26",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.25"
+                "reference": "tags/3.4.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.25.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.26.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -603,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.9.13",
+            "version": "4.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.9.13"
+                "reference": "tags/4.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.10.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
