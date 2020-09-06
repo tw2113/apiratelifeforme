@@ -180,7 +180,7 @@ add_filter( 'dashboard_glance_items', __NAMESPACE__ . '\custom_videos_counts' );
 
 function custom_books_counts( $data = [] ) {
 	$books_count = wp_count_posts( 'books' );
-	$url         = get_bloginfo( 'url' ) . '/book/';
+	$url         = get_post_type_archive_link( 'books' );
 	$data[]      = "<a href='{$url}'>Books: {$books_count->publish}</a>";
 
 	return $data;
