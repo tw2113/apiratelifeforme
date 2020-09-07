@@ -18,6 +18,12 @@
     .edit-book {
       text-align: center;
     }
+    & img:hover {
+      box-shadow: 0 5px 8px 5px #720000;
+    }
+    & img {
+      transition: box-shadow .3s;
+    }
   }
   @media screen and (min-width: 360px) {
     .individual-book {
