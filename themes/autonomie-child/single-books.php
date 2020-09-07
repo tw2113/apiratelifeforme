@@ -101,6 +101,8 @@ get_header(); ?>
 
 				edit_post_link( 'Edit book', '<p>', '</p>', null, 'btn btn-primary btn-edit-post-link' );
             endwhile;
+
+            comments_template('/reviews.php');
             ?>
         </div>
     </article>
