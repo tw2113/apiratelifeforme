@@ -155,3 +155,17 @@ function register_my_books_taxes() {
 	register_taxonomy( "book-series", [ "books" ], $args );
 }
 add_action( 'init', __NAMESPACE__ . '\register_my_books_taxes' );
+
+function update_comment_type_for_review( $comment_id, $comment ) {
+	$parent_type = get_post_type( $comment->comment_post_ID );
+	if ( 'books' !== $parent_type ) {
+		return;
+	}
+
+	$args = [
+		'comment_ID'   => $comment_id,
+		'comment_type' => 'BookReview',
+	];
+	wp_update_comment( $args );
+}
+add_action( 'wp_insert_comment', __NAMESPACE__ . '\update_comment_type_for_review', 10, 2 );
