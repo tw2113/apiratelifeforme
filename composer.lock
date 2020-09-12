@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33a2037c3a3c8fea1f93d24ce6171039",
+    "content-hash": "d42a217429e8cbb9d72d21b179c9548d",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.9.1",
+            "version": "8.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.9.1"
+                "reference": "tags/8.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.9.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -387,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.26",
+            "version": "3.4.27",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.26"
+                "reference": "tags/3.4.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.26.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.27.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
