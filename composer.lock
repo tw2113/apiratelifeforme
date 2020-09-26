@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d42a217429e8cbb9d72d21b179c9548d",
+    "content-hash": "d6240ef81a1f04a6ca5684353e066d33",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.8.0"
+                "reference": "tags/1.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "8.9.3",
+            "version": "9.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/8.9.3"
+                "reference": "tags/9.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.8.9.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.27",
+            "version": "3.4.30",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.27"
+                "reference": "tags/3.4.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.27.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.30.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -531,15 +531,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "4.0.3",
+            "version": "4.0.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/4.0.3"
+                "reference": "tags/4.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/webmention.4.0.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -567,15 +567,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.4.9",
+            "version": "3.4.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.4.9"
+                "reference": "tags/3.4.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -618,24 +618,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/zero-spam/"
-        },
-        {
-            "name": "wpackagist-theme/sempress",
-            "version": "1.6.2",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/sempress/",
-                "reference": "1.6.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/sempress.1.6.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/sempress/"
         }
     ],
     "packages-dev": [],
