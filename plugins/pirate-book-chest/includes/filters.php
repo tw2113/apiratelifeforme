@@ -40,7 +40,7 @@ function books_query_mods( $wp_query ) {
 add_action( 'pre_get_posts', __NAMESPACE__ . '\books_query_mods' );
 
 function books_chest_archive_title( $title ) {
-	if ( is_archive( 'book' ) ) {
+	if ( is_post_type_archive( 'books' ) ) {
 		return 'Pirate Book Chest';
 	}
 	return $title;
