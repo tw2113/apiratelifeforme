@@ -191,3 +191,11 @@ function coffee_statistics() {
 
 	return $coffee_numbers;
 }
+
+function music_video_archive_title( $title ) {
+	if ( is_post_type_archive( 'music_video' ) ) {
+		return 'The Asylum Archives';
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', __NAMESPACE__ . '\music_video_archive_title' );
