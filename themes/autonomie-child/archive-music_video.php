@@ -31,7 +31,9 @@ get_header(); ?>
                 <?php endwhile;
             }
             if ( ! empty( $_GET ) && 'all' === $_GET['list'] ) {
+                echo apply_filters( 'the_content', 'https://open.spotify.com/playlist/4hEEKBrynPtxMpm3TAX2ld?si=xPSxV0keQu2XzQDzBRcywg' );
                 ?>
+                <p><a href="spotify:playlist:4hEEKBrynPtxMpm3TAX2ld">Open in spotify for complete list</a></p>
                 <ul>
                 <?php
                 while ( have_posts() ) : the_post(); ?>
