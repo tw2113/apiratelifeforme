@@ -98,9 +98,18 @@ function random_video( $wp_query ) {
 		return;
 	}
 
-	$wp_query->set( 'posts_per_page', 1 );
-	$wp_query->set( 'orderby', 'rand' );
 	$wp_query->set( 'post__not_in', [ 107 ] );
+
+	if ( empty( $_GET ) ) {
+		$wp_query->set( 'posts_per_page', 1 );
+		$wp_query->set( 'orderby', 'rand' );
+    }
+
+	if ( ! empty( $_GET ) && $_GET['list'] ) {
+		$wp_query->set( 'posts_per_page', -1 );
+		$wp_query->set( 'orderby', 'title' );
+		$wp_query->set( 'order', 'ASC' );
+    }
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\random_video' );
 
