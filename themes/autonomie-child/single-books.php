@@ -47,9 +47,10 @@ get_header(); ?>
 					$reading = true;
 				}
 
-				$meta = get_post_meta( get_the_ID() );
-				$current = isset( $meta['pbc_current_page'][0] ) ? (int) $meta['pbc_current_page'][0] : 0;
-				$total   = isset( $meta['pbc_total_pages'][0] ) ? (int) $meta['pbc_total_pages'][0] : 0;
+				$meta       = get_post_meta(get_the_ID());
+				$current    = isset($meta['pbc_current_page'][0]) ? (int)$meta['pbc_current_page'][0] : 0;
+				$total      = isset($meta['pbc_total_pages'][0]) ? (int)$meta['pbc_total_pages'][0] : 0;
+				$percentage = number_format($current / $total * 100);
 
 				if ( $has_read ) {
 				    $current = $total;
@@ -57,10 +58,11 @@ get_header(); ?>
 
                 if ( $reading && $current < $total ) {
 					printf(
-						'<p><strong>Current page:</strong> %s of %s (%s%% complete)</p>',
+						'<div class="reading-status"><p><strong>Current page:</strong> %s of %s (%s%% complete)<span style="width: %s%%"></span></p></div>',
 						$current,
 						$total,
-						number_format($current / $total * 100)
+						$percentage,
+						$percentage
 					);
 				}
                 $started  = ! empty( $meta['pbc_start_date'][0] ) ? date( 'Y/m/d', $meta['pbc_start_date'][0] ) : 'TBD';
