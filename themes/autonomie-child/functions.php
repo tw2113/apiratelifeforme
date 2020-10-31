@@ -203,7 +203,7 @@ function coffee_statistics() {
 
 function music_video_archive_title( $title ) {
 	if ( is_post_type_archive( 'music_video' ) ) {
-		return 'The Asylum Archives';
+		return 'The Pirate Asylum Radio Archives';
 	}
 	return $title;
 }
