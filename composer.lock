@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f46f557ccb376001dacbe1cb9e8f624b",
+    "content-hash": "fcdf6564d8e13d7573f111c2b8458faf",
     "packages": [
         {
             "name": "composer/installers",
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.4.9",
+            "version": "3.4.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.4.9"
+                "reference": "tags/3.4.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
