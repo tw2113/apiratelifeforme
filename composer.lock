@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcdf6564d8e13d7573f111c2b8458faf",
+    "content-hash": "6da64f769e0e6d6c9367d4856d7c6f3e",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "9.3.0",
+            "version": "9.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/9.3.0"
+                "reference": "tags/9.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.30",
+            "version": "3.4.32",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.30"
+                "reference": "tags/3.4.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.30.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.32.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -423,15 +423,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.4",
+            "version": "3.6.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.4"
+                "reference": "tags/3.6.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -531,15 +531,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/1.5.0"
+                "reference": "tags/1.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
