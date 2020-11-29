@@ -212,12 +212,10 @@ function custom_columns( $columns ) {
 	$columns['featured_image'] = 'Cover';
 	return $columns;
 }
-add_filter('manage_posts_columns' , __NAMESPACE__ . '\custom_columns');
+add_filter('manage_books_posts_columns' , __NAMESPACE__ . '\custom_columns');
 
 function custom_columns_data( $column, $post_id ) {
-    if ( 'books' !== get_post_type( $post_id ) ) {
-        return $column;
-    }
+
     $img = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ) );
 	switch ( $column ) {
 		case 'featured_image':
@@ -231,4 +229,4 @@ function custom_columns_data( $column, $post_id ) {
 			break;
 	}
 }
-add_action( 'manage_posts_custom_column' , __NAMESPACE__ . '\custom_columns_data', 10, 2 );
+add_action( 'manage_books_posts_custom_column' , __NAMESPACE__ . '\custom_columns_data', 10, 2 );
