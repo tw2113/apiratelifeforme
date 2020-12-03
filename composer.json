@@ -9,7 +9,6 @@
     "wpackagist-plugin/query-monitor": "3.6.5",
     "wpackagist-plugin/zero-spam": "4.10.2",
     "wpackagist-plugin/wp-to-twitter": "3.4.10",
-    "wpackagist-plugin/creative-commons-configurator-1": "1.8.27",
     "wpackagist-plugin/webmention": "4.0.5",
     "wpackagist-plugin/semantic-linkbacks": "3.10.1",
     "wpackagist-plugin/wp-uf2": "1.1.0",
@@ -27,7 +26,7 @@
     "wpackagist-plugin/indieauth": "3.5.1",
     "wpackagist-plugin/ninja-forms": "3.4.32",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "9.4.1",
+    "wpackagist-plugin/gutenberg": "9.5.0",
     "wpackagist-plugin/carbon-offset": "1.0.5",
     "wpackagist-plugin/cmb2": "2.7.0"
   },
