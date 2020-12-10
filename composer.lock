@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "564a43268bdd5ab0f8c34bdb15ce991e",
+    "content-hash": "88af793abb7b6abbc0f2ac195264b4a2",
     "packages": [
         {
             "name": "composer/installers",
@@ -257,15 +257,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "9.5.0",
+            "version": "9.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/9.5.0"
+                "reference": "tags/9.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -401,15 +401,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.32",
+            "version": "3.4.33",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.32"
+                "reference": "tags/3.4.33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.32.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.33.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
