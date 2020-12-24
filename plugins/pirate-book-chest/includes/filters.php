@@ -30,7 +30,7 @@ function books_query_mods( $wp_query ) {
 		return;
 	}
 
-	if ( ! is_post_type_archive( 'books' ) && ! is_tax( 'book_status' ) ) {
+	if ( ! is_post_type_archive( 'books' ) && ! is_tax( 'book_status' ) && ! is_tax( 'genre' ) && ! is_tax( 'book_chest' ) ) {
 		return;
 	}
 
@@ -46,3 +46,15 @@ function books_chest_archive_title( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', __NAMESPACE__ . '\books_chest_archive_title' );
+
+function book_status_archive_title( $title ) {
+	if ( is_tax( 'book_status' ) ) {
+		return sprintf(
+			'Reading status: "%s", total: %s',
+			get_queried_object()->name,
+			get_queried_object()->count
+		);
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', __NAMESPACE__ . '\book_status_archive_title' );

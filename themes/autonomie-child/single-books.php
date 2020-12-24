@@ -69,9 +69,13 @@ get_header(); ?>
                 $finished = ! empty( $meta['pbc_finished_date'][0] ) ? date( 'Y/m/d', $meta['pbc_finished_date'][0] ) : 'TBD';
 				printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
 
+				$rating = str_replace( 'rating', '', $meta['pbc_rating'][0] );
+				if ( '0' === $rating ) {
+				    $rating = 'n/a';
+                }
 				printf(
                     '<p class="p-rating"><strong>Rating:</strong> %s star</p>',
-					str_replace( 'rating', '', $meta['pbc_rating'][0] )
+					$rating
                 );
 
 				$reviews = get_comments(
