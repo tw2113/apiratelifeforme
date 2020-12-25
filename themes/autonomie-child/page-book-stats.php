@@ -86,7 +86,7 @@ get_header(); ?>
 							<?php
 							$longest = pbc\the_longest_book();
 							?>
-                            <p><strong>Shortest book in chest:</strong> <?php printf( '<a href="%s">%s</a> with %s pages', esc_attr( get_the_permalink( $longest[0]->post_id ) ), get_the_title( $longest[0]->post_id ), $longest[0]->meta_value ); ?></p>
+                            <p><strong>Longest book in chest:</strong> <?php printf( '<a href="%s">%s</a> with %s pages', esc_attr( get_the_permalink( $longest[0]->post_id ) ), get_the_title( $longest[0]->post_id ), $longest[0]->meta_value ); ?></p>
 
                             <?php
 							$total_currently_reading = pbc\get_total_to_read_pages( $currently_reading_books );
