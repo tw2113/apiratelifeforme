@@ -81,12 +81,12 @@ get_header(); ?>
                             <?php
                             $shortest = pbc\the_shortest_book();
                             ?>
-                            <p><strong>Shortest book in chest:</strong> <?php printf( '%s with %s pages', get_the_title( $shortest[0]->post_id ), $shortest[0]->meta_value ); ?></p>
+                            <p><strong>Shortest book in chest:</strong> <?php printf( '<a href="%s">%s</a> with %s pages', esc_attr( get_the_permalink( $shortest[0]->post_id ) ), get_the_title( $shortest[0]->post_id ), $shortest[0]->meta_value ); ?></p>
 
 							<?php
 							$longest = pbc\the_longest_book();
 							?>
-                            <p><strong>Shortest book in chest:</strong> <?php printf( '%s with %s pages', get_the_title( $longest[0]->post_id ), $longest[0]->meta_value ); ?></p>
+                            <p><strong>Shortest book in chest:</strong> <?php printf( '<a href="%s">%s</a> with %s pages', esc_attr( get_the_permalink( $longest[0]->post_id ) ), get_the_title( $longest[0]->post_id ), $longest[0]->meta_value ); ?></p>
 
                             <?php
 							$total_currently_reading = pbc\get_total_to_read_pages( $currently_reading_books );
