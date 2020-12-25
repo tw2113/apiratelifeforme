@@ -2,27 +2,13 @@
 
 namespace tw2113\pbc;
 
-function get_total_to_read_pages() {
-	global $wpdb;
+function get_total_to_read_pages( $books = [] ) {
 
-	$args = [
-		'post_type'      => 'books',
-		'post_status'    => 'publish',
-		'posts_per_page' => -1,
-		'tax_query'      => [
-			[
-				'taxonomy' => 'book_status',
-				'field'    => 'slug',
-				'terms'    => 'to-read',
-			]
-		],
-		'fields'         => 'ids',
-	];
-
-	$books = new \WP_Query( $args );
-	if ( ! $books->have_posts() ) {
+	if ( empty ( $books ) ) {
 		return '0';
 	}
+
+	global $wpdb;
 
 	$book_ids = str_replace( "''", "'", implode( "','", $books->posts ) );
 	$book_ids = "'{$book_ids}'";
@@ -35,9 +21,33 @@ function get_total_to_read_pages() {
 		return '0';
 	}
 
-	return number_format( $rs[0]->pages );
+	return $rs[0]->pages;
 }
 
-function the_total_to_read_pages() {
-	echo get_total_to_read_pages();
+function the_total_to_read_pages( $books = [] ) {
+	echo get_total_to_read_pages( $books );
+}
+
+function the_longest_book() {
+	global $wpdb;
+	$rs = $wpdb->get_results(
+		"SELECT post_id, meta_value FROM wp_postmeta WHERE meta_key = 'pbc_total_pages' ORDER BY CAST( meta_value as int) DESC LIMIT 1"
+	);
+	if ( ! empty( $rs ) ) {
+		return $rs;
+	}
+
+	return 'n/a';
+}
+
+function the_shortest_book() {
+	global $wpdb;
+	$rs = $wpdb->get_results(
+		"SELECT post_id, meta_value FROM wp_postmeta WHERE meta_key = 'pbc_total_pages' ORDER BY CAST( meta_value as int) ASC LIMIT 1"
+	);
+	if ( ! empty( $rs ) ) {
+		return $rs;
+	}
+
+	return 'n/a';
 }
