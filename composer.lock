@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b092bbf93c63a0f765747480aa67a2f",
+    "content-hash": "637fca09e48f8bd9cf1f48d4c72c5b69",
     "packages": [
         {
             "name": "composer/installers",
@@ -257,15 +257,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "9.6.1",
+            "version": "9.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/9.6.1"
+                "reference": "tags/9.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.6.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -311,15 +311,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.4.12",
+            "version": "3.4.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.4.12"
+                "reference": "tags/3.4.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.13.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
