@@ -8,9 +8,10 @@ function register_my_cpts() {
 		"name" => __( "Books", "pirate-book-chest" ),
 		"singular_name" => __( "Book", "pirate-book-chest" ),
 		"featured_image" => __( 'Book Image', 'pirate-book-chest' ),
+		"add_new_item" => __( 'Add new Book', 'pirate-book-chest' ),
 		"view_items" => __( 'View Books', 'pirate-book-chest' ),
-		"set_featured_image" => __( 'Set Book Image', 'pirte-book-chest' ),
-		"remove_featured_image" => __( 'Remove Book Image', 'pirte-book-chest' ),
+		"set_featured_image" => __( 'Set Book Image', 'pirate-book-chest' ),
+		"remove_featured_image" => __( 'Remove Book Image', 'pirate-book-chest' ),
 	];
 
 	$args = [
@@ -41,6 +42,7 @@ function register_my_cpts() {
 		"name" => __( "Book Challenges", "pirate-book-chest" ),
 		"singular_name" => __( "Book Challenge", "pirate-book-chest" ),
 		"view_items" => __( 'View Challenges', 'pirate-book-chest' ),
+		"edit_item" => __( 'Edit Challenge', 'pirate-book-chest' ),
 	];
 
 	$args = [
