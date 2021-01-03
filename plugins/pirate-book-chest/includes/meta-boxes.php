@@ -156,6 +156,29 @@ function challenge_meta_boxes() {
 			'type' => 'number'
 		]
 	] );
+
+	$cmbpbc_challenge->add_field( [
+		'name'    => __( 'Achieved books', 'pirate-book-chest' ),
+		'desc'    => __( 'Books you successfully read for this challenge', 'pirate-book-chest' ),
+		'id'      => $prefix . '_read_books',
+		'type'    => 'custom_attached_posts',
+		'column'  => true, // Output in the admin post-listing as a custom column. https://github.com/CMB2/CMB2/wiki/Field-Parameters#column
+		'options' => [
+			'show_thumbnails' => false, // Show thumbnails on the left
+			'filter_boxes'    => true, // Show a text box for filtering the results
+			'query_args'      => [
+				'posts_per_page' => -1,
+				'post_type'      => 'books',
+				'tax_query'      => [
+					[
+						'taxonomy' => 'book_status',
+						'field'    => 'slug',
+						'terms'    => 'read',
+					]
+				]
+			], // override the get_posts args
+		],
+	] );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\challenge_meta_boxes' );
 
