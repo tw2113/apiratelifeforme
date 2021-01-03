@@ -23,7 +23,7 @@ get_header(); ?>
                 <?php
                 $read_books  = get_post_meta( get_the_ID(), 'pbc_read_books', true );
 				$target_goal = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
-				$tmpl        = '<p>Total achieved: %s, total aimed for: %s</p><div class="pirate-book-chest-wrapper">%s</div>';
+				$tmpl        = '<p><strong>Total achieved:</strong> %s, <strong>total aimed for:</strong> %s</p><div class="pirate-book-chest-wrapper">%s</div>';
 				$items       = '';
 				$current     = ( is_array( $read_books ) && ! empty( $read_books ) ) ? count( $read_books ) : '0';
                 if ( is_array( $read_books ) && ! empty( $read_books ) ) {
