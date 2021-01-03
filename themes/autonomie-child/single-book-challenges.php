@@ -18,23 +18,23 @@ get_header(); ?>
         <div class="entry-content e-content h-review" itemprop="description articleBody">
             <?php
             while ( have_posts() ) : the_post(); ?>
-                <h2><?php the_title(); ?></h2>
-
                 <h3 id="description">Read books for <?php the_title(); ?>:</h3>
-                <div class="p-item">
+
                 <?php
                 $read_books  = get_post_meta( get_the_ID(), 'pbc_read_books', true );
 				$target_goal = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
-				$tmpl        = '<p>Total achieved: %s, total aimed for: %s</p><ol>%s</ol>';
+				$tmpl        = '<p>Total achieved: %s, total aimed for: %s</p><div class="pirate-book-chest-wrapper">%s</div>';
 				$items       = '';
 				$current     = ( is_array( $read_books ) && ! empty( $read_books ) ) ? count( $read_books ) : '0';
                 if ( is_array( $read_books ) && ! empty( $read_books ) ) {
-                    $items_tmpl = '<li><a href="%s">%s</a></li>';
+                    $items_tmpl = '<div class="individual-book"><a href="%s">%s</a><h2><a href="%s">%s</a></h2></div>';
                     foreach( $read_books as $book_id ) {
                         $items .= sprintf(
 							$items_tmpl,
                             get_permalink( $book_id ),
-                            get_the_title( $book_id )
+                            get_the_post_thumbnail( $book_id, 'medium' ),
+							get_permalink( $book_id ),
+							get_the_title( $book_id )
                         );
                     }
                 }
@@ -46,8 +46,6 @@ get_header(); ?>
 					$items
 				);
                 ?>
-                </div>
-
             <?php
             endwhile;
             ?>
