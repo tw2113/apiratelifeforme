@@ -36,6 +36,36 @@ function register_my_cpts() {
 	];
 
 	register_post_type( "books", $args );
+
+	$labels = [
+		"name" => __( "Book Challenges", "pirate-book-chest" ),
+		"singular_name" => __( "Book Challenge", "pirate-book-chest" ),
+		"view_items" => __( 'View Challenges', 'pirate-book-chest' ),
+	];
+
+	$args = [
+		"label" => __("Book Challenges", "pirate-book-chest"),
+		"labels" => $labels,
+		"description" => "Michael's recreation of GoodReads reading challenges.",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => ["slug" => "book-challenge", "with_front" => true],
+		"query_var" => true,
+		"menu_icon" => "dashicons-book",
+		"supports" => ["title", "editor", "comments"],
+	];
+
+	register_post_type( "book-challenges", $args );
 }
 add_action( 'init', __NAMESPACE__ . '\register_my_cpts' );
 
