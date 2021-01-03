@@ -133,6 +133,32 @@ function meta_boxes() {
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\meta_boxes' );
 
+function challenge_meta_boxes() {
+	$prefix = 'pbc';
+
+	/**
+	 * My current challenge status details.
+	 */
+	$cmbpbc_challenge = new_cmb2_box( [
+		'id'           => $prefix . '_book_reading_challenge metabox',
+		'title'        => esc_html__( 'Book Reading Challenge Details', 'pirate-book-chest' ),
+		'object_types' => [ 'book-challenges' ],
+		'context'      => 'normal',
+		'priority'     => 'high',
+	] );
+
+	$cmbpbc_challenge->add_field( [
+		'name'       => esc_html__( 'Total Book Goal', 'pirate-book-chest' ),
+		'desc'       => esc_html__( 'How many books do you want to read?', 'pirate-book-chest' ),
+		'id'         => $prefix . '_total_goal',
+		'type'       => 'text_small',
+		'attributes' => [
+			'type' => 'number'
+		]
+	] );
+}
+add_action( 'cmb2_admin_init', __NAMESPACE__ . '\challenge_meta_boxes' );
+
 
 function cmb2_render_book_review( $field, $escaped_value, $object_id,
 								 $object_type, $field_type_object ) {
