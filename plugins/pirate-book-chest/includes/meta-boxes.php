@@ -162,7 +162,7 @@ function challenge_meta_boxes() {
 		'desc'    => __( 'Books you successfully read for this challenge', 'pirate-book-chest' ),
 		'id'      => $prefix . '_read_books',
 		'type'    => 'custom_attached_posts',
-		'column'  => true, // Output in the admin post-listing as a custom column. https://github.com/CMB2/CMB2/wiki/Field-Parameters#column
+		'column'  => false, // Output in the admin post-listing as a custom column. https://github.com/CMB2/CMB2/wiki/Field-Parameters#column
 		'options' => [
 			'show_thumbnails' => false, // Show thumbnails on the left
 			'filter_boxes'    => true, // Show a text box for filtering the results
