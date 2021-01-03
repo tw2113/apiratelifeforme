@@ -20,6 +20,8 @@ get_header(); ?>
             while ( have_posts() ) : the_post(); ?>
                 <h3 id="description">Read books for <?php the_title(); ?>:</h3>
 
+                <?php the_content(); ?>
+
                 <?php
                 $read_books  = get_post_meta( get_the_ID(), 'pbc_read_books', true );
 				$target_goal = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
