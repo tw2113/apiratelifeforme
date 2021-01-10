@@ -39,3 +39,34 @@ h4.entry-title a,
 #archive-nav a {
 	text-decoration: underline;
 }
+
+a,
+.entry-meta,
+.entry-meta a,
+.wp-caption-text a,
+.gallery-caption a,
+.page-link a,
+.page-links a,
+.entry-meta.post-format a,
+.entry-meta.post-format span,
+.entry-meta.post-format .entry-format::before,
+.site-header .page-banner #page-title,
+.site-header .page-banner #page-description,
+.site-header .page-banner #page-meta,
+.entry-content,
+.entry-summary,
+#colophon,
+#archive-nav .page-numbers,
+#archive-nav a:hover,
+.site-navigation ul ul a {
+	color: $royal-purple;
+}
+
+.site-navigation ul ul li:hover > a,
+.site-navigation ul ul li.focus > a {
+	background-color: $royal-purple;
+}
+
+.entry-content a {
+	color: $cherry-red;
+}
