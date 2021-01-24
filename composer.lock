@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4be500c95f7b8d5534c2e7e5d76894e",
+    "content-hash": "4e0955e3c10a3e7afbb77b75e9745b04",
     "packages": [
         {
             "name": "composer/installers",
@@ -156,15 +156,15 @@
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
-                "reference": "tags/2.4.2"
+                "reference": "tags/2.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.4.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "9.7.3",
+            "version": "9.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/9.7.3"
+                "reference": "tags/9.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.7.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.8.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -318,15 +318,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.4.14",
+            "version": "3.4.17",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.4.14"
+                "reference": "tags/3.4.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.14.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.4.17.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -426,15 +426,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.6"
+                "reference": "tags/3.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
