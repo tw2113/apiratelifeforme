@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e0955e3c10a3e7afbb77b75e9745b04",
+    "content-hash": "ea07c7cb6d7cf79223156c1f7ff27e6d",
     "packages": [
         {
             "name": "composer/installers",
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "9.8.1",
+            "version": "9.8.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/9.8.1"
+                "reference": "tags/9.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.9.8.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -282,15 +282,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.5.1"
+                "reference": "tags/3.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -408,15 +408,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.33",
+            "version": "3.4.34",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.33"
+                "reference": "tags/3.4.34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.33.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.34.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -534,15 +534,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/1.6.0"
+                "reference": "tags/1.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.7.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
