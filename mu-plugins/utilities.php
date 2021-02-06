@@ -14,11 +14,13 @@ add_action('init', function(){
 	remove_action('wp_head', 'wp_generator');
 });
 
-add_action( 'wp_head', function() {
-?>
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☠️</text></svg>">
-<?php
-});
+function favicon() {
+	?>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☠️</text></svg>">
+	<?php
+}
+add_action( 'wp_head', __NAMESPACE__ . '\favicon' );
+add_action( 'admin_head', __NAMESPACE__ . '\favicon' );
 
 //Remove <p> tags from images
 function filter_ptags_on_images($content){
