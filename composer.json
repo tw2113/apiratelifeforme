@@ -24,9 +24,9 @@
     "wpackagist-plugin/keyring": "2.0",
     "wpackagist-plugin/avatar-privacy": "2.4.5",
     "wpackagist-plugin/indieauth": "3.6.0",
-    "wpackagist-plugin/ninja-forms": "3.5.0",
+    "wpackagist-plugin/ninja-forms": "3.5.1",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "9.9.3",
+    "wpackagist-plugin/gutenberg": "10.0.0",
     "wpackagist-plugin/carbon-offset": "1.0.5",
     "wpackagist-plugin/cmb2": "2.8.0"
   },
