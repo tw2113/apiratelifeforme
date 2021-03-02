@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8578915f63d204a547d4751e8ef39f7e",
+    "content-hash": "bae7f48e4053df400d7ecbe8c579e87c",
     "packages": [
         {
             "name": "composer/installers",
@@ -354,15 +354,15 @@
         },
         {
             "name": "wpackagist-plugin/keyring",
-            "version": "2.0",
+            "version": "3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/keyring/",
-                "reference": "tags/2.0"
+                "reference": "tags/3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/keyring.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/keyring.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -588,15 +588,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.6",
+            "version": "5.0.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.6"
+                "reference": "tags/5.0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
