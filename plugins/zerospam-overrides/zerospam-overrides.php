@@ -17,6 +17,6 @@ function zerospam() {
 		[],
 		true
 	);
-	wp_localize_script( 'zerospam-override', 'zerospam', array( 'key' => wpzerospam_get_key() ) );
+	wp_localize_script( 'zerospam-override', 'zerospam', array( 'key' => \ZeroSpam\Core\Utilities::get_honeypot() ) );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\zerospam', 11 );
