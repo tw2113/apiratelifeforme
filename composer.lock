@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bae7f48e4053df400d7ecbe8c579e87c",
+    "content-hash": "804846970600374ae0cdc8f3d3a90fbf",
     "packages": [
         {
             "name": "composer/installers",
@@ -210,7 +210,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.8.0",
+            "version": "2.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -218,7 +218,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1612800893"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1614826089"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "10.0.2",
+            "version": "10.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/10.0.2"
+                "reference": "tags/10.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -480,15 +480,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.3.1"
+                "reference": "tags/4.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -588,15 +588,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.8",
+            "version": "5.0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.8"
+                "reference": "tags/5.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
