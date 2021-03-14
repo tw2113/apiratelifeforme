@@ -58,3 +58,65 @@ function book_status_archive_title( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', __NAMESPACE__ . '\book_status_archive_title' );
+
+function book_status_update( $post_id, $post, $updated ) {
+	if ( empty( $_POST ) ) {
+		return;
+	}
+
+	if ( ! $updated ) {
+		return;
+	}
+
+	if ( ! function_exists( 'wpt_oauth_connection' ) ) {
+		return;
+	}
+
+	$orig_page      = get_post_meta( $post_id, 'pbc_current_page', true );
+	$new_page       = sanitize_text_field( $_POST['pbc_current_page'] );
+	$total_pages    = get_post_meta( $post_id, 'pbc_total_pages', true );
+	$author         = get_post_meta( $post_id, 'pbc_book_authors', true );
+	$reading_status = get_the_terms( $post_id, 'book_status' );
+	$new_status     = sanitize_text_field( $_POST['pbc_reading_status'] );
+
+	$connection                 = wpt_oauth_connection( 1 );
+	$api                        = 'https://api.twitter.com/1.1/statuses/update.json';
+	$status['include_entities'] = 'true';
+
+	// change of current page.
+	if ( $new_page > $orig_page ) {
+		$status['status'] = sprintf(
+			'On page %s of %s on %s, by %s, %s',
+			$new_page,
+			$total_pages,
+			$post->post_title,
+			$author,
+			get_permalink( $post_id )
+		);
+
+		$connection->post( $api, $status );
+	}
+
+	if ( $reading_status[0]->slug === 'to-read' && $new_status === 'currently-reading' ) {
+		$status['status'] = sprintf(
+			'I have started reading %s by %s %s',
+			$post->post_title,
+			$author,
+			get_permalink( $post_id )
+		);
+
+		$connection->post( $api, $status );
+	}
+
+	if ( $reading_status[0]->slug === 'currently-reading' && $new_status === 'read' ) {
+		$status['status'] = sprintf(
+			'I have finished reading %s by %s %s',
+			$post->post_title,
+			$author,
+			get_permalink( $post_id )
+		);
+
+		$connection->post( $api, $status );
+	}
+}
+add_action( 'save_post_books', __NAMESPACE__ . '\book_status_update', 10, 3 );
