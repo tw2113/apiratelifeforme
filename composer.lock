@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46b0713cebeaa4ab28f4becfa9887a0c",
+    "content-hash": "04f36e8696cd3c95b4903958b41f456a",
     "packages": [
         {
             "name": "composer/installers",
@@ -156,15 +156,15 @@
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
-                "reference": "tags/2.5.0"
+                "reference": "tags/2.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -318,15 +318,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.5.2"
+                "reference": "tags/3.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.5.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
