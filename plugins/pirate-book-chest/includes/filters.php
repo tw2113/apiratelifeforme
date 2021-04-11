@@ -83,8 +83,8 @@ function book_status_update( $post_id, $post, $updated ) {
 	$api                        = 'https://api.twitter.com/1.1/statuses/update.json';
 	$status['include_entities'] = 'true';
 
-	// change of current page.
-	if ( $new_page > $orig_page ) {
+	// change of current page and not completing the book.
+	if ( $new_page > $orig_page && $new_page < $total_pages ) {
 		$status['status'] = sprintf(
 			'On page %s of %s on %s, by %s, %s',
 			$new_page,
