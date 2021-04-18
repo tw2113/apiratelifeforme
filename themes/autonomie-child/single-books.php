@@ -65,9 +65,17 @@ get_header(); ?>
 						$percentage
 					);
 				}
+
+                if ( ! empty( $meta['pbc_rereads'][0] ) ) {
+                    $rereads = maybe_unserialize( $meta['pbc_rereads'][0] );
+
+                    $rereads_started  = ! empty( $rereads[0]['pbc_reread_start_date'] ) ? date( 'Y/m/d', $rereads[0]['pbc_reread_start_date'] ) : 'TBD';
+                    $rereads_finished = ! empty( $rereads[0]['pbc_reread_end_date'] ) ? date( 'Y/m/d', $rereads[0]['pbc_reread_end_date'] ) : 'TBD';
+                    printf( '<p><strong>Re-reading duration:</strong> %s to %s</p>', $rereads_started, $rereads_finished );
+                }
                 $started  = ! empty( $meta['pbc_start_date'][0] ) ? date( 'Y/m/d', $meta['pbc_start_date'][0] ) : 'TBD';
                 $finished = ! empty( $meta['pbc_finished_date'][0] ) ? date( 'Y/m/d', $meta['pbc_finished_date'][0] ) : 'TBD';
-				printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
+                printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
 
 				$rating = str_replace( 'rating', '', $meta['pbc_rating'][0] );
 				if ( '0' === $rating ) {

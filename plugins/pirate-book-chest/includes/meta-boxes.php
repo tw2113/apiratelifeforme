@@ -63,6 +63,32 @@ function meta_boxes() {
 		'remove_default' => 'true',
 	] );
 
+	$cmbpbc_reread = $cmbpbc_reading->add_field( [
+		'id'          => $prefix . '_rereads',
+		'type'        => 'group',
+		'description' => 'Re-reads',
+		'repeatable'  => true,
+		'options'     => [
+			'group_title'       => 'Re-read {#}',
+			'add_button'        => 'Add new re-read dates',
+			'remove_button'     => 'Remove re-read',
+		],
+	] );
+
+	$cmbpbc_reading->add_group_field( $cmbpbc_reread, [
+		'name'        => 'Re-read start date',
+		'id'          => $prefix . '_reread_start_date',
+		'type'        => 'text_date_timestamp',
+		'date_format' => 'Y.m.d',
+	] );
+
+	$cmbpbc_reading->add_group_field( $cmbpbc_reread, [
+		'name'        => 'Re-read end date',
+		'id'          => $prefix . '_reread_end_date',
+		'type'        => 'text_date_timestamp',
+		'date_format' => 'Y.m.d',
+	] );
+
 	/**
 	 * Book review and notes
 	 */
