@@ -129,3 +129,12 @@ function book_meta_description( $description ) {
 	return 'Michael Beckwith\'s reading tracking archive, documenting what he has read, is reading, and wants to read in the future.';
 }
 add_filter( 'the_seo_framework_pta_description', __NAMESPACE__ . '\book_meta_description' );
+
+function book_meta_title( $description ) {
+	if ( ! is_post_type_archive( 'books' ) ) {
+		return $description;
+	}
+
+	return 'Pirate Book Chest Archive';
+}
+add_filter( 'the_seo_framework_title_from_generation', __NAMESPACE__ . '\book_meta_title' );
