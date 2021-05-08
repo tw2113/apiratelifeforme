@@ -24,10 +24,11 @@ get_header(); ?>
 
                 <?php
                 $read_books  = get_post_meta( get_the_ID(), 'pbc_read_books', true );
-				$target_goal = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
-				$tmpl        = '<p><strong>Total achieved:</strong> %s, <strong>total aimed for:</strong> %s</p><div class="pirate-book-chest-wrapper">%s</div>';
-				$items       = '';
-				$current     = ( is_array( $read_books ) && ! empty( $read_books ) ) ? count( $read_books ) : '0';
+                $target_goal = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
+                $status      = tw2113\pbc\get_reading_challenge_status();
+                $tmpl        = '<p><strong>Total achieved:</strong> %s, <strong>total aimed for:</strong> %s, <strong>current status:</strong> %s</strong></p><div class="pirate-book-chest-wrapper">%s</div>';
+                $items       = '';
+                $current     = ( is_array( $read_books ) && ! empty( $read_books ) ) ? count( $read_books ) : '0';
                 if ( is_array( $read_books ) && ! empty( $read_books ) ) {
                     $items_tmpl = '<div class="individual-book"><a href="%s">%s</a><h2><a href="%s">%s</a></h2></div>';
                     foreach( $read_books as $book_id ) {
@@ -45,6 +46,7 @@ get_header(); ?>
 					$tmpl,
 					$current,
 					$target_goal,
+					$status,
 					$items
 				);
                 ?>
