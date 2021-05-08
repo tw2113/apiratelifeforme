@@ -73,3 +73,43 @@ function get_reading_challenge_years() {
 	return $content;
 }
 add_shortcode( 'read-challenges', __NAMESPACE__ . '\get_reading_challenge_years' );
+
+function get_reading_challenge_status() {
+
+    $current_challenge = new \WP_Query(
+        [
+            'post_type' => 'book-challenges',
+            'post_status' => 'publish',
+            'posts_per_page' => 1
+        ]
+    );
+
+    if ( ! $current_challenge->have_posts() ) {
+        return;
+    }
+
+    //current read
+    $total_goal = $current_challenge->posts[0]->pbc_total_goal;
+	$total_read = count( $current_challenge->posts[0]->pbc_read_books );
+
+    // how many days per book allowed.
+	$days_per_book = 365 / $total_goal;
+
+    // current day of the year. Jan 22nd = 22nd day. Feb 28th = 59th day, etc.
+	$date        = new \DateTime();
+	$day_of_year = abs( $date->format( 'z' ) ) + 1;
+
+    // How many books I should have by this point?
+	$should_have = $day_of_year / $days_per_book;
+
+	$difference = abs( $total_read - ceil( $should_have ) );
+	if ( $total_read == ceil( $should_have ) ) {
+		return 'on schedule';
+	} else if ( $total_read < ceil( $should_have ) ) {
+		return "{$difference} behind schedule";
+	} else if ( $total_read > ceil( $should_have ) ) {
+		return "{$difference} ahead of schedule";
+	}
+
+	return '';
+}
