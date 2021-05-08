@@ -8,7 +8,8 @@
   margin-right: auto;
 }
 
-.post .entry-content .wp-block-image {
+.post .entry-content .wp-block-image,
+.post .entry-content .wp-block-embed {
   margin: 0 auto;
   max-width: 700px;
   width: 100%;
