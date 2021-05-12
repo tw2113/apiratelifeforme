@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b44c4af365b7b1b2e360bc133cbc824",
+    "content-hash": "a45ebe3cc94f27f7c27b7549d518d6fd",
     "packages": [
         {
             "name": "composer/installers",
@@ -176,15 +176,15 @@
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
-                "reference": "tags/2.5.1"
+                "reference": "tags/2.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.1.2",
+            "version": "6.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.1.2"
+                "reference": "tags/6.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -302,15 +302,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "10.5.0",
+            "version": "10.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/10.5.0"
+                "reference": "tags/10.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -428,15 +428,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.2.3"
+                "reference": "tags/2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -464,15 +464,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.7",
+            "version": "3.6.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.7"
+                "reference": "tags/3.6.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -572,15 +572,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/1.7.0"
+                "reference": "tags/1.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
