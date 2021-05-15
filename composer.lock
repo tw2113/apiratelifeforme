@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a45ebe3cc94f27f7c27b7549d518d6fd",
+    "content-hash": "051bb4fb10d3273679ac5b5fcc8fb49d",
     "packages": [
         {
             "name": "composer/installers",
@@ -302,15 +302,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "10.5.4",
+            "version": "10.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/10.5.4"
+                "reference": "tags/10.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.5.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -320,15 +320,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.6.0"
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -464,15 +464,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.8",
+            "version": "3.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.8"
+                "reference": "tags/3.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

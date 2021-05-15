@@ -1,4 +1,6 @@
 {
+  "name": "tw2113/apiratelifeforme",
+  "description": "My plugins",
   "repositories": [{
     "type": "composer",
     "url": "https://wpackagist.org/"
@@ -6,7 +8,7 @@
   "require": {
     "wpackagist-plugin/classic-editor": "1.6",
     "wpackagist-plugin/disable-emojis": "1.7.2",
-    "wpackagist-plugin/query-monitor": "3.6.8",
+    "wpackagist-plugin/query-monitor": "3.7.1",
     "wpackagist-plugin/zero-spam": "5.0.12",
     "wpackagist-plugin/wp-to-twitter": "3.5.2",
     "wpackagist-plugin/webmention": "4.0.5",
@@ -23,10 +25,10 @@
     "wpackagist-plugin/keyring-social-importers": "2.0",
     "wpackagist-plugin/keyring": "3.0",
     "wpackagist-plugin/avatar-privacy": "2.5.2",
-    "wpackagist-plugin/indieauth": "3.6.0",
+    "wpackagist-plugin/indieauth": "3.6.1",
     "wpackagist-plugin/ninja-forms": "3.5.4",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "10.5.4",
+    "wpackagist-plugin/gutenberg": "10.6.0",
     "wpackagist-plugin/carbon-offset": "1.0.5",
     "wpackagist-plugin/cmb2": "2.9.0",
     "wpackagist-plugin/autodescription": "4.1.3",
