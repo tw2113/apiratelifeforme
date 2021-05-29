@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "051bb4fb10d3273679ac5b5fcc8fb49d",
+    "content-hash": "4aa4dd60a1f5c7e915d354452ad75c58",
     "packages": [
         {
             "name": "composer/installers",
@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.1.4",
+            "version": "6.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.1.4"
+                "reference": "tags/6.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -302,15 +302,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "10.6.0",
+            "version": "10.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/10.6.0"
+                "reference": "tags/10.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -320,15 +320,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.6.1"
+                "reference": "tags/3.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -569,6 +569,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/webmention/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-graphql",
+            "version": "1.3.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-graphql/",
+                "reference": "tags/1.3.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.3.9.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-graphql/"
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
