@@ -31,7 +31,7 @@ get_header(); ?>
 						the_post_thumbnail('medium');
 					} else {
 						?>
-                        <div class="book-placeholder">Coming soon</div>
+                        <div class="book-placeholder">Coming once purchased</div>
 						<?php
 					}
 					?>
