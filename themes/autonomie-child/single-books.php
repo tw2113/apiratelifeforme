@@ -33,7 +33,7 @@ get_header(); ?>
 				echo get_the_term_list( get_the_ID(), 'book_chest', '<p><strong>Chests:</strong> ', ', ', '</p>' );
 
                 ?>
-                <h3 id="status">My status:</h3>
+                <h3 id="status">Status:</h3>
                 <?php
                 $statuses = get_the_terms( get_the_ID(), 'book_status' );
                 $has_read = false;
@@ -100,7 +100,7 @@ get_header(); ?>
                     }
                 }
                 ?>
-                <h3 id="details">Book details:</h3>
+                <h3 id="details">Details:</h3>
                 <?php
                 $authors = ! empty( $meta['pbc_book_authors'][0] ) ? $meta['pbc_book_authors'][0] : '';
                 $isbn    = ! empty( $meta['pbc_book_isbn'][0] ) ? $meta['pbc_book_isbn'][0] : '';
