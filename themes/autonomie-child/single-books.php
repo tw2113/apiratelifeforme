@@ -23,7 +23,7 @@ get_header(); ?>
                 <?php
                 the_post_thumbnail( 'medium' );
                 ?>
-                <h3 id="description">Book description:</h3>
+                <h3 id="description">Description:</h3>
                 <div class="p-item">
                 <?php
                 the_content();
@@ -50,7 +50,9 @@ get_header(); ?>
 				$meta       = get_post_meta(get_the_ID());
 				$current    = isset($meta['pbc_current_page'][0]) ? (int)$meta['pbc_current_page'][0] : 0;
 				$total      = isset($meta['pbc_total_pages'][0]) ? (int)$meta['pbc_total_pages'][0] : 0;
-				$percentage = number_format($current / $total * 100);
+				if ( $current > 0 ) {
+					$percentage = number_format( $current / $total * 100 );
+				} else $percentage = '0';
 
 				if ( $has_read ) {
 				    $current = $total;
