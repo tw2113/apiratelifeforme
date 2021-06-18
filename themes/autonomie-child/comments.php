@@ -73,7 +73,7 @@ endif;
 // If comments are closed and there are no comments, let's leave a little note, shall we?
 if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-	<p class="nocomments"><?php _e( 'Comments are closed.', 'autonomie' ); ?></p>
+	<p class="nocomments"><?php esc_html_e( 'Comments are closed. To respond at this time, please out via Twitter at @tw2113', 'autonomie' ); ?></p>
 <?php endif; ?>
 
 </div><!-- #comments -->
