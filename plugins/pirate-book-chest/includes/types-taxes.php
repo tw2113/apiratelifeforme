@@ -68,6 +68,37 @@ function register_my_cpts() {
 	];
 
 	register_post_type( "book-challenges", $args );
+
+	$labels = [
+		"name" => __( "Book Collections", "pirate-book-chest" ),
+		"singular_name" => __( "Book Collection", "pirate-book-chest" ),
+		"view_items" => __( 'View Collections', 'pirate-book-chest' ),
+		"edit_item" => __( 'Edit Collection', 'pirate-book-chest' ),
+	];
+
+	$args = [
+		"label" => __("Book Collections", "pirate-book-chest"),
+		"labels" => $labels,
+		"description" => "Books collected by subject and topic.",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => ["slug" => "book-collection", "with_front" => true],
+		"query_var" => true,
+		"menu_icon" => "dashicons-book",
+		"supports" => ["title", "editor", "comments"],
+	];
+
+	register_post_type( "book-collections", $args );
 }
 add_action( 'init', __NAMESPACE__ . '\register_my_cpts' );
 

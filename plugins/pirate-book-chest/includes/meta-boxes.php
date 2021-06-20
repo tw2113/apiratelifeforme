@@ -166,7 +166,7 @@ function challenge_meta_boxes() {
 	 * My current challenge status details.
 	 */
 	$cmbpbc_challenge = new_cmb2_box( [
-		'id'           => $prefix . '_book_reading_challenge metabox',
+		'id'           => $prefix . '_book_reading_challenge_metabox',
 		'title'        => esc_html__( 'Book Reading Challenge Details', 'pirate-book-chest' ),
 		'object_types' => [ 'book-challenges' ],
 		'context'      => 'normal',
@@ -207,6 +207,40 @@ function challenge_meta_boxes() {
 	] );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\challenge_meta_boxes' );
+
+function collection_meta_boxes() {
+	$prefix = 'pbc';
+
+	/**
+	 * My current challenge status details.
+	 */
+	$cmbpbc_collection = new_cmb2_box( [
+		'id'           => $prefix . '_book_reading_collection_metabox',
+		'title'        => esc_html__( 'Book collection Details', 'pirate-book-chest' ),
+		'object_types' => [ 'book-collections' ],
+		'context'      => 'normal',
+		'priority'     => 'high',
+	] );
+
+	$cmbpbc_collection->add_field( [
+		'name'    => __( 'Collection', 'pirate-book-chest' ),
+		'desc'    => __( 'Books for this collection', 'pirate-book-chest' ),
+		'id'      => $prefix . '_collection',
+		'type'    => 'custom_attached_posts',
+		'column'  => false, // Output in the admin post-listing as a custom column. https://github.com/CMB2/CMB2/wiki/Field-Parameters#column
+		'options' => [
+			'show_thumbnails' => false, // Show thumbnails on the left
+			'filter_boxes'    => true, // Show a text box for filtering the results
+			'query_args'      => [
+				'posts_per_page' => -1,
+				'post_type'      => 'books',
+				'orderby'        => 'title',
+				'order'          => 'ASC',
+			], // override the get_posts args
+		],
+	] );
+}
+add_action( 'cmb2_admin_init', __NAMESPACE__ . '\collection_meta_boxes' );
 
 
 function cmb2_render_book_review( $field, $escaped_value, $object_id,
