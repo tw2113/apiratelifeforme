@@ -30,7 +30,7 @@ function books_query_mods( $wp_query ) {
 		return;
 	}
 
-	if ( ! is_post_type_archive( 'books' ) && ! is_tax( 'book_status' ) && ! is_tax( 'genre' ) && ! is_tax( 'book_chest' ) ) {
+	if ( ! is_post_type_archive( 'books' ) && ! is_post_type_archive( 'book-collections' ) && ! is_tax( 'book_status' ) && ! is_tax( 'genre' ) && ! is_tax( 'book_chest' ) ) {
 		return;
 	}
 
@@ -138,3 +138,12 @@ function book_meta_title( $description ) {
 	return 'Pirate Book Chest Archive';
 }
 add_filter( 'the_seo_framework_title_from_generation', __NAMESPACE__ . '\book_meta_title' );
+
+function book_collection_meta_title( $description ) {
+	if ( ! is_post_type_archive( 'book-collections' ) ) {
+		return $description;
+	}
+
+	return 'Pirate Book Chest Collection Archive';
+}
+add_filter( 'the_seo_framework_title_from_generation', __NAMESPACE__ . '\book_collection_meta_title' );
