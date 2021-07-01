@@ -18,6 +18,7 @@ get_header(); ?>
         <div class="entry-content e-content h-review" itemprop="description articleBody">
             <?php
             while ( have_posts() ) : the_post(); ?>
+                <?php edit_post_link( 'Edit book', '<p>', '</p>', null, 'btn btn-primary btn-edit-post-link' ); ?>
                 <h2><?php the_title(); ?></h2>
 
                 <?php
