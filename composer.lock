@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "422eb1dddfda7a06836914d8b9111155",
+    "content-hash": "644ccf8844630ff407fdfc6be86934dc",
     "packages": [
         {
             "name": "composer/installers",
@@ -194,7 +194,7 @@
         },
         {
             "name": "wpackagist-plugin/carbon-offset",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/carbon-offset/",
@@ -202,7 +202,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/carbon-offset.zip?timestamp=1590925777"
+                "url": "https://downloads.wordpress.org/plugin/carbon-offset.zip?timestamp=1625044017"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.1.7",
+            "version": "6.1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.1.7"
+                "reference": "tags/6.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.1.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -302,15 +302,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "10.8.2",
+            "version": "11.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/10.8.2"
+                "reference": "tags/11.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.10.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.11.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -320,15 +320,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "3.6.2",
+            "version": "4.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/3.6.2"
+                "reference": "tags/4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.3.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.4.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -446,15 +446,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.5.5",
+            "version": "3.5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.5.5"
+                "reference": "tags/3.5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.5.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.5.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -572,15 +572,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.4.3",
+            "version": "1.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.4.3"
+                "reference": "tags/1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.4.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -669,5 +669,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
