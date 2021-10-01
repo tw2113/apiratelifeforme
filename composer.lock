@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65c1d4cc4bddea6cc41217108f1f359a",
+    "content-hash": "deed80276d49bbb26150dc39914d89e3",
     "packages": [
         {
             "name": "composer/installers",
@@ -245,11 +245,11 @@
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "trunk"
+                "reference": "tags/1.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.zip?timestamp=1623897602"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -295,15 +295,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "11.5.0",
+            "version": "11.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/11.5.0"
+                "reference": "tags/11.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.11.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.11.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -313,15 +313,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/4.0.0"
+                "reference": "tags/4.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.4.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.4.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -421,15 +421,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.2.4"
+                "reference": "tags/2.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -439,15 +439,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.5.8.1",
+            "version": "3.5.8.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.5.8.1"
+                "reference": "tags/3.5.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.5.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.5.8.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
