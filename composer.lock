@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d33620532c161a75e450863d6cb27a5",
+    "content-hash": "9f87f97e7a84e812de8296d23d7ab52c",
     "packages": [
         {
             "name": "composer/installers",
@@ -295,15 +295,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "11.7.0",
+            "version": "11.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/11.7.0"
+                "reference": "tags/11.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.11.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.11.8.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -349,15 +349,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.5.9",
+            "version": "3.5.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.5.9"
+                "reference": "tags/3.5.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.5.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.5.11.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -439,15 +439,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.6.2",
+            "version": "3.6.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.6.2"
+                "reference": "tags/3.6.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -511,15 +511,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.3.6",
+            "version": "4.3.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.3.6"
+                "reference": "tags/4.3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -565,15 +565,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.6.6"
+                "reference": "tags/1.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.6.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.6.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
@@ -637,15 +637,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.13",
+            "version": "5.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.13"
+                "reference": "tags/5.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
