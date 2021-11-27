@@ -12,6 +12,8 @@ function register_my_cpts() {
 		"view_items" => __( 'View Books', 'pirate-book-chest' ),
 		"set_featured_image" => __( 'Set Book Image', 'pirate-book-chest' ),
 		"remove_featured_image" => __( 'Remove Book Image', 'pirate-book-chest' ),
+		"edit_item" => __( 'Edit Book', 'pirate-book-chest' ),
+		"view_item" => __( 'View Book', 'pirate-book-chest' ),
 	];
 
 	$args = [
