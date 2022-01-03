@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f111dfee1ce9ab75fead3d15c7c6b27d",
+    "content-hash": "5314831e36de6638c89e05de67d5fc9b",
     "packages": [
         {
             "name": "composer/installers",
@@ -295,15 +295,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "12.1.0",
+            "version": "12.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/12.1.0"
+                "reference": "tags/12.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.12.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.12.2.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -421,15 +421,15 @@
         },
         {
             "name": "wpackagist-plugin/micropub",
-            "version": "2.2.5",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/micropub/",
-                "reference": "tags/2.2.5"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/micropub.2.2.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/micropub.2.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -457,15 +457,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.7.1",
+            "version": "3.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.7.1"
+                "reference": "tags/3.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.8.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -601,15 +601,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.5.3"
+                "reference": "tags/3.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.5.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
