@@ -147,3 +147,19 @@ function book_collection_meta_title( $description ) {
 	return 'Pirate Book Chest Collection Archive';
 }
 add_filter( 'the_seo_framework_title_from_generation', __NAMESPACE__ . '\book_collection_meta_title' );
+
+function book_rest_metadata() {
+	\register_rest_field( 'books',
+		'pbc_book_isbn',
+		[
+			'get_callback'    => __NAMESPACE__ . '\book_isbn_get_post_meta_cb',
+			'update_callback' => null,
+			'schema'          => null,
+		]
+	);
+}
+add_action( 'rest_api_init', __NAMESPACE__ . '\book_rest_metadata' );
+
+function book_isbn_get_post_meta_cb( $object, $field_name, $request ) {
+	return get_post_meta( $object[ 'id' ], $field_name );
+}
