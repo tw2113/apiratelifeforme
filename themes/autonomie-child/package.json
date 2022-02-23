@@ -4,7 +4,10 @@
   "description": "",
   "main": "Gulpfile.js",
   "dependencies": {
-    "gulp": "^4",
-    "gulp-sass": "^4"
+    "gulp": "^4"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
   }
 }
