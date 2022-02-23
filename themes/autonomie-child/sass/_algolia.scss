@@ -12,3 +12,18 @@
   fill: $royal-purple;
   left: 5px;
 }
+
+#ais-facets h2 {
+  text-decoration: underline $cherry-red 3px;
+}
+.ais-CurrentRefinements-label {
+  display: none;
+}
+.ais-CurrentRefinements-delete {
+  border: none;
+  &:hover {
+    border: none;
+    background: transparent;
+    color: $gray;
+  }
+}
