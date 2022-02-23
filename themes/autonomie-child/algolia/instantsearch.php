@@ -25,8 +25,15 @@ get_header();
 			<div id="algolia-pagination"></div>
 		</main>
 		<aside id="ais-facets">
+            <div>
+                <div id="clearfilters" class="clearfilters"></div>
+            </div>
+            <div>
+                <h4 class="widgettitle"><?php esc_html_e( 'Filtered by:', 'martfury-child' ); ?></h4>
+                <div id="current-facets" class="current-facets"></div>
+            </div>
 			<div>
-				<h3 class="widgettitle"><?php esc_html_e( 'Post Types', 'wp-search-with-algolia' ); ?></h3>
+				<h3 class="widgettitle"><?php esc_html_e( 'Content Type', 'wp-search-with-algolia' ); ?></h3>
 				<section class="ais-facets" id="facet-post-types"></section>
 			</div>
 			<div>
@@ -44,8 +51,8 @@ get_header();
             </div>
 
             <div>
-                <h3 class="widgettitle"><?php esc_html_e( 'Book Chest', 'wp-search-with-algolia' ); ?></h3>
-                <section class="ais-facets" id="facet-book_chest"></section>
+                <h3 class="widgettitle"><?php esc_html_e( 'Book Series', 'wp-search-with-algolia' ); ?></h3>
+                <section class="ais-facets" id="facet-book-series"></section>
             </div>
 		</aside>
 	</div>
@@ -118,6 +125,14 @@ get_header();
 						showSubmit: false,
 						showLoadingIndicator: false,
 					}),
+
+                    instantsearch.widgets.clearRefinements({
+                        container: '#clearfilters'
+                    }),
+
+                    instantsearch.widgets.currentRefinements({
+                        container: '#current-facets'
+                    }),
 
 					/* Stats widget */
 					instantsearch.widgets.stats({
@@ -193,8 +208,8 @@ get_header();
                     }),
 
                     instantsearch.widgets.refinementList({
-                        container: '#facet-book_chest',
-                        attribute: 'taxonomies.book_chest',
+                        container: '#facet-book-series',
+                        attribute: 'taxonomies.book-series',
                         operator: 'and',
                         limit: 15,
                         sortBy: ['isRefined:desc', 'count:desc', 'name:asc'],
