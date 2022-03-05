@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "gulp-sass": "^5.1.0",
-    "sass": "^1.49.8"
+    "sass": "^1.49.9"
   }
 }
