@@ -152,14 +152,28 @@ function book_rest_metadata() {
 	\register_rest_field( 'books',
 		'pbc_book_isbn',
 		[
-			'get_callback'    => __NAMESPACE__ . '\book_isbn_get_post_meta_cb',
+			'get_callback'    => function( $object, $field_name, $request ) { return get_post_meta( $object[ 'id' ], $field_name ); },
+			'update_callback' => null,
+			'schema'          => null,
+		]
+	);
+
+	\register_rest_field( 'books',
+		'pbc_total_pages',
+		[
+			'get_callback'    => function( $object, $field_name, $request ) { return get_post_meta( $object[ 'id' ], $field_name ); },
+			'update_callback' => null,
+			'schema'          => null,
+		]
+	);
+
+	\register_rest_field( 'books',
+		'pbc_book_authors',
+		[
+			'get_callback'    => function( $object, $field_name, $request ) { return get_post_meta( $object[ 'id' ], $field_name ); },
 			'update_callback' => null,
 			'schema'          => null,
 		]
 	);
 }
 add_action( 'rest_api_init', __NAMESPACE__ . '\book_rest_metadata' );
-
-function book_isbn_get_post_meta_cb( $object, $field_name, $request ) {
-	return get_post_meta( $object[ 'id' ], $field_name );
-}
