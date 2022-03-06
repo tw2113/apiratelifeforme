@@ -177,3 +177,9 @@ function book_rest_metadata() {
 	);
 }
 add_action( 'rest_api_init', __NAMESPACE__ . '\book_rest_metadata' );
+
+function book_rest_api_orderby_rand( $query_params ) {
+	$query_params['orderby']['enum'][] = 'rand';
+	return $query_params;
+}
+add_filter( 'rest_books_collection_params', __NAMESPACE__ . '\book_rest_api_orderby_rand' );
