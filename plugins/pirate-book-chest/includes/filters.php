@@ -180,10 +180,21 @@ add_action( 'rest_api_init', __NAMESPACE__ . '\book_rest_metadata' );
 
 function book_rest_api_orderby_rand( $query_params ) {
 	$query_params['orderby']['enum'][] = 'rand';
+	$query_params['orderby']['enum'][] = 'pbc_finished_date';
+
 	return $query_params;
 }
 add_filter( 'rest_books_collection_params', __NAMESPACE__ . '\book_rest_api_orderby_rand' );
 
+function book_rest_orderby_finished_date( $args, $request ) {
+    $order_by = $request->get_param( 'orderby' );
+    if ( isset( $order_by ) && 'pbc_finished_date' === $order_by ) {
+        $args['meta_key'] = $order_by;
+        $args['orderby']  = 'meta_value'; // user 'meta_value_num' for numerical fields
+    }
+    return $args;
+}
+add_filter( 'rest_books_query', __NAMESPACE__ . '\book_rest_orderby_finished_date', 10, 2 );
 
 function book_image_sizes() {
     add_image_size( 'book_next_thumb', 500 );
