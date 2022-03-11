@@ -186,6 +186,6 @@ add_filter( 'rest_books_collection_params', __NAMESPACE__ . '\book_rest_api_orde
 
 
 function book_image_sizes() {
-    add_image_size( 'book-next-thumb', 500 );
+    add_image_size( 'book_next_thumb', 500 );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\book_image_sizes' );
