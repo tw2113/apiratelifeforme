@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17320c39f00be602cc67b96634de7e28",
+    "content-hash": "24e771f4c67b9e6581fc3d3cc5b1ebb6",
     "packages": [
         {
             "name": "composer/installers",
@@ -278,15 +278,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.4.2",
+            "version": "6.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.4.2"
+                "reference": "tags/6.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "12.8.1",
+            "version": "12.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/12.8.1"
+                "reference": "tags/12.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.12.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.12.9.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -440,15 +440,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.6.7",
+            "version": "3.6.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.6.7"
+                "reference": "tags/3.6.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.9.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -566,15 +566,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.7.2"
+                "reference": "tags/1.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.7.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.8.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
