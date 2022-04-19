@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4755fba357637325969da405c1832d8a",
+    "content-hash": "6edd1846aff60a772a63cc901f53fb87",
     "packages": [
         {
             "name": "composer/installers",
@@ -170,15 +170,15 @@
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
-            "version": "2.5.2",
+            "version": "2.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/avatar-privacy/",
-                "reference": "tags/2.5.2"
+                "reference": "tags/2.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/avatar-privacy.2.6.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -638,15 +638,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.3.2",
+            "version": "5.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.3.2"
+                "reference": "tags/5.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.3.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
