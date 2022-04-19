@@ -3,8 +3,15 @@
 namespace tw2113;
 
 function scripts_styles() {
+
+	$debug = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG == true;
+	$suffix = '.min';
+	if ( true === $debug ) {
+		$suffix = '';
+	}
+
 	wp_enqueue_style( 'autonomie-parent', get_template_directory_uri() . '/style.css', [ 'dashicons' ] );
-	wp_enqueue_style( 'autonomie-child', get_stylesheet_directory_uri() . '/css/styles.css', [ 'dashicons', 'autonomie-parent' ] );
+	wp_enqueue_style( 'autonomie-child', get_stylesheet_directory_uri() . '/css/styles' . $suffix . '.css', [ 'dashicons', 'autonomie-parent' ] );
 
 	/*
 		 * Adds JavaScript to pages with the comment form to support sites with
