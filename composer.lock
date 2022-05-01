@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f5fa1e0e45123827cf01c1a4720e2a3",
+    "content-hash": "77ca1d59952be3bfb273609a6f4071a6",
     "packages": [
         {
             "name": "composer/installers",
@@ -278,15 +278,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.5.0",
+            "version": "6.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.5.0"
+                "reference": "tags/6.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "13.0.0",
+            "version": "13.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/13.0.0"
+                "reference": "tags/13.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.1.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
