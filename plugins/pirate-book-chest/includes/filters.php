@@ -175,6 +175,24 @@ function book_rest_metadata() {
 			'schema'          => null,
 		]
 	);
+
+	\register_rest_field( 'books',
+		'pbc_start_date',
+		[
+			'get_callback'    => function( $object, $field_name, $request ) { return get_post_meta( $object[ 'id' ], $field_name ); },
+			'update_callback' => null,
+			'schema'          => null,
+		]
+	);
+
+	\register_rest_field( 'books',
+		'pbc_finished_date',
+		[
+			'get_callback'    => function( $object, $field_name, $request ) { return get_post_meta( $object[ 'id' ], $field_name ); },
+			'update_callback' => null,
+			'schema'          => null,
+		]
+	);
 }
 add_action( 'rest_api_init', __NAMESPACE__ . '\book_rest_metadata' );
 
