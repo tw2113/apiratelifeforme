@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42cb21ad9bfb268a329c92129add8e98",
+    "content-hash": "c3bd64bd3e4d004a552bd09aae42928d",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,15 +260,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.12.0"
+                "reference": "tags/1.12.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.12.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.12.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "13.2.0",
+            "version": "13.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/13.2.0"
+                "reference": "tags/13.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -530,15 +530,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.3.11",
+            "version": "4.3.12",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.3.11"
+                "reference": "tags/4.3.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.11.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.3.12.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
