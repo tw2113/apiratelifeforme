@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2d9af0aaf4aaba8c187a83f59c8c4f4",
+    "content-hash": "19dea7eff4e1f84fa5d63b4d8f99d3d4",
     "packages": [
         {
             "name": "composer/installers",
@@ -170,15 +170,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.2.4",
+            "version": "4.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/4.2.4"
+                "reference": "tags/4.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.4.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.4.2.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.5.2",
+            "version": "6.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.5.2"
+                "reference": "tags/6.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.6.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "13.3.0",
+            "version": "13.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/13.3.0"
+                "reference": "tags/13.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -458,15 +458,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.6.9",
+            "version": "3.6.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.6.9"
+                "reference": "tags/3.6.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.10.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
