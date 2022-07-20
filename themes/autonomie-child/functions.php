@@ -264,9 +264,16 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 add_filter( 'algolia_post_shared_attributes', __NAMESPACE__ . '\algolia_custom_fields', 10, 2 );
 add_filter( 'algolia_searchable_post_shared_attributes', __NAMESPACE__ . '\algolia_custom_fields', 10, 2 );
 
-function posts_index_settings( array $settings ) {
-	$settings['searchableAttributes'][] = 'pbc_book_authors';
+function posts_index_settings( $settings ) {
+
+	$settings['searchableAttributes'] = [
+        'unordered(pbc_book_authors)',
+        'unordered(post_title)',
+		'unordered(taxonomies)',
+		'unordered(content)',
+    ];
 
 	return $settings;
 }
 add_filter( 'algolia_posts_index_settings', __NAMESPACE__ . '\posts_index_settings' );
+add_filter( 'algolia_posts_books_index_settings', __NAMESPACE__ . '\posts_index_settings' );
