@@ -263,3 +263,10 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 }
 add_filter( 'algolia_post_shared_attributes', __NAMESPACE__ . '\algolia_custom_fields', 10, 2 );
 add_filter( 'algolia_searchable_post_shared_attributes', __NAMESPACE__ . '\algolia_custom_fields', 10, 2 );
+
+function posts_index_settings( array $settings ) {
+	$settings['searchableAttributes'][] = 'pbc_book_authors';
+
+	return $settings;
+}
+add_filter( 'algolia_posts_index_settings', __NAMESPACE__ . '\posts_index_settings' );
