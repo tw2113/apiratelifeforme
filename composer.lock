@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84ca86aad2cd70dcb228e65ebdc8dd17",
+    "content-hash": "24b283773c22a848b3bc3e7dfdad5078",
     "packages": [
         {
             "name": "composer/installers",
@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.6.0",
+            "version": "6.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.6.0"
+                "reference": "tags/6.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.7.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "13.6.0",
+            "version": "13.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/13.6.0"
+                "reference": "tags/13.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.8.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -584,15 +584,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.8.6",
+            "version": "1.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.8.6"
+                "reference": "tags/1.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.8.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.9.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
