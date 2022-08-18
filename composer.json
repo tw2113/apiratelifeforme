@@ -27,12 +27,12 @@
     "wpackagist-plugin/indieauth": "4.2.0",
     "wpackagist-plugin/ninja-forms": "3.6.12",
     "wpackagist-plugin/slide": "0.0.39",
-    "wpackagist-plugin/gutenberg": "13.8.1",
+    "wpackagist-plugin/gutenberg": "13.9.0",
     "wpackagist-plugin/carbon-offset": "1.0.6",
     "wpackagist-plugin/cmb2": "2.10.1",
     "wpackagist-plugin/autodescription": "4.2.5",
     "wpackagist-plugin/ewww-image-optimizer": "6.7.0",
-    "wpackagist-plugin/wp-graphql": "1.9.0",
+    "wpackagist-plugin/wp-graphql": "1.9.1",
     "wpackagist-plugin/antispam-bee": "2.11.1"
   },
   "extra": {
