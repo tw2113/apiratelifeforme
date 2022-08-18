@@ -56,7 +56,7 @@ get_header(); ?>
 					$current,
 					$target_goal,
 					$status,
-					array_sum( $total_pages ),
+					number_format( array_sum( $total_pages ) ),
 					$items
 				);
                 ?>
