@@ -196,7 +196,7 @@ get_header();
                         attribute: 'taxonomies.book_status',
                         operator: 'and',
                         limit: 15,
-                        sortBy: ['isRefined:desc', 'count:desc', 'name:asc'],
+                        sortBy: ['count:desc', 'name:asc'],
                     }),
 
                     instantsearch.widgets.refinementList({
@@ -204,7 +204,7 @@ get_header();
                         attribute: 'taxonomies.genre',
                         operator: 'and',
                         limit: 15,
-                        sortBy: ['isRefined:desc', 'count:desc', 'name:asc'],
+                        sortBy: ['count:desc', 'name:asc'],
                     }),
 
                     instantsearch.widgets.refinementList({
@@ -212,7 +212,7 @@ get_header();
                         attribute: 'taxonomies.book-series',
                         operator: 'and',
                         limit: 15,
-                        sortBy: ['isRefined:desc', 'count:desc', 'name:asc'],
+                        sortBy: ['count:desc', 'name:asc'],
                     }),
 
 					/* Search powered-by widget */
