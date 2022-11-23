@@ -237,8 +237,12 @@ mark {
   color: #4f575a;
 }
 
-.site-header site-branding .search-field {
+.site-header .site-branding .search-field {
   width: 100%;
+}
+
+.site-header .search-form {
+  width: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */

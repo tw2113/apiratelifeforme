@@ -1,7 +1,11 @@
 .site-header {
-  site-branding {
+  .site-branding {
     .search-field {
       width: 100%;
     }
+  }
+
+  .search-form {
+    width: 500px;
   }
 }
