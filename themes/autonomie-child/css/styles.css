@@ -237,4 +237,8 @@ mark {
   color: #4f575a;
 }
 
+.site-header .search-field {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
