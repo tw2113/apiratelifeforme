@@ -245,4 +245,10 @@ mark {
   width: 500px;
 }
 
+@media (min-width: 1000px) {
+  .site-header .search-form {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
