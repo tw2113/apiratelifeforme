@@ -237,7 +237,7 @@ mark {
   color: #4f575a;
 }
 
-.site-header .search-field {
+.site-header site-branding .search-field {
   width: 100%;
 }
 
