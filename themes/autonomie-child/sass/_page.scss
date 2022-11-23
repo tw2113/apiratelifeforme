@@ -7,7 +7,7 @@
 
   .search-form {
     width: 500px;
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         width: 100%;
       }
     }
