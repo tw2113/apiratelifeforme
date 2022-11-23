@@ -1,7 +1,6 @@
 <?php
 
 namespace tw2113;
-
 function algolia_exclude_post_types( $post_types ) {
 
 	// Ignore these post types.
@@ -28,6 +27,9 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 	}
 
 	unset( $attributes['post_author'] );
+	unset( $attributes['post_mime_type'] );
+	unset( $attributes['menu_order'] );
+	unset( $attributes['is_sticky'] );
 
 	return $attributes;
 }
