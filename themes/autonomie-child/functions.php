@@ -5,7 +5,7 @@ namespace tw2113;
 function algolia_includes() {
     require_once get_stylesheet_directory() . '/algolia/filters.php';
 }
-add_action( 'plugins_loaded', __NAMESPACE__ . '\algolia_includes' );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\algolia_includes' );
 
 function scripts_styles() {
 
