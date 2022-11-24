@@ -26,6 +26,15 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 		}
 	}
 
+	if ( 'books' === $post->post_type ) {
+		$rating = get_post_meta( $post->ID, 'pbc_rating', true );
+		if ( empty( $rating ) ) {
+			$attributes['rating'] = 'n/a';
+		} else {
+			$attributes['rating'] = absint( substr( $rating, - 1, 1 ) );
+		}
+	}
+
 	unset( $attributes['post_author'] );
 	unset( $attributes['post_mime_type'] );
 	unset( $attributes['menu_order'] );
@@ -49,3 +58,10 @@ function posts_index_settings( $settings ) {
 }
 add_filter( 'algolia_posts_index_settings', __NAMESPACE__ . '\posts_index_settings' );
 add_filter( 'algolia_posts_books_index_settings', __NAMESPACE__ . '\posts_index_settings' );
+
+function posts_thumbnail_sizes( $sizes ) {
+	$sizes[] = 'medium';
+
+	return $sizes;
+}
+add_filter( 'algolia_post_images_sizes', __NAMESPACE__ . '\posts_thumbnail_sizes' );
