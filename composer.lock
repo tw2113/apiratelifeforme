@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e70bf4f76ef67931be0783c4d9156813",
+    "content-hash": "9556429ef691a09f79abcf9abf7ecaba",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.13.1",
+            "version": "1.13.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.13.1"
+                "reference": "tags/1.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.9.2",
+            "version": "6.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.9.2"
+                "reference": "tags/6.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.9.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "14.5.4",
+            "version": "14.7.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/14.5.4"
+                "reference": "tags/14.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.5.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.7.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -585,15 +585,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.12.2",
+            "version": "1.13.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.12.2"
+                "reference": "tags/1.13.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.12.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.13.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
