@@ -90,7 +90,10 @@ function get_reading_challenge_status() {
 
     //current read
     $total_goal = $current_challenge->posts[0]->pbc_total_goal;
-	$total_read = count( $current_challenge->posts[0]->pbc_read_books );
+    $total_read = (string) '0';
+    if ( ! empty( $total_goal ) && is_array( $total_goal ) ) {
+	    $total_read = count( $current_challenge->posts[0]->pbc_read_books );
+    }
 
     // how many days per book allowed.
 	$days_per_book = 365 / $total_goal;
