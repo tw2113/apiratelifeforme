@@ -91,7 +91,7 @@ function get_reading_challenge_status() {
     //current read
     $total_goal = $current_challenge->posts[0]->pbc_total_goal;
     $total_read = (string) '0';
-    if ( ! empty( $total_goal ) && is_array( $total_goal ) ) {
+    if ( ! empty( $current_challenge->posts[0]->pbc_read_books ) && is_array( $current_challenge->posts[0]->pbc_read_books ) ) {
 	    $total_read = count( $current_challenge->posts[0]->pbc_read_books );
     }
 
