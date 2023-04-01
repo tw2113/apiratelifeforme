@@ -5,7 +5,7 @@
  * @author  WebDevStudios <contact@webdevstudios.com>
  * @since   1.0.0
  *
- * @version 2.0.0
+ * @version 2.5.0
  * @package WebDevStudios\WPSWA
  */
 
@@ -20,7 +20,6 @@
 
 <script type="text/html" id="tmpl-autocomplete-post-suggestion">
 	<a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
-        <# {{ console.log(data); }} #>
 		<# if ( data.images.medium ) { #>
 			<img class="suggestion-post-thumbnail" src="{{ data.images.medium.url }}" alt="{{ data.post_title }}">
 		<# } #>
