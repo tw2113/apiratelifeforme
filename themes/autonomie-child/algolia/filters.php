@@ -58,10 +58,17 @@ function posts_index_settings( $settings ) {
 		'unordered(content)',
 	];
 
+	$settings['attributesForFaceting'] = [
+		'searchable(pbc_book_authors)',
+		'taxonomies',
+		'taxonomies_hierarchical',
+	];
+
 	return $settings;
 }
 add_filter( 'algolia_posts_index_settings', __NAMESPACE__ . '\posts_index_settings' );
 add_filter( 'algolia_posts_books_index_settings', __NAMESPACE__ . '\posts_index_settings' );
+add_filter( 'algolia_searchable_posts_index_settings', __NAMESPACE__ . '\posts_index_settings', 10, 2 );
 
 function posts_thumbnail_sizes( $sizes ) {
 	$sizes[] = 'medium';
