@@ -19,10 +19,14 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 	];
 
 	foreach ( $fields as $field ) {
-		$data = get_post_meta( $post->ID, $field );
+		$data = get_post_meta( $post->ID, $field, true );
 
 		if ( ! empty( $data )  ) {
-			$attributes[ $field ] = $data;
+			$authors = array_filter( explode( ',', $data ) );
+			if ( ! empty( $authors ) ) {
+				$authors = array_map( 'trim', $authors );
+			}
+			$attributes[ $field ] = $authors;
 		}
 	}
 
