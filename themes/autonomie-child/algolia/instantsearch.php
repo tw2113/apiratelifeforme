@@ -5,7 +5,7 @@
  * @author  WebDevStudios <contact@webdevstudios.com>
  * @since   1.0.0
  *
- * @version 2.5.0
+ * @version 2.5.2
  * @package WebDevStudios\WPSWA
  */
 
@@ -48,6 +48,10 @@ get_header();
             <div>
                 <h3 class="widgettitle"><?php esc_html_e( 'Book Genre', 'wp-search-with-algolia' ); ?></h3>
                 <section class="ais-facets" id="facet-genre"></section>
+            </div>
+            <div>
+                <h3 class="widgettitle"><?php esc_html_e( 'Book Author', 'wp-search-with-algolia' ); ?></h3>
+                <section class="ais-facets" id="facet-author"></section>
             </div>
 
             <div>
@@ -203,6 +207,14 @@ get_header();
                         container: '#facet-genre',
                         attribute: 'taxonomies.genre',
                         operator: 'and',
+                        limit: 15,
+                        sortBy: ['count:desc', 'name:asc'],
+                    }),
+
+                    instantsearch.widgets.refinementList({
+                        container: '#facet-author',
+                        attribute: 'pbc_book_authors',
+                        operator: 'or',
                         limit: 15,
                         sortBy: ['count:desc', 'name:asc'],
                     }),
