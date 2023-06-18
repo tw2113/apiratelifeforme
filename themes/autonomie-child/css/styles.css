@@ -237,6 +237,15 @@ mark {
   color: #4f575a;
 }
 
+.ais-RefinementList-checkbox {
+  margin-right: 5px;
+}
+
+#ais-main .ais-Hits-item em, #ais-main .ais-Hits-item a em, #ais-main .ais-Hits-item mark, #ais-main .ais-Hits-item a mark {
+  background-color: #720000;
+  color: #fff;
+}
+
 .site-header .site-branding .search-field {
   width: 100%;
 }

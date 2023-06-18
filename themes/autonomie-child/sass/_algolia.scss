@@ -27,3 +27,10 @@
     color: $gray;
   }
 }
+.ais-RefinementList-checkbox {
+  margin-right: 5px;
+}
+#ais-main .ais-Hits-item em, #ais-main .ais-Hits-item a em, #ais-main .ais-Hits-item mark, #ais-main .ais-Hits-item a mark {
+  background-color: $cherry-red;
+  color: $white;
+}
