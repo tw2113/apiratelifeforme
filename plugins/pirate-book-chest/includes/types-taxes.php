@@ -105,7 +105,7 @@ function register_my_cpts() {
 
 	register_post_type( "book-collections", $args );
 }
-add_action( 'init', __NAMESPACE__ . '\register_my_cpts' );
+add_action( 'init', __NAMESPACE__ . '\register_my_cpts', 9 );
 
 function register_my_books_taxes() {
 
@@ -224,7 +224,7 @@ function register_my_books_taxes() {
 	];
 	register_taxonomy( "book-series", [ "books" ], $args );
 }
-add_action( 'init', __NAMESPACE__ . '\register_my_books_taxes' );
+add_action( 'init', __NAMESPACE__ . '\register_my_books_taxes', 9 );
 
 function update_comment_type_for_review( $comment_id, $comment ) {
 	$parent_type = get_post_type( $comment->comment_post_ID );
