@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd5c68cf71faf8131fd19442d6f382ee",
+    "content-hash": "a8434bb175de5f39c69a5cb87993fbc8",
     "packages": [
         {
             "name": "composer/installers",
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.9.1",
+            "version": "16.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.9.1"
+                "reference": "tags/16.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -459,15 +459,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.6.24",
+            "version": "3.6.25",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.6.24"
+                "reference": "tags/3.6.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.24.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.6.25.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -567,15 +567,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/5.0.0"
+                "reference": "tags/5.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.5.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/webmention.5.1.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -585,15 +585,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.14.3",
+            "version": "1.14.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.14.3"
+                "reference": "tags/1.14.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.14.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.14.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
