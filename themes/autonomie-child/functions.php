@@ -229,12 +229,3 @@ function music_vide_meta_title( $description ) {
 	return 'The Pirate Asylum Radio Archives';
 }
 add_filter( 'the_seo_framework_title_from_generation', __NAMESPACE__ . '\music_vide_meta_title' );
-
-function music_video_meta_description( $description ) {
-	if ( ! is_post_type_archive( 'music_video' ) ) {
-		return $description;
-	}
-
-	return 'Michael Beckwith\'s "Radio" archive, a curated playlist of videos.';
-}
-add_filter( 'the_seo_framework_pta_description', __NAMESPACE__ . '\music_video_meta_description' );
