@@ -121,15 +121,6 @@ function book_status_update( $post_id, $post, $updated ) {
 }
 add_action( 'save_post_books', __NAMESPACE__ . '\book_status_update', 10, 3 );
 
-function book_meta_description( $description ) {
-	if ( ! is_post_type_archive( 'books' ) ) {
-		return $description;
-	}
-
-	return 'Michael Beckwith\'s reading tracking archive, documenting what he has read, is reading, and wants to read in the future.';
-}
-add_filter( 'the_seo_framework_pta_description', __NAMESPACE__ . '\book_meta_description' );
-
 function book_meta_title( $description ) {
 	if ( ! is_post_type_archive( 'books' ) ) {
 		return $description;
