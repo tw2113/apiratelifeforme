@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b49563d3cfa79e802082d44b44b34ac0",
+    "content-hash": "952a99ac316db2b2dc56c75db574fcbc",
     "packages": [
         {
             "name": "composer/installers",
@@ -186,6 +186,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
+            "name": "wpackagist-plugin/autopost-to-mastodon",
+            "version": "3.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autopost-to-mastodon/",
+                "reference": "tags/3.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.7.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autopost-to-mastodon/"
         },
         {
             "name": "wpackagist-plugin/avatar-privacy",
