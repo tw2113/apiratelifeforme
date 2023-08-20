@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a46617ae44667975f33d7cad584c3d7",
+    "content-hash": "db757b8ab65e23c91b60a0c94ad023fe",
     "packages": [
         {
             "name": "composer/installers",
@@ -636,24 +636,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-search-with-algolia/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.7.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.7.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.7.0.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-to-twitter/"
         },
         {
             "name": "wpackagist-plugin/wp-uf2",
