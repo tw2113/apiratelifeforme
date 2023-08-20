@@ -24,7 +24,7 @@
     "wpackagist-plugin/keyring": "3.0",
     "wpackagist-plugin/keyring-social-importers": "2.0",
     "wpackagist-plugin/micropub": "2.3.3",
-    "wpackagist-plugin/ninja-forms": "3.6.28",
+    "wpackagist-plugin/ninja-forms": "3.6.29",
     "wpackagist-plugin/query-monitor": "3.13.1",
     "wpackagist-plugin/semantic-linkbacks": "3.12.0",
     "wpackagist-plugin/slide": "0.0.39",
