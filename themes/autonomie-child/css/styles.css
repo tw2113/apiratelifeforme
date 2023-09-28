@@ -246,6 +246,28 @@ mark {
   color: #fff;
 }
 
+#autocomplete .aa-Form {
+  border: none;
+}
+
+#autocomplete .aa-Input {
+  color: #720000;
+  height: 33px;
+}
+
+#autocomplete input[type="search"] {
+  border-color: #720000;
+}
+
+#autocomplete .aa-Input::placeholder {
+  color: #720000;
+}
+
+#autocomplete button:hover {
+  border: 1px solid #720000;
+  background-color: transparent;
+}
+
 .site-header .site-branding .search-field {
   width: 100%;
 }
