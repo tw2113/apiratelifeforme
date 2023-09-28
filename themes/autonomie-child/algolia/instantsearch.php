@@ -5,7 +5,7 @@
  * @author  WebDevStudios <contact@webdevstudios.com>
  * @since   1.0.0
  *
- * @version 2.5.2
+ * @version NEXT
  * @package WebDevStudios\WPSWA
  */
 
@@ -61,63 +61,38 @@ get_header();
 		</aside>
 	</div>
 
-	<script type="text/html" id="tmpl-instantsearch-hit">
-		<article itemtype="http://schema.org/Article">
-			<# if ( data.images.thumbnail ) { #>
-				<div class="ais-hits--thumbnail">
-					<a href="{{ data.permalink }}" title="{{ data.post_title }}" class="ais-hits--thumbnail-link">
-						<img src="{{ data.images.thumbnail.url }}" alt="{{ data.post_title }}" title="{{ data.post_title }}" itemprop="image" />
-					</a>
-				</div>
-			<# } #>
-
-			<div class="ais-hits--content">
-				<h2 itemprop="name headline"><a href="{{ data.permalink }}" title="{{ data.post_title }}" class="ais-hits--title-link" itemprop="url">{{{ data._highlightResult.post_title.value }}}</a></h2>
-				<div class="excerpt">
-					<p>
-						<# if ( data._snippetResult['content'] ) { #>
-							<span class="suggestion-post-content ais-hits--content-snippet">{{{ data._snippetResult['content'].value }}}</span>
-						<# } #>
-					</p>
-				</div>
-			</div>
-			<div class="ais-clearfix"></div>
-		</article>
-	</script>
-
-
 	<script type="text/javascript">
-		jQuery(function() {
-			if(jQuery('#algolia-search-box').length > 0) {
+        window.addEventListener('load', function() {
+            if ( document.getElementById("algolia-search-box") ) {
 
-				if (algolia.indices.searchable_posts === undefined && jQuery('.admin-bar').length > 0) {
-					alert('It looks like you haven\'t indexed the searchable posts index. Please head to the Indexing page of the Algolia Search plugin and index it.');
-				}
+                if ( algolia.indices.searchable_posts === undefined && document.getElementsByClassName("admin-bar").length > 0) {
+                    alert('It looks like you haven\'t indexed the searchable posts index. Please head to the Indexing page of the Algolia Search plugin and index it.');
+                }
 
-				/* Instantiate instantsearch.js */
-				var search = instantsearch({
-					indexName: algolia.indices.searchable_posts.name,
-					searchClient: algoliasearch( algolia.application_id, algolia.search_api_key ),
-					routing: {
-						router: instantsearch.routers.history({ writeDelay: 1000 }),
-						stateMapping: {
-							stateToRoute( indexUiState ) {
-								return {
-									s: indexUiState[ algolia.indices.searchable_posts.name ].query,
-									page: indexUiState[ algolia.indices.searchable_posts.name ].page
-								}
-							},
-							routeToState( routeState ) {
-								const indexUiState = {};
-								indexUiState[ algolia.indices.searchable_posts.name ] = {
-									query: routeState.s,
-									page: routeState.page
-								};
-								return indexUiState;
-							}
-						}
-					}
-				});
+                /* Instantiate instantsearch.js */
+                var search = instantsearch({
+                    indexName: algolia.indices.searchable_posts.name,
+                    searchClient: algoliasearch( algolia.application_id, algolia.search_api_key ),
+                    routing: {
+                        router: instantsearch.routers.history({ writeDelay: 1000 }),
+                        stateMapping: {
+                            stateToRoute( indexUiState ) {
+                                return {
+                                    s: indexUiState[ algolia.indices.searchable_posts.name ].query,
+                                    page: indexUiState[ algolia.indices.searchable_posts.name ].page
+                                }
+                            },
+                            routeToState( routeState ) {
+                                const indexUiState = {};
+                                indexUiState[ algolia.indices.searchable_posts.name ] = {
+                                    query: routeState.s,
+                                    page: routeState.page
+                                };
+                                return indexUiState;
+                            }
+                        }
+                    }
+                });
 
 				search.addWidgets([
 
@@ -143,14 +118,48 @@ get_header();
 						container: '#algolia-stats'
 					}),
 
+                    // Configure widget
+                    // https://www.algolia.com/doc/api-reference/widgets/configure/js/
+                    instantsearch.widgets.configure({
+                        hitsPerPage: 10,
+                    }),
+
 					/* Hits widget */
 					instantsearch.widgets.hits({
 						container: '#algolia-hits',
-						hitsPerPage: 10,
-						templates: {
-							empty: 'No results were found for "<strong>{{query}}</strong>".',
-							item: wp.template('instantsearch-hit')
-						},
+                        templates: {
+                            empty(results, {html} ) {
+                                return html `No results were found for "<strong>${results.query}</strong>".`;
+                            },
+                            item(hit, { html, components }) {
+                                let thumbnail = '';
+                                if ( hit.images.thumbnail ) {
+                                    thumbnail = html`
+									<div class="ais-hits--thumbnail">
+										<a href="${hit.permalink}" title="${hit.post_title }" class="ais-hits--thumbnail-link">
+											<img src="${hit.images.thumbnail.url }" alt="${hit.post_title }" title="${hit.post_title }" itemprop="image" />
+										</a>
+									</div>`;
+                                }
+
+                                let content_snippet = '';
+                                if (hit._snippetResult['content']) {
+                                    content_snippet = html`<span class="suggestion-post-content ais-hits--content-snippet">${components.Snippet({hit, attribute: 'content'})}</span>`;
+                                }
+
+                                return html`
+									<article itemtype="http://schema.org/Article">
+										${thumbnail}
+										<div class="ais-hits--content">
+											<h2 itemprop="name headline"><a href="${hit.permalink}" title="${hit.post_title}" class="ais-hits--title-link" itemprop="url">${components.Highlight({hit, attribute: 'post_title'})}</a></h2>
+											<div class="excerpt">
+												<p>${content_snippet}</p>
+											</div>
+										</div>
+										<div class="ais-clearfix"></div>
+									</article>`;
+                            }
+                        },
 						transformData: {
 							item: function (hit) {
 
@@ -236,7 +245,7 @@ get_header();
 				/* Start */
 				search.start();
 
-				jQuery( '#algolia-search-box input' ).attr( 'type', 'search' ).trigger( 'select' );
+                document.querySelector("#algolia-search-box input[type='search']").select();
 			}
 		});
 	</script>
