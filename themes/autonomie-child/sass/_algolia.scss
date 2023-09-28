@@ -34,3 +34,21 @@
   background-color: $cherry-red;
   color: $white;
 }
+
+#autocomplete .aa-Form {
+  border: none;
+}
+#autocomplete .aa-Input {
+  color: $cherry-red;
+  height: 33px;
+}
+#autocomplete input[type="search"] {
+  border-color: $cherry-red;
+}
+#autocomplete .aa-Input::placeholder {
+  color: $cherry-red;
+}
+#autocomplete button:hover {
+  border: 1px solid $cherry-red;
+  background-color: transparent;
+}
