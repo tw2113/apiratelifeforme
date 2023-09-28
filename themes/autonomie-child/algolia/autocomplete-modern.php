@@ -141,6 +141,10 @@
 					}
 				}
 			},
+            placeholder: "Search ...",
+            classNames: {
+                input: "search-field"
+            }
 		}
 
 		autocomplete(config);
