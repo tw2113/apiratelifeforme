@@ -6,6 +6,10 @@ use tw2113\YarrRSS\Base\BaseInterface;
 
 class LastFM extends Base implements BaseInterface {
 
+    protected $wp_query;
+
+    protected $classname;
+
     public function __construct( \WP_Query $wp_query ) {
         $this->wp_query = $wp_query;
         $this->classname = $this->get_class_name_base();
