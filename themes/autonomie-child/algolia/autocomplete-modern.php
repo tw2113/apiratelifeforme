@@ -39,10 +39,12 @@
                             return item.permalink;
                         },
 						templates: {
-							header: function ({html}) {
+							header: function ({html,state}) {
+                                let queryval = encodeURIComponent(state.query);
 								return html`
 									<div class="autocomplete-header">
 										<div class="autocomplete-header-title">${config['label']}</div>
+                                        <div class="search-all"><a href="${autocomplete_extras.searchUrl}${queryval}">Search all</a></div>
 										<div class="clear"></div>
 									</div>`;
 							},
