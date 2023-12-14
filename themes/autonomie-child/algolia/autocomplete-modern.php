@@ -35,6 +35,9 @@
 								],
 							});
 						},
+                        getItemUrl({ item }) {
+                            return item.permalink;
+                        },
 						templates: {
 							header: function ({html}) {
 								return html`
@@ -128,8 +131,28 @@
 				if (!query) {
 					return [];
 				}
+
 				return get_sources(query);
 			},
+
+            // Default Navigator API implementation
+            navigator: {
+                navigate({ itemUrl }) {
+                    console.log(itemUrl);
+                    window.location.assign(itemUrl);
+                },
+                navigateNewTab({ itemUrl }) {
+                    const windowReference = window.open(itemUrl, '_blank', 'noopener');
+
+                    if (windowReference) {
+                        windowReference.focus();
+                    }
+                },
+                navigateNewWindow({ itemUrl }) {
+                    window.open(itemUrl, '_blank', 'noopener');
+                },
+            },
+
 			onStateChange({state}) {
 				if (state.isOpen) {
 					let algoliaPoweredLink = document.querySelector('.algolia-powered-by-link');
