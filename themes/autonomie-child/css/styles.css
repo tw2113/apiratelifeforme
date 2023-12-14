@@ -268,6 +268,10 @@ mark {
   background-color: transparent;
 }
 
+.aa-Panel .search-all {
+  float: right;
+}
+
 .site-header .site-branding .search-field {
   width: 100%;
 }
