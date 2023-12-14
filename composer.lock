@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "303e221be1778508aaafa68e939e3058",
+    "content-hash": "478588d76081c16b85162b9bef3e71f6",
     "packages": [
         {
             "name": "composer/installers",
@@ -171,15 +171,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/5.0.1"
+                "reference": "tags/5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.5.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.5.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "7.2.1",
+            "version": "7.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/7.2.1"
+                "reference": "tags/7.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.7.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.7.2.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -333,15 +333,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "17.1.4",
+            "version": "17.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/17.1.4"
+                "reference": "tags/17.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -549,15 +549,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.4.14",
+            "version": "4.4.15",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.4.14"
+                "reference": "tags/4.4.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.4.14.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.4.15.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
