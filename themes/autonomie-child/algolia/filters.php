@@ -76,3 +76,14 @@ function posts_thumbnail_sizes( $sizes ) {
 	return $sizes;
 }
 add_filter( 'algolia_post_images_sizes', __NAMESPACE__ . '\posts_thumbnail_sizes' );
+
+function autocomplete_extras() {
+	wp_add_inline_script(
+		'algolia-autocomplete', 'const autocomplete_extras = ' . json_encode(
+			[
+				'searchUrl' => home_url() . '/?s=',
+			]
+		)
+	);
+}
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\autocomplete_extras' );
