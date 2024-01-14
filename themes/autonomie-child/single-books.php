@@ -22,7 +22,7 @@ get_header(); ?>
                 <h2><?php the_title(); ?></h2>
 
                 <?php
-                the_post_thumbnail( 'medium' );
+                the_post_thumbnail( 'book_cover' );
                 ?>
                 <h3 id="description">Description:</h3>
                 <div class="p-item">
