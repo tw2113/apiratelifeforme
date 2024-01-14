@@ -206,6 +206,6 @@ function book_rest_orderby_finished_date( $args, $request ) {
 add_filter( 'rest_books_query', __NAMESPACE__ . '\book_rest_orderby_finished_date', 10, 2 );
 
 function book_image_sizes() {
-    add_image_size( 'book_next_thumb', 500 );
+    add_image_size( 'book_cover', 600 );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\book_image_sizes' );
