@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "344ba3bca3e81e340868b26a933426dd",
+    "content-hash": "46cf0153171991cd6a29acc664600cbd",
     "packages": [
         {
             "name": "composer/installers",
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "7.2.2",
+            "version": "7.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/7.2.2"
+                "reference": "tags/7.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.7.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.7.2.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -333,15 +333,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "17.2.1",
+            "version": "17.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/17.2.1"
+                "reference": "tags/17.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.4.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -351,15 +351,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "4.4.0",
+            "version": "4.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/4.4.0"
+                "reference": "tags/4.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.4.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.4.4.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -387,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb-post-kinds/",
-                "reference": "tags/3.7.0"
+                "reference": "tags/3.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.3.7.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -494,6 +494,24 @@
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
         },
         {
+            "name": "wpackagist-plugin/post-type-switcher",
+            "version": "3.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/post-type-switcher/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.zip?timestamp=1705234732"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/post-type-switcher/"
+        },
+        {
             "name": "wpackagist-plugin/query-monitor",
             "version": "3.15.0",
             "source": {
@@ -585,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/webmention",
-            "version": "5.1.9",
+            "version": "5.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webmention/",
-                "reference": "tags/5.1.9"
+                "reference": "tags/5.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webmention.5.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/webmention.5.2.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
