@@ -213,7 +213,6 @@ get_header();
                         operator: 'and',
                         limit: 5,
                         sortBy: ['count:desc', 'name:asc'],
-                        showMore: true,
                     }),
 
                     instantsearch.widgets.refinementList({
