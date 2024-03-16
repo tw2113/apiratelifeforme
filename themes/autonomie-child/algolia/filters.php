@@ -32,10 +32,18 @@ function algolia_custom_fields( array $attributes, \WP_Post $post ) {
 
 	if ( 'books' === $post->post_type ) {
 		$rating = get_post_meta( $post->ID, 'pbc_rating', true );
+		$attributes['rating'] = 'n/a';
 		if ( empty( $rating ) ) {
-			$attributes['rating'] = 'n/a';
-		} else {
 			$attributes['rating'] = absint( substr( $rating, - 1, 1 ) );
+		}
+
+		$attributes['currently_reading'] = has_term( 95, 'book_status', $post->ID );
+		$attributes['read_status'] = implode( ',', wp_list_pluck( get_the_terms( $post->ID, 'book_status' ), 'name') );
+		$total_pages = get_post_meta( $post->ID, 'pbc_total_pages', true );
+
+		$attributes['total_pages'] = 'n/a';
+		if ( ! empty( $total_pages ) ) {
+			$attributes['total_pages'] = $total_pages;
 		}
 	}
 
