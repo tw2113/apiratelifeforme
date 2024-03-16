@@ -95,3 +95,13 @@ function autocomplete_extras() {
 	);
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\autocomplete_extras' );
+
+function wds_algolia_register_replicas( $replicas ) {
+	$replicas[] = new \Algolia_Index_Replica( 'rating', 'asc' );
+	$replicas[] = new \Algolia_Index_Replica( 'rating', 'desc' );
+
+	$replicas[] = new \Algolia_Index_Replica( 'total_pages', 'asc' );
+	$replicas[] = new \Algolia_Index_Replica( 'total_pages', 'desc' );
+	return $replicas;
+}
+add_filter( 'algolia_searchable_posts_index_replicas', __NAMESPACE__ . '\wds_algolia_register_replicas' );
