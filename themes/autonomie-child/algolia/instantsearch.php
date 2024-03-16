@@ -29,6 +29,9 @@ get_header();
                 <div id="clearfilters" class="clearfilters"></div>
             </div>
             <div>
+                <div id="sort-by" class="sort-by"></div>
+            </div>
+            <div>
                 <h4 class="widgettitle"><?php esc_html_e( 'Filtered by:', 'martfury-child' ); ?></h4>
                 <div id="current-facets" class="current-facets"></div>
             </div>
@@ -208,39 +211,53 @@ get_header();
                         container: '#facet-book_status',
                         attribute: 'taxonomies.book_status',
                         operator: 'and',
-                        limit: 15,
+                        limit: 5,
                         sortBy: ['count:desc', 'name:asc'],
+                        showMore: true,
                     }),
 
                     instantsearch.widgets.refinementList({
                         container: '#facet-genre',
                         attribute: 'taxonomies.genre',
                         operator: 'and',
-                        limit: 15,
+                        limit: 5,
                         sortBy: ['count:desc', 'name:asc'],
+                        showMore: true,
                     }),
 
                     instantsearch.widgets.refinementList({
                         container: '#facet-author',
                         attribute: 'pbc_book_authors',
                         operator: 'or',
-                        limit: 15,
+                        limit: 5,
                         sortBy: ['count:desc', 'name:asc'],
+                        showMore: true,
                     }),
 
                     instantsearch.widgets.refinementList({
                         container: '#facet-book-series',
                         attribute: 'taxonomies.book-series',
                         operator: 'and',
-                        limit: 15,
+                        limit: 5,
                         sortBy: ['count:desc', 'name:asc'],
+                        showMore: true,
                     }),
 
 					/* Search powered-by widget */
 					instantsearch.widgets.poweredBy({
 						container: '#algolia-powered-by'
-					})
-				]);
+					}),
+
+                    /*instantsearch.widgets.sortBy({
+                        container: '#sort-by',
+                        items: [
+                            { label: 'Total Pages (asc)', value: 'wp_searchable_posts_total_pages_asc' },
+                            { label: 'Total Pages (desc)', value: 'wp_searchable_posts_total_pages_desc' },
+                            { label: 'Rating (asc)', value: 'wp_searchable_posts_rating_asc' },
+                            { label: 'Rating (desc)', value: 'wp_searchable_posts_rating_desc' },
+                        ],
+                    })*/
+            ]);
 
 				/* Start */
 				search.start();
