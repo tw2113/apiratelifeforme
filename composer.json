@@ -7,7 +7,7 @@
   }],
   "require": {
     "wpackagist-plugin/antispam-bee": "2.11.6",
-    "wpackagist-plugin/autodescription": "5.0.5",
+    "wpackagist-plugin/autodescription": "5.0.6",
     "wpackagist-plugin/autopost-to-mastodon": "3.7",
     "wpackagist-plugin/avatar-privacy": "2.7.0",
     "wpackagist-plugin/carbon-offset": "1.0.6",
