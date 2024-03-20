@@ -40,7 +40,8 @@
   }
 
   .book-placeholder {
-    background-color: #720000;
+    background: #720000 url('../images/abc-book.svg') 50% 50% no-repeat;
+    background-size: 90%;
     color: #fff;
     height: 300px;
     margin: 0 auto;
