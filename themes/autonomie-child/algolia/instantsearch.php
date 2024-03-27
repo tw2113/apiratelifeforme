@@ -76,6 +76,7 @@ get_header();
                 var search = instantsearch({
                     indexName: algolia.indices.searchable_posts.name,
                     searchClient: algoliasearch( algolia.application_id, algolia.search_api_key ),
+                    insights: true,
                     routing: {
                         router: instantsearch.routers.history({ writeDelay: 1000 }),
                         stateMapping: {
