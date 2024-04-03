@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62acc9cfd17b40dc03af1b50757e4d86",
+    "content-hash": "14f5cc7d62dc05aa80feda2f6fbd9ea6",
     "packages": [
         {
             "name": "composer/installers",
@@ -261,7 +261,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -269,7 +269,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1676582798"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1712086610"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -333,15 +333,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "17.9.0",
+            "version": "18.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/17.9.0"
+                "reference": "tags/18.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.18.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -477,15 +477,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.8.0",
+            "version": "3.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.8.0"
+                "reference": "tags/3.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.8.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.8.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
