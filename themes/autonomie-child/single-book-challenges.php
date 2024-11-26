@@ -32,8 +32,9 @@ get_header(); ?>
 
                 $read_books     = get_post_meta( get_the_ID(), 'pbc_read_books', true );
                 $target_goal    = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
+                $read_books     = array_reverse( $read_books );
 
-                $tmpl           = '<p><strong>Total achieved:</strong> %s, <strong>total aimed for:</strong> %s, <strong>current status:</strong> %s</strong></p><p><strong>Total pages read:</strong> %s</p><div class="pirate-book-chest-wrapper">%s</div>';
+                $tmpl           = '<p><strong>Total achieved:</strong> %s, <strong>total aimed for:</strong> %s, <strong>current status:</strong> %s</strong></p><p><strong>Total pages read:</strong> %s</p><p><strong>From most to least recent.</p><div class="pirate-book-chest-wrapper">%s</div>';
                 $items          = '';
                 $current        = ( is_array( $read_books ) && ! empty( $read_books ) ) ? count( $read_books ) : '0';
                 $total_pages    = [];
