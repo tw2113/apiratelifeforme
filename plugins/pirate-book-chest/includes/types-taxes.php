@@ -47,11 +47,12 @@ function register_my_cpts() {
 	register_post_type( "books", $args );
 
 	$labels = [
-		"name"          => __( "Book Challenges", "pirate-book-chest" ),
-		"singular_name" => __( "Book Challenge", "pirate-book-chest" ),
+		"name"          => __( "Book challenges", "pirate-book-chest" ),
+		"singular_name" => __( "Book challenge", "pirate-book-chest" ),
 		"add_new"       => __( 'Add new challenge', 'pirate-book-chest' ),
-		"view_items"    => __( 'View Challenges', 'pirate-book-chest' ),
-		"edit_item"     => __( 'Edit Challenge', 'pirate-book-chest' ),
+		"view_items"    => __( 'View challenges', 'pirate-book-chest' ),
+		"edit_item"     => __( 'Edit challenge', 'pirate-book-chest' ),
+		"search_items"  => __( 'Search challenges', 'pirate-book-chest' ),
 	];
 
 	$args = [
