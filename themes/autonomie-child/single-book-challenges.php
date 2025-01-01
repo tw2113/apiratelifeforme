@@ -30,7 +30,7 @@ get_header(); ?>
 	                $status = 'challenge concluded';
                 }
 
-                $read_books     = get_post_meta( get_the_ID(), 'pbc_read_books', true );
+                $read_books     = (array) get_post_meta( get_the_ID(), 'pbc_read_books', true );
                 $target_goal    = get_post_meta( get_the_ID(), 'pbc_total_goal', true );
                 $read_books     = array_reverse( $read_books );
 
