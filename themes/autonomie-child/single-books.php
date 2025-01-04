@@ -80,6 +80,19 @@ get_header(); ?>
                 $finished = ! empty( $meta['pbc_finished_date'][0] ) ? date( 'Y/m/d', $meta['pbc_finished_date'][0] ) : 'TBD';
                 printf( '<p><strong>Reading duration:</strong> %s to %s</p>', $started, $finished );
 
+                $duration = '';
+                if ( 'TBD' !== $started && 'TBD' !== $finished ){
+                    $started_utc = strtotime( $started );
+                    $finished_utc = strtotime( $finished );
+
+	                $duration = $finished_utc - $started_utc;
+                    $duration = round($duration / (60 * 60 * 24));
+                }
+
+                if ( $duration ) {
+	                printf( '<p><strong>Time needed:</strong> %s days</p>', $duration );
+                }
+
 				$rating = str_replace( 'rating', '', $meta['pbc_rating'][0] );
 				if ( '0' === $rating ) {
 				    $rating = 'n/a';
