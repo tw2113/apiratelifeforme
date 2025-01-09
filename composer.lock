@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dc8572950e3ac2577be2671f55e5feb",
+    "content-hash": "2383700c1a10a98f566a3c26bfee68c7",
     "packages": [
         {
             "name": "composer/installers",
@@ -244,15 +244,15 @@
         },
         {
             "name": "wpackagist-plugin/classic-editor",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.6.6"
+                "reference": "tags/1.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -334,15 +334,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "19.7.0",
+            "version": "19.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/19.7.0"
+                "reference": "tags/19.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.9.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
