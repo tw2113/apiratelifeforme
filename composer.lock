@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7420d11fae489946227022838957499f",
+    "content-hash": "0dc8572950e3ac2577be2671f55e5feb",
     "packages": [
         {
             "name": "composer/installers",
@@ -172,15 +172,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "5.1.0",
+            "version": "5.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/5.1.0"
+                "reference": "tags/5.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.5.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.5.1.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -316,15 +316,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "7.9.1",
+            "version": "8.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/7.9.1"
+                "reference": "tags/8.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.7.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.8.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -338,11 +338,11 @@
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "trunk"
+                "reference": "tags/19.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.zip?timestamp=1732127388"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.7.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -352,15 +352,15 @@
         },
         {
             "name": "wpackagist-plugin/indieauth",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieauth/",
-                "reference": "tags/4.5.2"
+                "reference": "tags/4.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieauth.4.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieauth.4.5.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -478,15 +478,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.8.19",
+            "version": "3.8.23",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.8.19"
+                "reference": "tags/3.8.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.8.19.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.8.23.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -514,15 +514,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.16.4",
+            "version": "3.17.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.16.4"
+                "reference": "tags/3.17.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.16.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.17.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -568,15 +568,15 @@
         },
         {
             "name": "wpackagist-plugin/syndication-links",
-            "version": "4.4.21",
+            "version": "4.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syndication-links/",
-                "reference": "tags/4.4.21"
+                "reference": "tags/4.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.4.21.zip"
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.4.5.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -622,15 +622,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.29.2",
+            "version": "1.29.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.29.2"
+                "reference": "tags/1.29.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.29.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.29.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
